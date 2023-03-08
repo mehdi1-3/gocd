@@ -1728,3 +1728,555 @@ INFO   | jvm 2    | 2023/03/08 12:09:59 | 	at com.thoughtworks.go.apiv3.stageins
 INFO   | jvm 2    | 2023/03/08 12:09:59 | 	at com.thoughtworks.go.api.base.JsonOutputWriter$JsonOutputWriterUsingJackson.lambda$forTopLevelObject$21(JsonOutputWriter.java:317)
 INFO   | jvm 2    | 2023/03/08 12:09:59 | 	at com.thoughtworks.go.api.base.JsonOutputWriter$JsonOutputWriterUsingJackson$ConsumerWhichThrows.accept(JsonOutputWriter.java:306)
 INFO   | jvm 2    | 2023/03/08 12:09:59 | 	... 153 common frames omitted
+INFO   | jvm 2    | 2023/03/08 13:35:17 | 2023-03-08 13:35:17,185 ERROR [qtp533044735-45] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 13:35:17 | 2023-03-08 13:35:17,188 INFO  [qtp533044735-45] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@207e149d[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.CreatePipelineConfigCommand@3f055d0c
+INFO   | jvm 2    | 2023/03/08 13:35:17 | 2023-03-08 13:35:17,190 INFO  [qtp533044735-45] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@207e149d[displayName=anonymous,username=anonymous] is being processed
+INFO   | jvm 2    | 2023/03/08 13:35:17 | 2023-03-08 13:35:17,202 INFO  [qtp533044735-45] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+INFO   | jvm 2    | 2023/03/08 13:35:17 | 2023-03-08 13:35:17,223 INFO  [qtp533044735-45] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+INFO   | jvm 2    | 2023/03/08 13:35:17 | 2023-03-08 13:35:17,255 INFO  [qtp533044735-45] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+INFO   | jvm 2    | 2023/03/08 13:35:17 | 2023-03-08 13:35:17,256 INFO  [qtp533044735-45] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline test.
+INFO   | jvm 2    | 2023/03/08 13:35:17 | 2023-03-08 13:35:17,258 INFO  [qtp533044735-45] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+INFO   | jvm 2    | 2023/03/08 13:35:17 | 2023-03-08 13:35:17,259 INFO  [qtp533044735-45] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@207e149d[displayName=anonymous,username=anonymous] is completed
+INFO   | jvm 2    | 2023/03/08 13:35:17 | 2023-03-08 13:35:17,264 INFO  [qtp533044735-45] PipelinePauseService:131 - [Pipeline Pause] Pipeline [test] is paused by [com.thoughtworks.go.server.domain.Username@207e149d[displayName=anonymous,username=anonymous]] because [Under construction]
+INFO   | jvm 2    | 2023/03/08 13:35:36 | 2023-03-08 13:35:36,253 INFO  [qtp533044735-40] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@30d52189[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@4f0dc152
+INFO   | jvm 2    | 2023/03/08 13:35:36 | 2023-03-08 13:35:36,255 INFO  [qtp533044735-40] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@30d52189[displayName=anonymous,username=anonymous] is being processed
+INFO   | jvm 2    | 2023/03/08 13:35:36 | 2023-03-08 13:35:36,257 INFO  [qtp533044735-40] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+INFO   | jvm 2    | 2023/03/08 13:35:36 | 2023-03-08 13:35:36,270 INFO  [qtp533044735-40] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+INFO   | jvm 2    | 2023/03/08 13:35:36 | 2023-03-08 13:35:36,295 INFO  [qtp533044735-40] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+INFO   | jvm 2    | 2023/03/08 13:35:36 | 2023-03-08 13:35:36,297 INFO  [qtp533044735-40] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline test.
+INFO   | jvm 2    | 2023/03/08 13:35:36 | 2023-03-08 13:35:36,298 INFO  [qtp533044735-40] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+INFO   | jvm 2    | 2023/03/08 13:35:36 | 2023-03-08 13:35:36,298 INFO  [qtp533044735-40] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@30d52189[displayName=anonymous,username=anonymous] is completed
+INFO   | jvm 2    | 2023/03/08 13:35:48 | 2023-03-08 13:35:48,368 WARN  [ThreadPoolTaskScheduler-4] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 13:35:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 13:35:58 | 2023-03-08 13:35:58,594 INFO  [qtp533044735-38] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@b7224b0[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@34f4523
+INFO   | jvm 2    | 2023/03/08 13:35:58 | 2023-03-08 13:35:58,596 INFO  [qtp533044735-38] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@b7224b0[displayName=anonymous,username=anonymous] is being processed
+INFO   | jvm 2    | 2023/03/08 13:35:58 | 2023-03-08 13:35:58,599 INFO  [qtp533044735-38] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+INFO   | jvm 2    | 2023/03/08 13:35:58 | 2023-03-08 13:35:58,613 INFO  [qtp533044735-38] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+INFO   | jvm 2    | 2023/03/08 13:35:58 | 2023-03-08 13:35:58,637 INFO  [qtp533044735-38] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+INFO   | jvm 2    | 2023/03/08 13:35:58 | 2023-03-08 13:35:58,640 INFO  [qtp533044735-38] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline test.
+INFO   | jvm 2    | 2023/03/08 13:35:58 | 2023-03-08 13:35:58,643 INFO  [qtp533044735-38] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+INFO   | jvm 2    | 2023/03/08 13:35:58 | 2023-03-08 13:35:58,644 INFO  [qtp533044735-38] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@b7224b0[displayName=anonymous,username=anonymous] is completed
+INFO   | jvm 2    | 2023/03/08 13:36:18 | 2023-03-08 13:36:18,373 WARN  [ThreadPoolTaskScheduler-6] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 13:35:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 13:36:33 | 2023-03-08 13:36:33,494 INFO  [qtp533044735-31] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@5a893657[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@47d9b269
+INFO   | jvm 2    | 2023/03/08 13:36:33 | 2023-03-08 13:36:33,495 INFO  [qtp533044735-31] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@5a893657[displayName=anonymous,username=anonymous] is being processed
+INFO   | jvm 2    | 2023/03/08 13:36:33 | 2023-03-08 13:36:33,498 INFO  [qtp533044735-31] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+INFO   | jvm 2    | 2023/03/08 13:36:33 | 2023-03-08 13:36:33,511 INFO  [qtp533044735-31] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+INFO   | jvm 2    | 2023/03/08 13:36:33 | 2023-03-08 13:36:33,530 INFO  [qtp533044735-31] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+INFO   | jvm 2    | 2023/03/08 13:36:33 | 2023-03-08 13:36:33,531 INFO  [qtp533044735-31] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline test.
+INFO   | jvm 2    | 2023/03/08 13:36:33 | 2023-03-08 13:36:33,532 INFO  [qtp533044735-31] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+INFO   | jvm 2    | 2023/03/08 13:36:33 | 2023-03-08 13:36:33,533 INFO  [qtp533044735-31] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@5a893657[displayName=anonymous,username=anonymous] is completed
+INFO   | jvm 2    | 2023/03/08 13:36:43 | 2023-03-08 13:36:43,471 INFO  [qtp533044735-39] PipelinePauseService:159 - [Pipeline Unpause] Pipeline [test] is unpaused by [com.thoughtworks.go.server.domain.Username@5a9cac8e[displayName=anonymous,username=anonymous]]
+INFO   | jvm 2    | 2023/03/08 13:36:45 | 2023-03-08 13:36:44,956 INFO  [qtp533044735-39] PipelineTriggerService:43 - [Pipeline Schedule] [Requested] Manual trigger of pipeline 'test' requested by anonymous
+INFO   | jvm 2    | 2023/03/08 13:36:45 | 2023-03-08 13:36:44,958 INFO  [qtp533044735-39] PipelineTriggerService:46 - [Pipeline Schedule] [Accepted] Manual trigger of pipeline 'test' accepted for user anonymous
+INFO   | jvm 2    | 2023/03/08 13:36:45 | 2023-03-08 13:36:44,961 WARN  [qtp533044735-39] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 13:35:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 13:36:45 | 2023-03-08 13:36:44,962 INFO  [qtp533044735-39] PipelineTriggerService:48 - [Pipeline Schedule] [Processed] Manual trigger of pipeline 'test' processed with result 'com.thoughtworks.go.serverhealth.ServerHealthState@232e808f[description=,expiryTime=<null>,healthStateLevel=OK,message=,timestamp=Wed Mar 08 13:36:44 GMT 2023,type=<HealthStateType ARTIFACTS_DISK_FULL LogScope[GLOBAL, scope=GLOBAL]>]'
+INFO   | jvm 2    | 2023/03/08 13:36:48 | 2023-03-08 13:36:48,375 WARN  [ThreadPoolTaskScheduler-5] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 13:35:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 13:36:56 | 2023-03-08 13:36:56,886 INFO  [qtp533044735-28] PipelineTriggerService:43 - [Pipeline Schedule] [Requested] Manual trigger of pipeline 'test' requested by anonymous
+INFO   | jvm 2    | 2023/03/08 13:36:56 | 2023-03-08 13:36:56,887 INFO  [qtp533044735-28] PipelineTriggerService:46 - [Pipeline Schedule] [Accepted] Manual trigger of pipeline 'test' accepted for user anonymous
+INFO   | jvm 2    | 2023/03/08 13:36:56 | 2023-03-08 13:36:56,889 INFO  [qtp533044735-28] ManualBuild:61 - 'Failed to trigger pipeline: test'  because 'Pipeline already triggered'
+INFO   | jvm 2    | 2023/03/08 13:36:56 | 2023-03-08 13:36:56,890 INFO  [qtp533044735-28] PipelineTriggerService:48 - [Pipeline Schedule] [Processed] Manual trigger of pipeline 'test' processed with result 'com.thoughtworks.go.serverhealth.ServerHealthState@13a65f16[description=Pipeline already triggered,expiryTime=<null>,healthStateLevel=ERROR,message=Failed to trigger pipeline: test,timestamp=Wed Mar 08 13:36:56 GMT 2023,type=<HealthStateType GENERAL LogScope[PIPELINE, scope=test]>]'
+INFO   | jvm 2    | 2023/03/08 13:37:18 | 2023-03-08 13:37:18,376 WARN  [ThreadPoolTaskScheduler-7] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 13:35:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 13:37:48 | 2023-03-08 13:37:48,378 WARN  [ThreadPoolTaskScheduler-3] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 13:35:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 13:38:18 | 2023-03-08 13:38:18,380 WARN  [ThreadPoolTaskScheduler-10] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 13:35:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 13:38:48 | 2023-03-08 13:38:48,382 WARN  [ThreadPoolTaskScheduler-2] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 13:35:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 13:39:18 | 2023-03-08 13:39:18,383 WARN  [ThreadPoolTaskScheduler-1] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 13:35:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 13:39:48 | 2023-03-08 13:39:48,385 WARN  [ThreadPoolTaskScheduler-9] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 13:35:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 13:39:51 | 2023-03-08 13:39:51,689 INFO  [131@MessageListener for MaterialUpdateListener] ScmMaterialUpdater:60 - [Material Update] Found '1' modifications for material 'GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'}' with flyweight '6d0ba4f8638c8c8308d31f8bc6c88c3530dc38ece8368b955ada4b7caccc4ebc' using working directory '/go-working-dir/pipelines/flyweight/7e9993dc-f0dd-49f1-86b1-9b274b452641'
+INFO   | jvm 2    | 2023/03/08 13:39:52 | 2023-03-08 13:39:52,519 INFO  [ThreadPoolTaskScheduler-6] ScheduleService:160 - [Pipeline Schedule] Scheduling pipeline test with build cause [ManualForcedBuildCause: Forced by anonymous]
+INFO   | jvm 2    | 2023/03/08 13:39:52 | 2023-03-08 13:39:52,525 INFO  [ThreadPoolTaskScheduler-6] PipelineRepository:78 - Start updating pipeline timeline
+INFO   | jvm 2    | 2023/03/08 13:39:52 | 2023-03-08 13:39:52,530 INFO  [ThreadPoolTaskScheduler-6] PipelineRepository:84 - Pipeline timeline updated
+INFO   | jvm 2    | 2023/03/08 13:40:02 | 2023-03-08 13:40:02,525 INFO  [111@MessageListener for WorkFinder] BuildAssignmentService:189 - [Agent Assignment] Assigned job [JobIdentifier[test, 1, 1, test, 1, test, 13]] to agent [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53]]
+INFO   | jvm 2    | 2023/03/08 13:40:12 | 2023-03-08 13:40:12,762 INFO  [qtp533044735-34] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Preparing] for [Build [test/1/test/1/test/13]]
+INFO   | jvm 2    | 2023/03/08 13:40:12 | 2023-03-08 13:40:12,883 INFO  [qtp533044735-31] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Building] for [Build [test/1/test/1/test/13]]
+INFO   | jvm 2    | 2023/03/08 13:40:13 | 2023-03-08 13:40:13,000 INFO  [qtp533044735-30] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting result [Passed] for [Build [test/1/test/1/test/13]]
+INFO   | jvm 2    | 2023/03/08 13:40:13 | 2023-03-08 13:40:13,126 INFO  [qtp533044735-42] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Completing] for [Build [test/1/test/1/test/13]]
+INFO   | jvm 2    | 2023/03/08 13:40:13 | 2023-03-08 13:40:13,223 INFO  [qtp533044735-38] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status and result [Completed, Passed] for [Build [test/1/test/1/test/13]]
+INFO   | jvm 2    | 2023/03/08 13:40:13 | 2023-03-08 13:40:13,227 INFO  [qtp533044735-38] Stage:236 - Stage is being completed by transition id: 78
+INFO   | jvm 2    | 2023/03/08 13:40:58 | 2023-03-08 13:40:58,671 INFO  [qtp533044735-42] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@6717e955[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.CreateTemplateConfigCommand@456cb542
+INFO   | jvm 2    | 2023/03/08 13:40:58 | 2023-03-08 13:40:58,673 INFO  [qtp533044735-42] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@6717e955[displayName=anonymous,username=anonymous] is being processed
+INFO   | jvm 2    | 2023/03/08 13:40:58 | 2023-03-08 13:40:58,686 INFO  [qtp533044735-42] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+INFO   | jvm 2    | 2023/03/08 13:40:58 | 2023-03-08 13:40:58,708 INFO  [qtp533044735-42] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+INFO   | jvm 2    | 2023/03/08 13:40:58 | 2023-03-08 13:40:58,732 INFO  [qtp533044735-42] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineTemplateConfig config listeners
+INFO   | jvm 2    | 2023/03/08 13:40:58 | 2023-03-08 13:40:58,735 INFO  [qtp533044735-42] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineTemplateConfig config listeners
+INFO   | jvm 2    | 2023/03/08 13:40:58 | 2023-03-08 13:40:58,736 INFO  [qtp533044735-42] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@6717e955[displayName=anonymous,username=anonymous] is completed
+INFO   | jvm 2    | 2023/03/08 13:50:40 | 2023-03-08 13:50:40,892 INFO  [qtp533044735-34] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@71233f14[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@54ecc24d
+INFO   | jvm 2    | 2023/03/08 13:50:40 | 2023-03-08 13:50:40,893 INFO  [qtp533044735-34] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@71233f14[displayName=anonymous,username=anonymous] is being processed
+INFO   | jvm 2    | 2023/03/08 13:50:40 | 2023-03-08 13:50:40,896 INFO  [qtp533044735-34] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+INFO   | jvm 2    | 2023/03/08 13:50:40 | 2023-03-08 13:50:40,908 INFO  [qtp533044735-34] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+INFO   | jvm 2    | 2023/03/08 13:50:40 | 2023-03-08 13:50:40,928 INFO  [qtp533044735-34] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+INFO   | jvm 2    | 2023/03/08 13:50:40 | 2023-03-08 13:50:40,930 INFO  [qtp533044735-34] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline test.
+INFO   | jvm 2    | 2023/03/08 13:50:40 | 2023-03-08 13:50:40,931 INFO  [qtp533044735-34] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+INFO   | jvm 2    | 2023/03/08 13:50:40 | 2023-03-08 13:50:40,932 INFO  [qtp533044735-34] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@71233f14[displayName=anonymous,username=anonymous] is completed
+INFO   | jvm 2    | 2023/03/08 14:32:48 | 2023-03-08 14:32:48,415 WARN  [ThreadPoolTaskScheduler-7] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:32:48 | 2023-03-08 14:32:48,417 WARN  [ThreadPoolTaskScheduler-7] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:33:18 | 2023-03-08 14:33:18,418 WARN  [ThreadPoolTaskScheduler-8] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:33:18 | 2023-03-08 14:33:18,419 WARN  [ThreadPoolTaskScheduler-8] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:33:48 | 2023-03-08 14:33:48,420 WARN  [ThreadPoolTaskScheduler-4] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:33:48 | 2023-03-08 14:33:48,422 WARN  [ThreadPoolTaskScheduler-4] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:34:18 | 2023-03-08 14:34:18,423 WARN  [ThreadPoolTaskScheduler-2] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:34:18 | 2023-03-08 14:34:18,425 WARN  [ThreadPoolTaskScheduler-2] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:34:48 | 2023-03-08 14:34:48,426 WARN  [ThreadPoolTaskScheduler-1] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:34:48 | 2023-03-08 14:34:48,428 WARN  [ThreadPoolTaskScheduler-1] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:35:18 | 2023-03-08 14:35:18,429 WARN  [ThreadPoolTaskScheduler-1] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:35:18 | 2023-03-08 14:35:18,430 WARN  [ThreadPoolTaskScheduler-1] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:35:48 | 2023-03-08 14:35:48,431 WARN  [ThreadPoolTaskScheduler-10] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:35:48 | 2023-03-08 14:35:48,432 WARN  [ThreadPoolTaskScheduler-10] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:36:18 | 2023-03-08 14:36:18,433 WARN  [ThreadPoolTaskScheduler-1] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:36:18 | 2023-03-08 14:36:18,435 WARN  [ThreadPoolTaskScheduler-1] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:36:48 | 2023-03-08 14:36:48,436 WARN  [ThreadPoolTaskScheduler-2] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:36:48 | 2023-03-08 14:36:48,438 WARN  [ThreadPoolTaskScheduler-2] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:37:18 | 2023-03-08 14:37:18,439 WARN  [ThreadPoolTaskScheduler-1] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 14:37:18 | 2023-03-08 14:37:18,441 WARN  [ThreadPoolTaskScheduler-1] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd/, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 14:32:18 GMT 2023
+INFO   | jvm 2    | 2023/03/08 15:14:42 | 2023-03-08 15:14:42,503 ERROR [qtp533044735-45] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:14:52 | 2023-03-08 15:14:52,505 ERROR [qtp533044735-29] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:14:59 | 2023-03-08 15:14:59,692 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:15:08 | 2023-03-08 15:15:08,208 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:15:55 | 2023-03-08 15:15:55,254 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:16:02 | 2023-03-08 15:16:02,114 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:16:02 | 2023-03-08 15:16:02,138 INFO  [qtp533044735-33] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@2387367f[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.CreateConfigRepoCommand@26bcbaad
+INFO   | jvm 2    | 2023/03/08 15:16:02 | 2023-03-08 15:16:02,139 INFO  [qtp533044735-33] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@2387367f[displayName=anonymous,username=anonymous] is being processed
+INFO   | jvm 2    | 2023/03/08 15:16:02 | 2023-03-08 15:16:02,147 INFO  [qtp533044735-33] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+INFO   | jvm 2    | 2023/03/08 15:16:02 | 2023-03-08 15:16:02,159 INFO  [qtp533044735-33] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+INFO   | jvm 2    | 2023/03/08 15:16:02 | 2023-03-08 15:16:02,175 INFO  [qtp533044735-33] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.remote.ConfigRepoConfig config listeners
+INFO   | jvm 2    | 2023/03/08 15:16:02 | 2023-03-08 15:16:02,187 INFO  [qtp533044735-33] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.remote.ConfigRepoConfig config listeners
+INFO   | jvm 2    | 2023/03/08 15:16:02 | 2023-03-08 15:16:02,188 INFO  [qtp533044735-33] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@2387367f[displayName=anonymous,username=anonymous] is completed
+INFO   | jvm 2    | 2023/03/08 15:16:02 | 2023-03-08 15:16:02,206 ERROR [qtp533044735-27] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:16:05 | 2023-03-08 15:16:05,291 ERROR [qtp533044735-39] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:16:15 | 2023-03-08 15:16:15,303 ERROR [qtp533044735-27] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:16:18 | 2023-03-08 15:16:18,451 WARN  [ThreadPoolTaskScheduler-8] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 15:16:02 GMT 2023
+INFO   | jvm 2    | 2023/03/08 15:16:25 | 2023-03-08 15:16:25,323 ERROR [qtp533044735-27] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:16:35 | 2023-03-08 15:16:35,338 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:16:45 | 2023-03-08 15:16:45,369 ERROR [qtp533044735-29] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:16:48 | 2023-03-08 15:16:48,455 WARN  [ThreadPoolTaskScheduler-4] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 15:16:02 GMT 2023
+INFO   | jvm 2    | 2023/03/08 15:16:55 | 2023-03-08 15:16:55,380 ERROR [qtp533044735-29] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:17:05 | 2023-03-08 15:17:05,390 ERROR [qtp533044735-42] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:17:15 | 2023-03-08 15:17:15,402 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:17:18 | 2023-03-08 15:17:18,457 WARN  [ThreadPoolTaskScheduler-3] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 15:16:02 GMT 2023
+INFO   | jvm 2    | 2023/03/08 15:17:25 | 2023-03-08 15:17:25,416 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:17:35 | 2023-03-08 15:17:35,427 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:17:45 | 2023-03-08 15:17:45,440 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:17:48 | 2023-03-08 15:17:48,458 WARN  [ThreadPoolTaskScheduler-3] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 15:16:02 GMT 2023
+INFO   | jvm 2    | 2023/03/08 15:17:55 | 2023-03-08 15:17:55,458 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:18:05 | 2023-03-08 15:18:05,473 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:18:15 | 2023-03-08 15:18:15,489 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:18:18 | 2023-03-08 15:18:18,460 WARN  [ThreadPoolTaskScheduler-1] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 15:16:02 GMT 2023
+INFO   | jvm 2    | 2023/03/08 15:18:25 | 2023-03-08 15:18:25,508 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:18:35 | 2023-03-08 15:18:35,523 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:18:45 | 2023-03-08 15:18:45,537 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:18:48 | 2023-03-08 15:18:48,461 WARN  [ThreadPoolTaskScheduler-4] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 15:16:02 GMT 2023
+INFO   | jvm 2    | 2023/03/08 15:18:55 | 2023-03-08 15:18:55,551 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:19:05 | 2023-03-08 15:19:05,579 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:19:15 | 2023-03-08 15:19:15,604 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:19:18 | 2023-03-08 15:19:18,463 WARN  [ThreadPoolTaskScheduler-8] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Wed Mar 08 15:16:02 GMT 2023
+INFO   | jvm 2    | 2023/03/08 15:19:25 | 2023-03-08 15:19:25,626 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:19:29 | 2023-03-08 15:19:29,226 INFO  [138@MessageListener for MaterialUpdateListener] ScmMaterialUpdater:60 - [Material Update] Found '1' modifications for material 'GitMaterial{url=https://github.com/mehdi1-3/gocd, branch='master', shallowClone=false, submoduleFolder='null'}' with flyweight '0824dc982ad52193ccc2cc41a13fbf254bcc00012cf78af3a609470a7c9d334a' using working directory '/go-working-dir/pipelines/flyweight/77b41907-5173-463d-91f9-e8290f5fa1c0'
+INFO   | jvm 2    | 2023/03/08 15:19:30 | 2023-03-08 15:19:30,268 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:19:30 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:19:30 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:19:30 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:19:30 | 
+INFO   | jvm 2    | 2023/03/08 15:19:30 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:19:30 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:19:30 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:19:30 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:19:30 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:19:30 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:19:30 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:19:30 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:19:30 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:19:35 | 2023-03-08 15:19:35,644 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:19:45 | 2023-03-08 15:19:45,683 ERROR [qtp533044735-36] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:19:55 | 2023-03-08 15:19:55,708 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:20:05 | 2023-03-08 15:20:05,726 ERROR [qtp533044735-26] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:20:15 | 2023-03-08 15:20:15,756 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:20:25 | 2023-03-08 15:20:25,781 ERROR [qtp533044735-26] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:20:35 | 2023-03-08 15:20:35,803 ERROR [qtp533044735-29] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:20:45 | 2023-03-08 15:20:45,820 ERROR [qtp533044735-36] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:20:50 | 2023-03-08 15:20:50,061 ERROR [125@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:20:50 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:20:50 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:20:50 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:20:50 | 
+INFO   | jvm 2    | 2023/03/08 15:20:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:20:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:20:50 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:20:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:20:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:20:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:20:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:20:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:20:50 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:20:55 | 2023-03-08 15:20:55,837 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:21:05 | 2023-03-08 15:21:05,857 ERROR [qtp533044735-26] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:21:15 | 2023-03-08 15:21:15,878 ERROR [qtp533044735-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:21:25 | 2023-03-08 15:21:25,903 ERROR [qtp533044735-26] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:21:35 | 2023-03-08 15:21:35,917 ERROR [qtp533044735-29] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:21:45 | 2023-03-08 15:21:45,947 ERROR [qtp533044735-36] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:21:56 | 2023-03-08 15:21:55,962 ERROR [qtp533044735-29] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:22:06 | 2023-03-08 15:22:05,989 ERROR [qtp533044735-36] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:22:16 | 2023-03-08 15:22:16,015 ERROR [qtp533044735-41] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:22:20 | 2023-03-08 15:22:20,149 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:22:20 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:22:20 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:22:20 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:22:20 | 
+INFO   | jvm 2    | 2023/03/08 15:22:20 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:22:20 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:22:20 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:22:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:22:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:22:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:22:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:22:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:22:20 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:22:26 | 2023-03-08 15:22:26,040 ERROR [qtp533044735-36] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:22:36 | 2023-03-08 15:22:36,055 ERROR [qtp533044735-41] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:22:46 | 2023-03-08 15:22:46,071 ERROR [qtp533044735-36] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:22:56 | 2023-03-08 15:22:56,099 ERROR [qtp533044735-26] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:23:06 | 2023-03-08 15:23:06,112 ERROR [qtp533044735-36] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/08 15:23:37 | 2023-03-08 15:23:37,850 INFO  [qtp533044735-26] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@8275c05[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.DeletePipelineConfigCommand@7aa4028a
+INFO   | jvm 2    | 2023/03/08 15:23:37 | 2023-03-08 15:23:37,852 INFO  [qtp533044735-26] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@8275c05[displayName=anonymous,username=anonymous] is being processed
+INFO   | jvm 2    | 2023/03/08 15:23:37 | 2023-03-08 15:23:37,854 INFO  [qtp533044735-26] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+INFO   | jvm 2    | 2023/03/08 15:23:37 | 2023-03-08 15:23:37,865 INFO  [qtp533044735-26] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+INFO   | jvm 2    | 2023/03/08 15:23:37 | 2023-03-08 15:23:37,882 INFO  [qtp533044735-26] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+INFO   | jvm 2    | 2023/03/08 15:23:37 | 2023-03-08 15:23:37,884 INFO  [qtp533044735-26] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline test.
+INFO   | jvm 2    | 2023/03/08 15:23:37 | 2023-03-08 15:23:37,885 INFO  [qtp533044735-26] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+INFO   | jvm 2    | 2023/03/08 15:23:37 | 2023-03-08 15:23:37,886 WARN  [CCTray-Queue-Processor] MultiplexingQueueProcessor:65 - Failed to handle action in CCTray queue
+INFO   | jvm 2    | 2023/03/08 15:23:37 | java.lang.NullPointerException: Cannot invoke "com.thoughtworks.go.config.PipelineConfigs.iterator()" because "group" is null
+INFO   | jvm 2    | 2023/03/08 15:23:37 | 	at com.thoughtworks.go.config.security.GoConfigPipelinePermissionsAuthority.lambda$pipelinesInGroupsAndTheirPermissions$0(GoConfigPipelinePermissionsAuthority.java:70)
+INFO   | jvm 2    | 2023/03/08 15:23:37 | 	at com.thoughtworks.go.domain.PipelineGroups.accept(PipelineGroups.java:120)
+INFO   | jvm 2    | 2023/03/08 15:23:37 | 	at com.thoughtworks.go.config.security.GoConfigPipelinePermissionsAuthority.pipelinesInGroupsAndTheirPermissions(GoConfigPipelinePermissionsAuthority.java:69)
+INFO   | jvm 2    | 2023/03/08 15:23:37 | 	at com.thoughtworks.go.config.security.GoConfigPipelinePermissionsAuthority.permissionsForPipeline(GoConfigPipelinePermissionsAuthority.java:56)
+INFO   | jvm 2    | 2023/03/08 15:23:37 | 	at com.thoughtworks.go.domain.cctray.CcTrayConfigChangeHandler.call(CcTrayConfigChangeHandler.java:52)
+INFO   | jvm 2    | 2023/03/08 15:23:37 | 	at com.thoughtworks.go.domain.cctray.CcTrayActivityListener$5$1.call(CcTrayActivityListener.java:150)
+INFO   | jvm 2    | 2023/03/08 15:23:37 | 	at com.thoughtworks.go.server.messaging.MultiplexingQueueProcessor.lambda$start$0(MultiplexingQueueProcessor.java:60)
+INFO   | jvm 2    | 2023/03/08 15:23:37 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:23:37 | 2023-03-08 15:23:37,886 INFO  [qtp533044735-26] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@8275c05[displayName=anonymous,username=anonymous] is completed
+INFO   | jvm 2    | 2023/03/08 15:23:47 | 2023-03-08 15:23:47,345 INFO  [qtp533044735-29] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@2dd12c64[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.DeleteTemplateConfigCommand@7f68d605
+INFO   | jvm 2    | 2023/03/08 15:23:47 | 2023-03-08 15:23:47,351 INFO  [qtp533044735-29] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@2dd12c64[displayName=anonymous,username=anonymous] is being processed
+INFO   | jvm 2    | 2023/03/08 15:23:47 | 2023-03-08 15:23:47,356 INFO  [qtp533044735-29] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+INFO   | jvm 2    | 2023/03/08 15:23:47 | 2023-03-08 15:23:47,366 INFO  [qtp533044735-29] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+INFO   | jvm 2    | 2023/03/08 15:23:47 | 2023-03-08 15:23:47,387 INFO  [qtp533044735-29] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineTemplateConfig config listeners
+INFO   | jvm 2    | 2023/03/08 15:23:47 | 2023-03-08 15:23:47,388 INFO  [qtp533044735-29] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineTemplateConfig config listeners
+INFO   | jvm 2    | 2023/03/08 15:23:47 | 2023-03-08 15:23:47,389 INFO  [qtp533044735-29] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@2dd12c64[displayName=anonymous,username=anonymous] is completed
+INFO   | jvm 2    | 2023/03/08 15:23:50 | 2023-03-08 15:23:50,247 ERROR [125@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:23:50 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:23:50 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:23:50 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:23:50 | 
+INFO   | jvm 2    | 2023/03/08 15:23:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:23:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:23:50 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:23:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:23:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:23:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:23:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:23:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:23:50 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:25:19 | 2023-03-08 15:25:19,927 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:25:19 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:25:19 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:25:19 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:25:20 | 
+INFO   | jvm 2    | 2023/03/08 15:25:20 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:25:20 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:25:20 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:25:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:25:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:25:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:25:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:25:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:25:20 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:26:50 | 2023-03-08 15:26:50,083 ERROR [125@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:26:50 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:26:50 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:26:50 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:26:50 | 
+INFO   | jvm 2    | 2023/03/08 15:26:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:26:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:26:50 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:26:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:26:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:26:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:26:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:26:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:26:50 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:28:19 | 2023-03-08 15:28:19,910 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:28:19 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:28:19 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:28:19 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:28:19 | 
+INFO   | jvm 2    | 2023/03/08 15:28:19 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:28:19 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:28:19 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:28:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:28:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:28:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:28:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:28:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:28:20 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:29:50 | 2023-03-08 15:29:49,935 ERROR [125@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:29:50 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:29:50 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:29:50 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:29:50 | 
+INFO   | jvm 2    | 2023/03/08 15:29:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:29:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:29:50 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:29:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:29:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:29:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:29:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:29:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:29:50 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:31:19 | 2023-03-08 15:31:19,854 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:31:19 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:31:19 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:31:19 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:31:19 | 
+INFO   | jvm 2    | 2023/03/08 15:31:19 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:31:19 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:31:19 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:31:19 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:31:19 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:31:19 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:31:19 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:31:19 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:31:19 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:32:50 | 2023-03-08 15:32:50,014 ERROR [125@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:32:50 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:32:50 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:32:50 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:32:50 | 
+INFO   | jvm 2    | 2023/03/08 15:32:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:32:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:32:50 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:32:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:32:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:32:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:32:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:32:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:32:50 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:34:19 | 2023-03-08 15:34:19,932 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:34:19 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:34:19 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:34:19 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:34:19 | 
+INFO   | jvm 2    | 2023/03/08 15:34:19 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:34:19 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:34:19 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:34:19 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:34:19 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:34:19 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:34:19 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:34:19 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:34:19 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:35:51 | 2023-03-08 15:35:50,996 ERROR [125@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:35:51 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:35:51 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:35:51 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:35:51 | 
+INFO   | jvm 2    | 2023/03/08 15:35:51 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:35:51 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:35:51 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:35:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:35:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:35:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:35:51 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:35:51 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:35:51 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:37:20 | 2023-03-08 15:37:20,036 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:37:20 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:37:20 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:37:20 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:37:20 | 
+INFO   | jvm 2    | 2023/03/08 15:37:20 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:37:20 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:37:20 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:37:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:37:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:37:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:37:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:37:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:37:20 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:38:50 | 2023-03-08 15:38:50,214 ERROR [125@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:38:50 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:38:50 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:38:50 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:38:50 | 
+INFO   | jvm 2    | 2023/03/08 15:38:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:38:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:38:50 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:38:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:38:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:38:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:38:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:38:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:38:50 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:40:20 | 2023-03-08 15:40:20,148 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:40:20 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:40:20 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:40:20 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:40:20 | 
+INFO   | jvm 2    | 2023/03/08 15:40:20 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:40:20 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:40:20 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:40:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:40:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:40:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:40:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:40:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:40:20 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:41:50 | 2023-03-08 15:41:50,004 ERROR [125@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:41:50 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:41:50 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:41:50 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:41:50 | 
+INFO   | jvm 2    | 2023/03/08 15:41:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:41:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:41:50 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:41:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:41:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:41:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:41:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:41:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:41:50 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:43:20 | 2023-03-08 15:43:19,937 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:43:20 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:43:20 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:43:20 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:43:20 | 
+INFO   | jvm 2    | 2023/03/08 15:43:20 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:43:20 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:43:20 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:43:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:43:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:43:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:43:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:43:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:43:20 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:44:50 | 2023-03-08 15:44:50,254 ERROR [125@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:44:50 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:44:50 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:44:50 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:44:50 | 
+INFO   | jvm 2    | 2023/03/08 15:44:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:44:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:44:50 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:44:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:44:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:44:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:44:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:44:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:44:50 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:46:20 | 2023-03-08 15:46:20,148 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:46:20 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:46:20 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:46:20 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:46:20 | 
+INFO   | jvm 2    | 2023/03/08 15:46:20 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:46:20 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:46:20 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:46:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:46:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:46:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:46:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:46:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:46:20 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:47:50 | 2023-03-08 15:47:49,947 ERROR [125@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:47:50 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:47:50 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:47:50 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:47:50 | 
+INFO   | jvm 2    | 2023/03/08 15:47:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:47:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:47:50 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:47:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:47:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:47:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:47:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:47:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:47:50 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:49:19 | 2023-03-08 15:49:19,943 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:49:19 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:49:19 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:49:19 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:49:19 | 
+INFO   | jvm 2    | 2023/03/08 15:49:19 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:49:19 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:49:19 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:49:19 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:49:19 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:49:19 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:49:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:49:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:49:20 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:50:50 | 2023-03-08 15:50:49,962 ERROR [125@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:50:50 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:50:50 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:50:50 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:50:50 | 
+INFO   | jvm 2    | 2023/03/08 15:50:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:50:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:50:50 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:50:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:50:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:50:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:50:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:50:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:50:50 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:52:20 | 2023-03-08 15:52:20,037 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:52:20 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:52:20 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:52:20 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:52:20 | 
+INFO   | jvm 2    | 2023/03/08 15:52:20 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:52:20 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:52:20 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:52:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:52:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:52:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:52:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:52:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:52:20 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:53:50 | 2023-03-08 15:53:50,060 ERROR [125@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:53:50 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:53:50 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:53:50 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:53:50 | 
+INFO   | jvm 2    | 2023/03/08 15:53:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:53:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:53:50 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:53:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:53:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:53:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:53:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:53:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:53:50 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:55:20 | 2023-03-08 15:55:20,154 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:55:20 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:55:20 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:55:20 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:55:20 | 
+INFO   | jvm 2    | 2023/03/08 15:55:20 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:55:20 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:55:20 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:55:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:55:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:55:20 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:55:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:55:20 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:55:20 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/08 15:56:50 | 2023-03-08 15:56:50,052 ERROR [125@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/08 15:56:50 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/08 15:56:50 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/08 15:56:50 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/08 15:56:50 | 
+INFO   | jvm 2    | 2023/03/08 15:56:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/08 15:56:50 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/08 15:56:50 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/08 15:56:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/08 15:56:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/08 15:56:50 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/08 15:56:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/08 15:56:50 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/08 15:56:50 | 	at java.base/java.lang.Thread.run(Unknown Source)

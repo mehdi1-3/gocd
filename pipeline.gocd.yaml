@@ -15,7 +15,7 @@ pipelines:
           - .gitignore
         name: pipeline
         shallow_clone: false
-        url:
+        url: https://github.com/mehdi1-3/gocd
 
     stages:
     - clean:

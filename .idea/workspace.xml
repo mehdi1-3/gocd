@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32e90438-1709-47b3-a992-98c109f1e3b1" name="Changes" comment="pipeline modification">
+    <list default="true" id="32e90438-1709-47b3-a992-98c109f1e3b1" name="Changes" comment="pipeline modification2">
+      <change afterPath="$PROJECT_DIR$/data/artifacts/pipelines/test/1/test/1/test/cruise-output/console.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline.gocd.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline.gocd.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/agent-logs/go-agent-bootstrapper-wrapper.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/agent-logs/go-agent-bootstrapper-wrapper.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/agent-logs/go-agent-stdout.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/agent-logs/go-agent-stdout.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/agent-logs/go-agent.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/agent-logs/go-agent.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/cruise-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/cruise-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/logs/go-server-wrapper.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/logs/go-server-wrapper.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/logs/go-server.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/logs/go-server.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,28 +48,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;configurable..is.expanded&quot;: &quot;false&quot;,
-    &quot;configurable.GoLibrariesConfigurable.is.expanded&quot;: &quot;true&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mehdi MOSBAH/GolandProjects/awesomeProject1&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultGoTemplateProperty": "Go File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "configurable..is.expanded": "false",
+    "configurable.GoLibrariesConfigurable.is.expanded": "true",
+    "go.import.settings.migrated": "true",
+    "last_opened_file_path": "C:/Users/Mehdi MOSBAH/GolandProjects/awesomeProject1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Mehdi MOSBAH\GolandProjects\awesomeProject1" />
@@ -99,7 +106,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678280341148</updated>
-      <workItem from="1678280341564" duration="728000" />
+      <workItem from="1678280341564" duration="1532000" />
     </task>
     <servers />
   </component>
@@ -129,7 +136,8 @@
     <MESSAGE value="pipline copilot" />
     <MESSAGE value="SpringApp.java" />
     <MESSAGE value="pipeline modification" />
-    <option name="LAST_COMMIT_MESSAGE" value="pipeline modification" />
+    <MESSAGE value="pipeline modification2" />
+    <option name="LAST_COMMIT_MESSAGE" value="pipeline modification2" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

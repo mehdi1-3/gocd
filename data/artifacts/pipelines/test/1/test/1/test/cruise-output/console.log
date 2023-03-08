@@ -1,0 +1,27 @@
+##|13:40:12.655 [go] Job Started: 2023-03-08 13:40:12 GMT
+##|13:40:12.655 
+pr|13:40:12.659 [go] Start to prepare test/1/test/1/test on d32686145094 [/go]
+pr|13:40:12.768 [go] Skipping material update since stage is configured not to fetch materials
+pr|13:40:12.769 [go] overriding environment variable 'GO_SERVER_URL' with value 'http://172.20.10.3:8153/go'
+pr|13:40:12.769 [go] setting environment variable 'GO_PIPELINE_GROUP_NAME' to value 'defaultGroup'
+pr|13:40:12.769 [go] setting environment variable 'GO_TRIGGER_USER' to value 'anonymous'
+pr|13:40:12.769 [go] setting environment variable 'GO_PIPELINE_NAME' to value 'test'
+pr|13:40:12.769 [go] setting environment variable 'GO_PIPELINE_COUNTER' to value '1'
+pr|13:40:12.769 [go] setting environment variable 'GO_PIPELINE_LABEL' to value '1'
+pr|13:40:12.769 [go] setting environment variable 'GO_STAGE_NAME' to value 'test'
+pr|13:40:12.769 [go] setting environment variable 'GO_STAGE_COUNTER' to value '1'
+pr|13:40:12.769 [go] setting environment variable 'GO_JOB_NAME' to value 'test'
+pr|13:40:12.769 [go] setting environment variable 'GO_REVISION' to value '5574c4a9097123a61d7ef34e1dfdbeff20e763f5'
+pr|13:40:12.769 [go] setting environment variable 'GO_TO_REVISION' to value '5574c4a9097123a61d7ef34e1dfdbeff20e763f5'
+pr|13:40:12.769 [go] setting environment variable 'GO_FROM_REVISION' to value '5574c4a9097123a61d7ef34e1dfdbeff20e763f5'
+pr|13:40:12.769 [go] setting environment variable 'GO_MATERIAL_URL' to value 'https://github.com/mehdi1-3/gocd/'
+pr|13:40:12.769 [go] setting environment variable 'GO_MATERIAL_BRANCH' to value 'master'
+pr|13:40:12.770 [go] setting environment variable 'GO_MATERIAL_HAS_CHANGED' to value 'true'
+pr|13:40:12.770 
+##|13:40:12.794 [go] Start to build test/1/test/1/test on d32686145094 [/go]
+!!|13:40:12.888 [go] Task: ls
+?0|13:40:12.907 [go] Task status: passed (18 ms)
+j0|13:40:13.031 [go] Current job status: passed
+##|13:40:13.130 [go] Start to create properties test/1/test/1/test on d32686145094 [/go]
+ar|13:40:13.130 [go] Start to upload test/1/test/1/test on d32686145094 [/go]
+ex|13:40:13.134 [go] Job completed test/1/test/1/test on d32686145094 [/go]
