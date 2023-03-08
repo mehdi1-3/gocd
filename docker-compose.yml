@@ -1,4 +1,6 @@
-#write docker-compose.yml for GoCD server and agent
+#write docker-compose.yml for GoCD server and agent and tomcat-server 1.8
+---
+
 version: '2.1'
 services:
   gocd-server:
@@ -31,6 +33,18 @@ services:
       - ./data/agent-logs:/godata/logs
     networks:
       - gocd-network
+  tomcat-server:
+    image: tomcat:8.5.69-jdk8-openjdk
+    container_name: tomcat-server
+    ports:
+      - 8080:8080
+      - 8009:8009
+      - 8443:8443
+    volumes:
+      - ./data/tomcat-server/webapps:/usr/local/tomcat/webapps
+      - ./data/tomcat-server/conf:/usr/local/tomcat/conf
+       - ./data/tomcat-server/logs:/usr/local/tomcat/logs
+
 networks:
   gocd-network:
     driver: bridge

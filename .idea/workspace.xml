@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32e90438-1709-47b3-a992-98c109f1e3b1" name="Changes" comment="pipline as code" />
+    <list default="true" id="32e90438-1709-47b3-a992-98c109f1e3b1" name="Changes" comment="pipline as code1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/logs/go-server-wrapper.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/logs/go-server-wrapper.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/logs/go-server.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/logs/go-server.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline.gocd.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline.gocd.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,6 +80,11 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="7d2aa052-be9f-4db4-8cb0-04c7d8f17c32">
+          <value>
+            <State />
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -84,7 +95,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pipline as code" />
-    <option name="LAST_COMMIT_MESSAGE" value="pipline as code" />
+    <MESSAGE value="pipline as code1" />
+    <option name="LAST_COMMIT_MESSAGE" value="pipline as code1" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
