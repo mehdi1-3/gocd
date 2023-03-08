@@ -4,18 +4,103 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32e90438-1709-47b3-a992-98c109f1e3b1" name="Changes" comment="pipline copilot">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehdi/springboot/SpringBootRestWithH2/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehdi/springboot/SpringBootRestWithH2/SpringApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehdi/springboot/SpringBootRestWithH2/model/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehdi/springboot/SpringBootRestWithH2/service/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/data-h2.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/schema-h2.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mehdi/springboot/SpringBootRestWithH2/EmployeeControllerIntegrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mehdi/springboot/SpringBootRestWithH2/EmployeeControllerTest.java" afterDir="false" />
+    <list default="true" id="32e90438-1709-47b3-a992-98c109f1e3b1" name="Changes" comment="SpringApp.java">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipeline.gocd.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline.gocd.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/classes/com/mehdi/springboot/SpringBootRestWithH2/EmployeeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/classes/com/mehdi/springboot/SpringBootRestWithH2/SpringApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/classes/com/mehdi/springboot/SpringBootRestWithH2/model/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/classes/com/mehdi/springboot/SpringBootRestWithH2/service/EmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/classes/data-h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/classes/schema-h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/FastInfoset-1.2.16.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/HikariCP-3.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.9.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/byte-buddy-1.10.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/classmate-1.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/dom4j-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/h2-1.4.200.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-5.1.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/hibernate-core-5.4.10.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/hibernate-validator-6.0.18.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/istack-commons-runtime-3.0.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.10.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.10.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.10.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/jackson-datatype-jdk8-2.10.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/jackson-datatype-jsr310-2.10.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/jackson-module-parameter-names-2.10.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/jakarta.activation-api-1.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/jakarta.annotation-api-1.3.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/jakarta.persistence-api-2.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/jakarta.transaction-api-1.3.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/jakarta.validation-api-2.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/jakarta.xml.bind-api-2.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/jandex-2.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/javassist-3.24.0-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/jaxb-runtime-2.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.4.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/jul-to-slf4j-1.7.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/log4j-api-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/log4j-to-slf4j-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/logback-core-1.2.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/snakeyaml-1.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-aspects-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-2.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-autoconfigure-2.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-2.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-aop-2.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-data-jpa-2.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-jdbc-2.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-json-2.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-logging-2.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-tomcat-2.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-validation-2.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-boot-starter-web-2.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-context-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-core-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-data-commons-2.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-data-jpa-2.2.4.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-orm-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-tx-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-web-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.2.3.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/stax-ex-1.8.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-core-9.0.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-el-9.0.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-websocket-9.0.30.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringBootRestWithH2-1.0.0-SNAPSHOT/WEB-INF/lib/txw2-2.3.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mehdi/springboot/SpringBootRestWithH2/EmployeeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mehdi/springboot/SpringBootRestWithH2/SpringApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mehdi/springboot/SpringBootRestWithH2/model/Employee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mehdi/springboot/SpringBootRestWithH2/service/EmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/data-h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/schema-h2.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/jacoco.exec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/spring-h2-demo.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2023-03-08T14-02-13_630.dumpstream" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mehdi.springboot.SpringBootRestWithH2.EmployeeControllerIntegrationTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.mehdi.springboot.SpringBootRestWithH2.EmployeeControllerTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.mehdi.springboot.SpringBootRestWithH2.EmployeeControllerIntegrationTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.mehdi.springboot.SpringBootRestWithH2.EmployeeControllerTest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mehdi/springboot/SpringBootRestWithH2/EmployeeControllerIntegrationTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/mehdi/springboot/SpringBootRestWithH2/EmployeeControllerTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,39 +115,59 @@
     </option>
   </component>
   <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.20" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2LcPDwg7FJ6gb53JhxTSCa6Q18p" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "DefaultGoTemplateProperty": "Go File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "configurable..is.expanded": "false",
-    "configurable.GoLibrariesConfigurable.is.expanded": "true",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "C:/Users/Mehdi MOSBAH/GolandProjects/awesomeProject1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;configurable..is.expanded&quot;: &quot;false&quot;,
+    &quot;configurable.GoLibrariesConfigurable.is.expanded&quot;: &quot;true&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mehdi MOSBAH/GolandProjects/awesomeProject1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mehdi MOSBAH\GolandProjects\awesomeProject1" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -81,6 +186,17 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32e90438-1709-47b3-a992-98c109f1e3b1" name="Changes" comment="pipline as code1" />
+      <created>1678280341148</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678280341148</updated>
+      <workItem from="1678280341564" duration="728000" />
+    </task>
+    <servers />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
@@ -101,10 +217,12 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="pipline as code" />
     <MESSAGE value="pipline as code1" />
     <MESSAGE value="pipline copilot" />
-    <option name="LAST_COMMIT_MESSAGE" value="pipline copilot" />
+    <MESSAGE value="SpringApp.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringApp.java" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

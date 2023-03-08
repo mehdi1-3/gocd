@@ -1,103 +1,53 @@
-#write gocd pipeline .yaml for spring boot maven deploy tomcat server who is running in docker container and gocd server and agent are running in docker container
-# ---
-#
+#write a GoCD pipeline to clean, package a spring boot application existing with this template in a git repository  and finally deoloy to tomcat server runing in docker container
 format_version: 10
-pipeline:
-    name: spring-boot-app
-    label_template: ${COUNT}
+pipelines:
+  pipeline:
+    group: defaultGroup
+    label_template: "${COUNT}"
     lock_behavior: none
     materials:
-        git:
-        url:
+      git:
+        auto_update: true
         branch: master
-#stage 1: clean and build
-    stages:
-        - name: clean-build
-          clean_working_directory: true
-          fetch_materials: true
-          never_cleanup_artifacts: false
-          jobs:
-              - name: clean-build
-                elastic_profile_id: docker
-                environment_variables:
-                    - name: GO_EA_AUTO_REGISTER_KEY
-                      value: 123456789
-                tasks:
-                    - exec:
-                        command: mvn
-                        arguments:
-                            - clean
-                            - package
-                            - -DskipTests
-                            - -Dmaven.javadoc.skip=true
-                            - -B
-                            - -V
-                        run_if: passed
-                        working_directory: /var/lib/go-agent/pipelines/spring-boot-app
-                        on_cancel:
-                            exec:
-                                command: echo
-                                arguments:
-                                    - "on cancel"
-                                run_if: passed
-                                working_directory: /var/lib/go-agent/pipelines/spring-boot-app
-                        on_failure:
-                            exec:
-                                command: echo
-                                arguments:
-                                    - "on failure"
-                                run_if: passed
-                                working_directory: /var/lib/go-agent/pipelines/spring-boot-app
-                        on_success:
-                            exec:
-                                command: echo
-                                arguments:
-                                    - "on success"
-                                run_if: passed
-                                working_directory: /var/lib/go-agent/pipelines/spring-boot-app
-        #stage 2 deploy to tomcat server  in docker container
-        - name: deploy
-          clean_working_directory: true
-          fetch_materials: true
-          never_cleanup_artifacts: false
-          jobs:
-              - name: deploy
-                elastic_profile_id: docker
-                environment_variables:
-                    - name: GO_EA_AUTO_REGISTER_KEY
-                      value: 123456789
-                tasks:
-                    - exec:
-                        command: mvn
-                        arguments:
-                            - tomcat7:deploy
-                            - -DskipTests
-                            - -Dmaven.javadoc.skip=true
-                            - -B
-                            - -V
-                        run_if: passed
-                        working_directory: /var/lib/go-agent/pipelines/spring-boot-app
-                        on_cancel:
-                            exec:
-                                command: echo
-                                arguments:
-                                    - "on cancel"
-                                run_if: passed
-                                working_directory: /var/lib/go-agent/pipelines/spring-boot-app
-                        on_failure:
-                            exec:
-                                command: echo
-                                arguments:
-                                    - "on failure"
-                                run_if: passed
-                                working_directory: /var/lib/go-agent/pipelines/spring-boot-app
-                        on_success:
-                            exec:
-                                command: echo
-                                arguments:
-                                    - "on success"
-                                run_if: passed
+        destination: pipeline
+        filter:
+          ignore:
+          - .gitignore
+        name: pipeline
+        shallow_clone: false
+        url:
 
+    stages:
+    - clean:
+        clean:
+          working_directory: pipeline
+          command: mvn clean
+        jobs:
+        - clean:
+            tasks:
+            - exec:
+                command: mvn clean
+                working_directory: pipeline
+    - package:
+        package:
+          working_directory: pipeline
+          command: mvn package
+        jobs:
+        - package:
+            tasks:
+            - exec:
+                command: mvn package
+                working_directory: pipeline
+    - deploytomcat:
+        deploytomcat:
+          working_directory: pipeline
+          command: mvn deploytomcat
+        jobs:
+        - deploytomcat:
+            tasks:
+            - exec:
+                command: mvn deploytomcat
+                working_directory: pipeline
 
 
 
