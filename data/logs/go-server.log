@@ -1635,3 +1635,146 @@ pipeline.gocd.yaml;
 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
 	at java.base/java.lang.Thread.run(Unknown Source)
+2023-03-08 15:58:19,582 INFO  [138@MessageListener for MaterialUpdateListener] ScmMaterialUpdater:60 - [Material Update] Found '2' modifications for material 'GitMaterial{url=https://github.com/mehdi1-3/gocd, branch='master', shallowClone=false, submoduleFolder='null'}' with flyweight '0824dc982ad52193ccc2cc41a13fbf254bcc00012cf78af3a609470a7c9d334a' using working directory '/go-working-dir/pipelines/flyweight/77b41907-5173-463d-91f9-e8290f5fa1c0'
+2023-03-08 15:58:20,392 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+pipeline.gocd.yaml;
+1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+
+	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-03-08 15:59:50,116 ERROR [125@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+pipeline.gocd.yaml;
+1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+
+	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-03-08 16:01:20,112 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+pipeline.gocd.yaml;
+1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+
+	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-03-08 16:02:50,119 ERROR [125@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+pipeline.gocd.yaml;
+1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+
+	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-03-08 16:04:20,015 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+pipeline.gocd.yaml;
+1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+
+	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-03-08 16:05:50,370 ERROR [125@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+pipeline.gocd.yaml;
+1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+
+	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-03-08 16:07:20,194 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+pipeline.gocd.yaml;
+1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+
+	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-03-08 16:08:49,986 ERROR [125@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+pipeline.gocd.yaml;
+1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+
+	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-03-08 16:09:31,019 ERROR [qtp533044735-36] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+2023-03-08 16:09:33,923 INFO  [qtp533044735-35] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@68343da4[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.DeleteConfigRepoCommand@184e2e29
+2023-03-08 16:09:33,925 INFO  [qtp533044735-35] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@68343da4[displayName=anonymous,username=anonymous] is being processed
+2023-03-08 16:09:33,927 INFO  [qtp533044735-35] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+2023-03-08 16:09:33,939 INFO  [qtp533044735-35] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+2023-03-08 16:09:33,959 INFO  [qtp533044735-35] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.remote.ConfigRepoConfig config listeners
+2023-03-08 16:09:33,960 INFO  [qtp533044735-35] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.remote.ConfigRepoConfig config listeners
+2023-03-08 16:09:33,961 INFO  [qtp533044735-35] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@68343da4[displayName=anonymous,username=anonymous] is completed
+2023-03-08 16:09:33,970 ERROR [qtp533044735-26] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+2023-03-08 16:10:23,396 WARN  [pool-3-thread-1] ProcessWrapper:59 - null
+java.lang.InterruptedException: null
+	at java.base/java.lang.Object.wait(Native Method)
+	at java.base/java.lang.Object.wait(Unknown Source)
+	at java.base/java.lang.ProcessImpl.waitFor(Unknown Source)
+	at com.thoughtworks.go.util.ProcessWrapper.waitForExit(ProcessWrapper.java:55)
+	at com.thoughtworks.go.util.command.CommandLine.run(CommandLine.java:373)
+	at com.thoughtworks.go.domain.materials.SCMCommand.run(SCMCommand.java:42)
+	at com.thoughtworks.go.domain.materials.git.GitCommand.cloneWithNoCheckout(GitCommand.java:106)
+	at com.thoughtworks.go.config.materials.git.GitMaterial.git(GitMaterial.java:379)
+	at com.thoughtworks.go.config.materials.git.GitMaterial.getGit(GitMaterial.java:347)
+	at com.thoughtworks.go.config.materials.git.GitMaterial.latestModification(GitMaterial.java:124)
+	at com.thoughtworks.go.server.service.materials.GitPoller.latestModification(GitPoller.java:30)
+	at com.thoughtworks.go.server.service.materials.GitPoller.latestModification(GitPoller.java:26)
+	at com.thoughtworks.go.server.service.MaterialService.latestModification(MaterialService.java:127)
+	at com.thoughtworks.go.apiv1.pipelinesascodeinternal.PipelinesAsCodeInternalControllerV1.lambda$checkoutFromMaterialConfig$6(PipelinesAsCodeInternalControllerV1.java:225)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)

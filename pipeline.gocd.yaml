@@ -3,19 +3,15 @@ format_version: 10
 pipelines:
   pipeline:
     group: defaultGroup
-    label_template: "${COUNT}"
+    label_template: ${COUNT}
     lock_behavior: none
+    display_order: -1
     materials:
-      git:
+      git-a5b18f4:
+        git: https://github.com/mehdi1-3/gocd
+        shallow_clone: false
         auto_update: true
         branch: master
-        destination: pipeline
-        filter:
-          ignore:
-          - .gitignore
-        name: pipeline
-        shallow_clone: false
-        url: https://github.com/mehdi1-3/gocd
 
     stages:
     - clean:
@@ -38,15 +34,15 @@ pipelines:
             - exec:
                 command: mvn package
                 working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-    - deploytomcat:
-        deploytomcat:
+    - deployment:
+        deployment:
           working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-          command: mvn deploytomcat
+          command: mvn deploy
         jobs:
-        - deploytomcat:
+        - deployment:
             tasks:
             - exec:
-                command: mvn deploytomcat
+                command: mvn deploy
                 working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
 
 

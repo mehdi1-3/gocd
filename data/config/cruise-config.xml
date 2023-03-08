@@ -5,11 +5,6 @@
       <artifactsDir>artifacts</artifactsDir>
     </artifacts>
   </server>
-  <config-repos>
-    <config-repo id="test" pluginId="yaml.config.plugin">
-      <git url="https://github.com/mehdi1-3/gocd" />
-    </config-repo>
-  </config-repos>
   <pipelines group="defaultGroup">
     <pipeline name="pipeline1">
       <materials>
