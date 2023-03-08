@@ -97,7 +97,6 @@ pipeline:
                                 arguments:
                                     - "on success"
                                 run_if: passed
-                                working_directory: /var/lib/go-agent/pipelines/spring-boot-app
 
 
 

@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32e90438-1709-47b3-a992-98c109f1e3b1" name="Changes" comment="pipline as code1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/logs/go-server-wrapper.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/logs/go-server-wrapper.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/logs/go-server.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/logs/go-server.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="32e90438-1709-47b3-a992-98c109f1e3b1" name="Changes" comment="pipline copilot">
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehdi/springboot/SpringBootRestWithH2/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehdi/springboot/SpringBootRestWithH2/SpringApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehdi/springboot/SpringBootRestWithH2/model/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mehdi/springboot/SpringBootRestWithH2/service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data-h2.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/schema-h2.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mehdi/springboot/SpringBootRestWithH2/EmployeeControllerIntegrationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/mehdi/springboot/SpringBootRestWithH2/EmployeeControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipeline.gocd.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline.gocd.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,6 +56,7 @@
     "last_opened_file_path": "C:/Users/Mehdi MOSBAH/GolandProjects/awesomeProject1",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
   }
 }]]></component>
@@ -96,7 +103,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pipline as code" />
     <MESSAGE value="pipline as code1" />
-    <option name="LAST_COMMIT_MESSAGE" value="pipline as code1" />
+    <MESSAGE value="pipline copilot" />
+    <option name="LAST_COMMIT_MESSAGE" value="pipline copilot" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
