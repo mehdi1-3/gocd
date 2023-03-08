@@ -1,0 +1,8 @@
+2023-03-08 10:01:13,555 - [Wed Mar 08 10:01:13 GMT 2023] Starting process: 
+2023-03-08 10:01:13,556 - [Wed Mar 08 10:01:13 GMT 2023]   Working directory    : /go
+2023-03-08 10:01:13,557 - [Wed Mar 08 10:01:13 GMT 2023]   Application arguments: [-serverUrl, http://172.20.10.3:8153/go, -sslVerificationMode, FULL]
+2023-03-08 10:01:13,557 - [Wed Mar 08 10:01:13 GMT 2023]            GoCD Version: 22.3.0-15301
+2023-03-08 10:01:13,558 - [Wed Mar 08 10:01:13 GMT 2023]            Java Version: 17.0.5
+2023-03-08 10:01:13,560 - [Wed Mar 08 10:01:13 GMT 2023]        Operating System: Linux(5.15.90.1-microsoft-standard-WSL2)
+2023-03-08 10:01:14,040 - Could not find file `config/agent-logback.xml'. Attempting to load from classpath.
+2023-03-08 10:01:14,041 - Using classpath resource `jar:onejar:lib/agent-22.3.0-15301-classes.jar!/config/agent-logback.xml'.

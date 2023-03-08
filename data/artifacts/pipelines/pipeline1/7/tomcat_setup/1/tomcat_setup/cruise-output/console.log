@@ -1,0 +1,44 @@
+##|10:31:29.827 [go] Job Started: 2023-03-08 10:31:29 GMT
+##|10:31:29.827 
+pr|10:31:29.827 [go] Start to prepare pipeline1/7/tomcat_setup/1/tomcat_setup on d32686145094 [/go]
+pr|10:31:29.995 [go] Start to update materials.
+pr|10:31:29.995 
+pr|10:31:29.995 [go] Start updating files at revision 9feacb130985900d249fd01e4b5433c1993cead8 from https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git
+pr|10:31:29.999 [GIT] Fetching changes
+pr|10:31:30.729 [GIT] Performing git gc
+pr|10:31:30.731 [GIT] Reset working directory pipelines/pipeline1
+pr|10:31:30.731 [GIT] Cleaning all unversioned files in working copy
+pr|10:31:30.751 [GIT] Cleaning submodule configurations in .git/config
+pr|10:31:30.753 [GIT] Updating working copy to revision 9feacb130985900d249fd01e4b5433c1993cead8
+pr|10:31:30.756 HEAD is now at 9feacb1 Update Jenkinsfile
+pr|10:31:30.757 [GIT] Removing modified files in submodules
+pr|10:31:30.877 [GIT] Cleaning all unversioned files in working copy
+pr|10:31:31.012 [go] Done.
+pr|10:31:31.012 
+pr|10:31:31.013 [go] overriding environment variable 'GO_SERVER_URL' with value 'http://172.20.10.3:8153/go'
+pr|10:31:31.013 [go] setting environment variable 'GO_PIPELINE_GROUP_NAME' to value 'defaultGroup'
+pr|10:31:31.013 [go] setting environment variable 'GO_TRIGGER_USER' to value 'anonymous'
+pr|10:31:31.013 [go] setting environment variable 'GO_PIPELINE_NAME' to value 'pipeline1'
+pr|10:31:31.013 [go] setting environment variable 'GO_PIPELINE_COUNTER' to value '7'
+pr|10:31:31.013 [go] setting environment variable 'GO_PIPELINE_LABEL' to value '7'
+pr|10:31:31.013 [go] setting environment variable 'GO_STAGE_NAME' to value 'tomcat_setup'
+pr|10:31:31.013 [go] setting environment variable 'GO_STAGE_COUNTER' to value '1'
+pr|10:31:31.013 [go] setting environment variable 'GO_JOB_NAME' to value 'tomcat_setup'
+pr|10:31:31.013 [go] setting environment variable 'GO_REVISION' to value '9feacb130985900d249fd01e4b5433c1993cead8'
+pr|10:31:31.013 [go] setting environment variable 'GO_TO_REVISION' to value '9feacb130985900d249fd01e4b5433c1993cead8'
+pr|10:31:31.013 [go] setting environment variable 'GO_FROM_REVISION' to value '9feacb130985900d249fd01e4b5433c1993cead8'
+pr|10:31:31.013 [go] setting environment variable 'GO_MATERIAL_URL' to value 'https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git'
+pr|10:31:31.013 [go] setting environment variable 'GO_MATERIAL_BRANCH' to value 'master'
+pr|10:31:31.013 [go] setting environment variable 'GO_MATERIAL_HAS_CHANGED' to value 'false'
+pr|10:31:31.013 
+##|10:31:31.048 [go] Start to build pipeline1/7/tomcat_setup/1/tomcat_setup on d32686145094 [/go]
+!!|10:31:31.175 [go] Task: "ls -al" 
+&2|10:31:31.181 Error happened while attempting to execute 'ls -al '. 
+&2|10:31:31.181 Please make sure [ls -al] can be executed on this agent.
+&2|10:31:31.181 
+&2|10:31:31.181 [Debug Information] Environment variable PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+?1|10:31:31.184 [go] Task status: failed (8 ms)
+j1|10:31:31.342 [go] Current job status: failed
+##|10:31:31.464 [go] Start to create properties pipeline1/7/tomcat_setup/1/tomcat_setup on d32686145094 [/go]
+ar|10:31:31.464 [go] Start to upload pipeline1/7/tomcat_setup/1/tomcat_setup on d32686145094 [/go]
+ex|10:31:31.466 [go] Job completed pipeline1/7/tomcat_setup/1/tomcat_setup on d32686145094 [/go]

@@ -1,0 +1,44 @@
+##|10:30:16.982 [go] Job Started: 2023-03-08 10:30:16 GMT
+##|10:30:16.982 
+pr|10:30:16.982 [go] Start to prepare pipeline1/6/stage1/1/clean on d32686145094 [/go]
+pr|10:30:17.148 [go] Start to update materials.
+pr|10:30:17.148 
+pr|10:30:17.148 [go] Start updating files at revision 9feacb130985900d249fd01e4b5433c1993cead8 from https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git
+pr|10:30:17.154 [GIT] Fetching changes
+pr|10:30:17.850 [GIT] Performing git gc
+pr|10:30:17.852 [GIT] Reset working directory pipelines/pipeline1
+pr|10:30:17.852 [GIT] Cleaning all unversioned files in working copy
+pr|10:30:18.079 [GIT] Cleaning submodule configurations in .git/config
+pr|10:30:18.081 [GIT] Updating working copy to revision 9feacb130985900d249fd01e4b5433c1993cead8
+pr|10:30:18.085 HEAD is now at 9feacb1 Update Jenkinsfile
+pr|10:30:18.085 [GIT] Removing modified files in submodules
+pr|10:30:18.109 [GIT] Cleaning all unversioned files in working copy
+pr|10:30:18.133 [go] Done.
+pr|10:30:18.133 
+pr|10:30:18.133 [go] overriding environment variable 'GO_SERVER_URL' with value 'http://172.20.10.3:8153/go'
+pr|10:30:18.133 [go] setting environment variable 'GO_PIPELINE_GROUP_NAME' to value 'defaultGroup'
+pr|10:30:18.133 [go] setting environment variable 'GO_TRIGGER_USER' to value 'changes'
+pr|10:30:18.133 [go] setting environment variable 'GO_PIPELINE_NAME' to value 'pipeline1'
+pr|10:30:18.133 [go] setting environment variable 'GO_PIPELINE_COUNTER' to value '6'
+pr|10:30:18.133 [go] setting environment variable 'GO_PIPELINE_LABEL' to value '6'
+pr|10:30:18.133 [go] setting environment variable 'GO_STAGE_NAME' to value 'stage1'
+pr|10:30:18.133 [go] setting environment variable 'GO_STAGE_COUNTER' to value '1'
+pr|10:30:18.133 [go] setting environment variable 'GO_JOB_NAME' to value 'clean'
+pr|10:30:18.133 [go] setting environment variable 'GO_REVISION' to value '9feacb130985900d249fd01e4b5433c1993cead8'
+pr|10:30:18.133 [go] setting environment variable 'GO_TO_REVISION' to value '9feacb130985900d249fd01e4b5433c1993cead8'
+pr|10:30:18.133 [go] setting environment variable 'GO_FROM_REVISION' to value '9feacb130985900d249fd01e4b5433c1993cead8'
+pr|10:30:18.133 [go] setting environment variable 'GO_MATERIAL_URL' to value 'https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git'
+pr|10:30:18.133 [go] setting environment variable 'GO_MATERIAL_BRANCH' to value 'master'
+pr|10:30:18.133 [go] setting environment variable 'GO_MATERIAL_HAS_CHANGED' to value 'false'
+pr|10:30:18.133 
+##|10:30:18.164 [go] Start to build pipeline1/6/stage1/1/clean on d32686145094 [/go]
+!!|10:30:18.331 [go] Task: mvn clean
+&2|10:30:18.337 Error happened while attempting to execute 'mvn clean'. 
+&2|10:30:18.337 Please make sure [mvn] can be executed on this agent.
+&2|10:30:18.337 
+&2|10:30:18.337 [Debug Information] Environment variable PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+?1|10:30:18.339 [go] Task status: failed (7 ms)
+j1|10:30:18.529 [go] Current job status: failed
+##|10:30:18.692 [go] Start to create properties pipeline1/6/stage1/1/clean on d32686145094 [/go]
+ar|10:30:18.692 [go] Start to upload pipeline1/6/stage1/1/clean on d32686145094 [/go]
+ex|10:30:18.694 [go] Job completed pipeline1/6/stage1/1/clean on d32686145094 [/go]

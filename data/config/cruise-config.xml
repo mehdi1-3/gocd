@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cruise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cruise-config.xsd" schemaVersion="139">
+  <server agentAutoRegisterKey="c46682e3-fb65-4260-afaf-c9b97e2b92d0" webhookSecret="21a3a69b-3db3-446f-bf16-11b171dc998a" serverId="c3713013-5ff2-4592-af47-087d703a9131" tokenGenerationKey="6487530b-d564-4d00-ac13-d51c02bd32de">
+    <artifacts>
+      <artifactsDir>artifacts</artifactsDir>
+    </artifacts>
+  </server>
+  <pipelines group="defaultGroup">
+    <pipeline name="pipeline1">
+      <materials>
+        <git url="https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git" />
+      </materials>
+      <stage name="stage1">
+        <jobs>
+          <job name="clean">
+            <tasks>
+              <exec command="mvn">
+                <arg>clean</arg>
+              </exec>
+            </tasks>
+          </job>
+        </jobs>
+      </stage>
+      <stage name="tomcat_setup">
+        <jobs>
+          <job name="tomcat_setup">
+            <tasks>
+              <exec command="/bin/bash" workingdir="q">
+                <arg>start_tomcat.sh /opt/tomcat-8.5.41/</arg>
+                <runif status="passed" />
+              </exec>
+            </tasks>
+          </job>
+        </jobs>
+      </stage>
+      <stage name="deploy">
+        <jobs>
+          <job name="deploy">
+            <tasks>
+              <exec command="mvn">
+                <arg>tomcat7:deploy</arg>
+              </exec>
+            </tasks>
+          </job>
+        </jobs>
+      </stage>
+    </pipeline>
+  </pipelines>
+</cruise>

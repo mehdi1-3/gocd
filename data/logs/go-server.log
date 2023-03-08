@@ -1,0 +1,761 @@
+2023-03-08 09:56:52,190 INFO  [WrapperJarAppMain] Jetty9Server:193 - Configuring Jetty using /go-working-dir/config/jetty.xml
+2023-03-08 09:56:52,296 WARN  [WrapperJarAppMain] Server:357 - ErrorPageMapper not supported for Server level Error Handling
+2023-03-08 09:56:52,527 WARN  [WrapperJarAppMain] AbstractHandler:96 - No Server set for ResourceHandler@4784378c{STOPPED}
+2023-03-08 09:57:00,353 WARN  [WrapperJarAppMain] ConnectionManager:117 - The file config/db.properties specified by `go.db.config` does not exist.
+2023-03-08 09:57:00,612 INFO  [WrapperJarAppMain] DatabaseMigrator:40 - Upgrading database, this might take a while depending on the size of the database.
+2023-03-08 09:57:00,613 INFO  [WrapperJarAppMain] DatabaseMigrator:49 - ************************************************************************
+2023-03-08 09:57:00,614 INFO  [WrapperJarAppMain] DatabaseMigrator:49 - WARNING: Shutting down your server at this point will lead to a database corruption. Please wait until the database upgrade completes.
+2023-03-08 09:57:00,615 INFO  [WrapperJarAppMain] DatabaseMigrator:49 - ************************************************************************
+2023-03-08 09:57:02,734 INFO  [WrapperJarAppMain] DatabaseMigrator:57 - Database upgrade completed successfully.
+2023-03-08 09:57:02,738 INFO  [WrapperJarAppMain] DataMigrationRunner:34 - Running data migrations...
+2023-03-08 09:57:02,820 INFO  [WrapperJarAppMain] DataMigrationRunner:49 - Data migration took 1 ms
+2023-03-08 09:57:02,831 INFO  [WrapperJarAppMain] DataMigrationRunner:49 - Data migration took 1 ms
+2023-03-08 09:57:02,834 INFO  [WrapperJarAppMain] DataMigrationRunner:39 - Data migrations completed.
+2023-03-08 09:57:03,966 WARN  [WrapperJarAppMain] ConfigurationFactory:136 - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/go-working-dir/work/jetty-0_0_0_0-8153-cruise_war-_go-any-/webapp/WEB-INF/lib/ehcache-2.10.9.2.jar!/ehcache-failsafe.xml
+2023-03-08 09:57:04,073 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.AccessToken]; using defaults.
+2023-03-08 09:57:04,134 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.NotificationFilter]; using defaults.
+2023-03-08 09:57:04,231 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.User]; using defaults.
+2023-03-08 09:57:04,252 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.Plugin]; using defaults.
+2023-03-08 09:57:04,264 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.EnvironmentVariable]; using defaults.
+2023-03-08 09:57:04,305 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.User.notificationFilters]; using defaults.
+2023-03-08 09:57:04,377 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.
+2023-03-08 09:57:04,385 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.
+2023-03-08 09:57:06,637 INFO  [WrapperJarAppMain] ConnectionManager:98 - Done loading query extensions, found com.thoughtworks.go.server.database.h2.H2QueryExtensions@4e2f2747
+2023-03-08 09:57:07,355 INFO  [WrapperJarAppMain] AESCipherProvider:61 - AES cipher not found. Creating a new cipher file
+2023-03-08 09:57:21,287 INFO  [WrapperJarAppMain] GoConfigMigration:94 - Upgrading config file from version 139 to version 139
+2023-03-08 09:57:21,337 INFO  [WrapperJarAppMain] GoConfigMigration:102 - Finished upgrading config file
+2023-03-08 09:57:21,340 INFO  [WrapperJarAppMain] GoConfigMigrator:106 - [Config Save] Starting Config Save post upgrade using FullConfigSaveNormalFlow
+2023-03-08 09:57:21,540 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-ldap-authentication-plugin.jar
+2023-03-08 09:57:22,252 WARN  [Thread-79] PluginSettingsMetadataLoader:63 - Failed to fetch plugin settings metadata for plugin cd.go.authentication.ldap. Maybe the plugin does not implement plugin settings and view?
+2023-03-08 09:57:22,253 WARN  [Thread-79] PluginSettingsMetadataLoader:64 - Plugin: cd.go.authentication.ldap - Metadata load info: [{extension='authorization', configuration='null', view='null', error='The plugin sent a response that could not be understood by Go. Plugin returned with code '500' and the following response: 'This is an invalid request type :go.plugin-settings.get-configuration''}]
+2023-03-08 09:57:22,256 WARN  [Thread-79] PluginSettingsMetadataLoader:65 - Not all plugins are required to implement the request above. This error may be safe to ignore.
+2023-03-08 09:57:22,257 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-ldap-authentication-plugin.jar
+2023-03-08 09:57:22,326 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-file-based-secrets-plugin.jar
+2023-03-08 09:57:22,529 ERROR [Thread-79] DefaultPluginManager:136 - This is an invalid request type :go.plugin-settings.get-configuration
+2023-03-08 09:57:22,531 WARN  [Thread-79] PluginSettingsMetadataLoader:63 - Failed to fetch plugin settings metadata for plugin cd.go.secrets.file-based-plugin. Maybe the plugin does not implement plugin settings and view?
+2023-03-08 09:57:22,533 WARN  [Thread-79] PluginSettingsMetadataLoader:64 - Plugin: cd.go.secrets.file-based-plugin - Metadata load info: [{extension='secrets', configuration='null', view='null', error='com.thoughtworks.go.plugin.api.exceptions.UnhandledRequestTypeException: This is an invalid request type :go.plugin-settings.get-configuration'}]
+2023-03-08 09:57:22,535 WARN  [Thread-79] PluginSettingsMetadataLoader:65 - Not all plugins are required to implement the request above. This error may be safe to ignore.
+2023-03-08 09:57:22,605 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-file-based-secrets-plugin.jar
+2023-03-08 09:57:22,658 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-json-config-plugin.jar
+2023-03-08 09:57:23,495 INFO  [Thread-79] ConfigRepositoryInitializer:108 - [Config Repository Initializer] Start initializing the config repositories for plugin 'json.config.plugin' 
+2023-03-08 09:57:23,518 INFO  [Thread-79] GoFileConfigDataSource:263 - Config file changed at 1678269411792
+2023-03-08 09:57:23,519 INFO  [Thread-79] GoFileConfigDataSource:264 - Reloading config file: config/cruise-config.xml
+2023-03-08 09:57:23,541 ERROR [Thread-79] GoFileConfigDataSource:436 - Unable to load config file: /go-working-dir/config/cruise-config.xml The value of 'serverId' uniquely identifies a Go server instance. This field cannot be modified.
+java.lang.RuntimeException: The value of 'serverId' uniquely identifies a Go server instance. This field cannot be modified.
+	at com.thoughtworks.go.config.validation.ServerIdImmutabilityValidator.validate(ServerIdImmutabilityValidator.java:45)
+	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.validateCruiseConfig(MagicalGoConfigXmlLoader.java:142)
+	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.preprocessAndValidate(MagicalGoConfigXmlLoader.java:124)
+	at com.thoughtworks.go.config.FullConfigSaveFlow.preprocessAndValidate(FullConfigSaveFlow.java:97)
+	at com.thoughtworks.go.config.FullConfigSaveNormalFlow.execute(FullConfigSaveNormalFlow.java:59)
+	at com.thoughtworks.go.config.GoFileConfigDataSource.forceLoad(GoFileConfigDataSource.java:426)
+	at com.thoughtworks.go.config.GoFileConfigDataSource.load(GoFileConfigDataSource.java:267)
+	at com.thoughtworks.go.config.CachedGoConfig.forceReload(CachedGoConfig.java:98)
+	at com.thoughtworks.go.config.CachedGoConfig.loadConfigIfNull(CachedGoConfig.java:138)
+	at com.thoughtworks.go.config.CachedGoConfig.loadForEditing(CachedGoConfig.java:116)
+	at com.thoughtworks.go.config.GoConfigDao.loadForEditing(GoConfigDao.java:72)
+	at com.thoughtworks.go.server.service.GoConfigService.getConfigForEditing(GoConfigService.java:224)
+	at com.thoughtworks.go.server.service.ConfigRepoService.getConfigRepos(ConfigRepoService.java:92)
+	at com.thoughtworks.go.server.service.ConfigRepositoryInitializer.initializeConfigRepositories(ConfigRepositoryInitializer.java:109)
+	at com.thoughtworks.go.server.service.ConfigRepositoryInitializer.pluginLoaded(ConfigRepositoryInitializer.java:90)
+	at com.thoughtworks.go.plugin.infra.PluginLoader.lambda$doPostBundleInstallActivities$0(PluginLoader.java:113)
+	at org.apache.commons.collections4.IteratorUtils.forEach(IteratorUtils.java:1224)
+	at org.apache.commons.collections4.IterableUtils.forEach(IterableUtils.java:585)
+	at com.thoughtworks.go.plugin.infra.PluginLoader.lambda$doPostBundleInstallActivities$1(PluginLoader.java:113)
+	at org.apache.commons.collections4.IteratorUtils.forEach(IteratorUtils.java:1224)
+	at org.apache.commons.collections4.IterableUtils.forEach(IterableUtils.java:585)
+	at com.thoughtworks.go.plugin.infra.PluginLoader.doPostBundleInstallActivities(PluginLoader.java:112)
+	at com.thoughtworks.go.plugin.infra.PluginLoader.loadPlugin(PluginLoader.java:70)
+	at com.thoughtworks.go.plugin.infra.listeners.DefaultPluginJarChangeListener.refreshBundle(DefaultPluginJarChangeListener.java:180)
+	at com.thoughtworks.go.plugin.infra.listeners.DefaultPluginJarChangeListener.addPlugin(DefaultPluginJarChangeListener.java:123)
+	at com.thoughtworks.go.plugin.infra.listeners.DefaultPluginJarChangeListener.pluginJarAdded(DefaultPluginJarChangeListener.java:72)
+	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread$DoOnAllListeners.lambda$pluginJarAdded$0(DefaultPluginJarLocationMonitor.java:237)
+	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread$DoOnAllListeners.doOnAllPluginJarChangeListener(DefaultPluginJarLocationMonitor.java:258)
+	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread$DoOnAllListeners.pluginJarAdded(DefaultPluginJarLocationMonitor.java:237)
+	at com.thoughtworks.go.plugin.infra.monitor.PluginChangeNotifier.lambda$notify$0(PluginChangeNotifier.java:33)
+	at java.base/java.lang.Iterable.forEach(Unknown Source)
+	at com.thoughtworks.go.plugin.infra.monitor.PluginChangeNotifier.notify(PluginChangeNotifier.java:30)
+	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread.loadAndNotifyPluginsFrom(DefaultPluginJarLocationMonitor.java:204)
+	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread.oneShot(DefaultPluginJarLocationMonitor.java:191)
+	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread.run(DefaultPluginJarLocationMonitor.java:177)
+2023-03-08 09:57:23,544 WARN  [Thread-79] GoFileConfigDataSource:438 - --- /go-working-dir/config/cruise-config.xml ---
+2023-03-08 09:57:23,554 WARN  [Thread-79] GoFileConfigDataSource:439 - <?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2022 Thoughtworks, Inc.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<cruise xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cruise-config.xsd" schemaVersion="139">
+  <server>
+    <artifacts>
+      <artifactsDir>artifacts</artifactsDir>
+    </artifacts>
+  </server>
+</cruise>
+
+2023-03-08 09:57:23,555 WARN  [Thread-79] GoFileConfigDataSource:440 - ------
+2023-03-08 09:57:23,556 WARN  [Thread-79] CachedGoConfig:103 - Error loading cruise-config.xml from disk, keeping previous one
+java.lang.RuntimeException: The value of 'serverId' uniquely identifies a Go server instance. This field cannot be modified.
+	at com.thoughtworks.go.config.validation.ServerIdImmutabilityValidator.validate(ServerIdImmutabilityValidator.java:45)
+	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.validateCruiseConfig(MagicalGoConfigXmlLoader.java:142)
+	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.preprocessAndValidate(MagicalGoConfigXmlLoader.java:124)
+	at com.thoughtworks.go.config.FullConfigSaveFlow.preprocessAndValidate(FullConfigSaveFlow.java:97)
+	at com.thoughtworks.go.config.FullConfigSaveNormalFlow.execute(FullConfigSaveNormalFlow.java:59)
+	at com.thoughtworks.go.config.GoFileConfigDataSource.forceLoad(GoFileConfigDataSource.java:426)
+	at com.thoughtworks.go.config.GoFileConfigDataSource.load(GoFileConfigDataSource.java:267)
+	at com.thoughtworks.go.config.CachedGoConfig.forceReload(CachedGoConfig.java:98)
+	at com.thoughtworks.go.config.CachedGoConfig.loadConfigIfNull(CachedGoConfig.java:138)
+	at com.thoughtworks.go.config.CachedGoConfig.loadForEditing(CachedGoConfig.java:116)
+	at com.thoughtworks.go.config.GoConfigDao.loadForEditing(GoConfigDao.java:72)
+	at com.thoughtworks.go.server.service.GoConfigService.getConfigForEditing(GoConfigService.java:224)
+	at com.thoughtworks.go.server.service.ConfigRepoService.getConfigRepos(ConfigRepoService.java:92)
+	at com.thoughtworks.go.server.service.ConfigRepositoryInitializer.initializeConfigRepositories(ConfigRepositoryInitializer.java:109)
+	at com.thoughtworks.go.server.service.ConfigRepositoryInitializer.pluginLoaded(ConfigRepositoryInitializer.java:90)
+	at com.thoughtworks.go.plugin.infra.PluginLoader.lambda$doPostBundleInstallActivities$0(PluginLoader.java:113)
+	at org.apache.commons.collections4.IteratorUtils.forEach(IteratorUtils.java:1224)
+	at org.apache.commons.collections4.IterableUtils.forEach(IterableUtils.java:585)
+	at com.thoughtworks.go.plugin.infra.PluginLoader.lambda$doPostBundleInstallActivities$1(PluginLoader.java:113)
+	at org.apache.commons.collections4.IteratorUtils.forEach(IteratorUtils.java:1224)
+	at org.apache.commons.collections4.IterableUtils.forEach(IterableUtils.java:585)
+	at com.thoughtworks.go.plugin.infra.PluginLoader.doPostBundleInstallActivities(PluginLoader.java:112)
+	at com.thoughtworks.go.plugin.infra.PluginLoader.loadPlugin(PluginLoader.java:70)
+	at com.thoughtworks.go.plugin.infra.listeners.DefaultPluginJarChangeListener.refreshBundle(DefaultPluginJarChangeListener.java:180)
+	at com.thoughtworks.go.plugin.infra.listeners.DefaultPluginJarChangeListener.addPlugin(DefaultPluginJarChangeListener.java:123)
+	at com.thoughtworks.go.plugin.infra.listeners.DefaultPluginJarChangeListener.pluginJarAdded(DefaultPluginJarChangeListener.java:72)
+	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread$DoOnAllListeners.lambda$pluginJarAdded$0(DefaultPluginJarLocationMonitor.java:237)
+	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread$DoOnAllListeners.doOnAllPluginJarChangeListener(DefaultPluginJarLocationMonitor.java:258)
+	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread$DoOnAllListeners.pluginJarAdded(DefaultPluginJarLocationMonitor.java:237)
+	at com.thoughtworks.go.plugin.infra.monitor.PluginChangeNotifier.lambda$notify$0(PluginChangeNotifier.java:33)
+	at java.base/java.lang.Iterable.forEach(Unknown Source)
+	at com.thoughtworks.go.plugin.infra.monitor.PluginChangeNotifier.notify(PluginChangeNotifier.java:30)
+	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread.loadAndNotifyPluginsFrom(DefaultPluginJarLocationMonitor.java:204)
+	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread.oneShot(DefaultPluginJarLocationMonitor.java:191)
+	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread.run(DefaultPluginJarLocationMonitor.java:177)
+2023-03-08 09:57:24,509 WARN  [WrapperJarAppMain] ConfigRepository:200 - [CONFIG REPOSITORY] No head exists in the config repository.
+2023-03-08 09:57:24,575 INFO  [WrapperJarAppMain] CachedGoConfig:223 - About to notify config listeners
+2023-03-08 09:57:24,576 INFO  [WrapperJarAppMain] CachedGoConfig:231 - Finished notifying all listeners
+2023-03-08 09:57:24,589 INFO  [Thread-79] ConfigRepositoryInitializer:112 - [Config Repository Initializer] Done initializing the config repositories for plugin 'json.config.plugin' 
+2023-03-08 09:57:24,625 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-json-config-plugin.jar
+2023-03-08 09:57:24,688 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-yum-repository-poller-plugin.jar
+2023-03-08 09:57:24,767 INFO  [WrapperJarAppMain] BuildAssignmentService:250 - [Configuration Changed] Removing jobs for pipelines that no longer exist in configuration.
+2023-03-08 09:57:24,793 INFO  [WrapperJarAppMain] InvalidateAuthenticationOnSecurityConfigChangeFilter:78 - [Configuration Changed] Security Configuration is changed. Updating the last changed time.
+2023-03-08 09:57:24,811 INFO  [WrapperJarAppMain] PipelineRepository:78 - Start updating pipeline timeline
+2023-03-08 09:57:24,832 INFO  [WrapperJarAppMain] PipelineRepository:84 - Pipeline timeline updated
+2023-03-08 09:57:24,834 INFO  [WrapperJarAppMain] PipelineSqlMapDao:132 - Loading active pipelines into memory.
+2023-03-08 09:57:24,835 INFO  [WrapperJarAppMain] PipelineSqlMapDao:383 - Retriving Active Pipelines from Database...
+2023-03-08 09:57:24,843 INFO  [WrapperJarAppMain] PipelineSqlMapDao:134 - Done loading active pipelines into memory.
+2023-03-08 09:57:24,878 INFO  [WrapperJarAppMain] ConsoleActivityMonitor:78 - Found '0' building jobs. Added them with '2023-03-08T09:57:24.845Z' as the last heard time
+2023-03-08 09:57:24,886 INFO  [WrapperJarAppMain] ConsoleActivityMonitor:79 - Found '0' scheduled jobs. Added them with '2023-03-08T09:57:24.845Z' as the last heard time
+2023-03-08 09:57:24,893 INFO  [WrapperJarAppMain] RailsAssetsService:68 - Found rails assets manifest file named .sprockets-manifest-33237067f8bbd7d7d3ed31a1f9d514b9.json 
+2023-03-08 09:57:24,900 INFO  [WrapperJarAppMain] RailsAssetsService:72 - Successfully read rails assets manifest file located at /go-working-dir/work/jetty-0_0_0_0-8153-cruise_war-_go-any-/webapp/WEB-INF/rails/public/assets/.sprockets-manifest-33237067f8bbd7d7d3ed31a1f9d514b9.json
+2023-03-08 09:57:25,097 WARN  [Thread-79] PluginSettingsMetadataLoader:63 - Failed to fetch plugin settings metadata for plugin yum. Maybe the plugin does not implement plugin settings and view?
+2023-03-08 09:57:25,098 WARN  [Thread-79] PluginSettingsMetadataLoader:64 - Plugin: yum - Metadata load info: [{extension='package-repository', configuration='null', view='null', error='The plugin sent a response that could not be understood by Go. Plugin returned with code '400' and the following response: 'Invalid request name go.plugin-settings.get-configuration''}]
+2023-03-08 09:57:25,100 WARN  [Thread-79] PluginSettingsMetadataLoader:65 - Not all plugins are required to implement the request above. This error may be safe to ignore.
+2023-03-08 09:57:25,143 ERROR [Thread-79] PluginInfoBuilder:54 - Failed to fetch Plugin Settings metadata for plugin yum. Maybe the plugin does not implement plugin settings and view?
+2023-03-08 09:57:25,148 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-yum-repository-poller-plugin.jar
+2023-03-08 09:57:25,203 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-filebased-authentication-plugin.jar
+2023-03-08 09:57:25,337 WARN  [Thread-79] PluginSettingsMetadataLoader:63 - Failed to fetch plugin settings metadata for plugin cd.go.authentication.passwordfile. Maybe the plugin does not implement plugin settings and view?
+2023-03-08 09:57:25,338 WARN  [Thread-79] PluginSettingsMetadataLoader:64 - Plugin: cd.go.authentication.passwordfile - Metadata load info: [{extension='authorization', configuration='null', view='null', error='The plugin sent a response that could not be understood by Go. Plugin returned with code '500' and the following response: 'Request go.plugin-settings.get-configuration is not supported by plugin.''}]
+2023-03-08 09:57:25,339 WARN  [Thread-79] PluginSettingsMetadataLoader:65 - Not all plugins are required to implement the request above. This error may be safe to ignore.
+2023-03-08 09:57:25,340 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-filebased-authentication-plugin.jar
+2023-03-08 09:57:25,397 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-yaml-config-plugin.jar
+2023-03-08 09:57:26,455 INFO  [Thread-79] ConfigRepositoryInitializer:108 - [Config Repository Initializer] Start initializing the config repositories for plugin 'yaml.config.plugin' 
+2023-03-08 09:57:26,456 INFO  [Thread-79] ConfigRepositoryInitializer:112 - [Config Repository Initializer] Done initializing the config repositories for plugin 'yaml.config.plugin' 
+2023-03-08 09:57:26,469 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-yaml-config-plugin.jar
+2023-03-08 09:57:36,972 WARN  [WrapperJarAppMain] DeprecationWarning:43 - Using @Deprecated Class com.thoughtworks.go.server.web.DefaultHeadersFilter
+2023-03-08 09:57:43,303 INFO  [ThreadPoolTaskScheduler-1] GoFileConfigDataSource:263 - Config file changed at 1678269444562
+2023-03-08 09:57:43,304 INFO  [ThreadPoolTaskScheduler-1] GoFileConfigDataSource:264 - Reloading config file: config/cruise-config.xml
+2023-03-08 09:57:43,341 INFO  [ThreadPoolTaskScheduler-1] CachedGoConfig:223 - About to notify config listeners
+2023-03-08 09:57:43,343 INFO  [ThreadPoolTaskScheduler-1] BuildAssignmentService:250 - [Configuration Changed] Removing jobs for pipelines that no longer exist in configuration.
+2023-03-08 09:57:43,344 INFO  [ThreadPoolTaskScheduler-1] CachedGoConfig:231 - Finished notifying all listeners
+2023-03-08 09:57:55,515 INFO  [qtp533044735-39] ServerVersionInfoManager:71 - [Go Update Check] Starting update check at: Wed Mar 08 09:57:55 GMT 2023
+2023-03-08 09:57:56,443 INFO  [qtp533044735-38] ServerVersionInfoManager:86 - [Go Update Check] Update check done at: Wed Mar 08 09:57:56 GMT 2023, latest available version: 22.3.0-15301
+2023-03-08 10:05:49,637 INFO  [qtp533044735-38] BuildRepositoryRemoteImpl:124 - [Agent Cookie] Agent [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53]] at location [/go] asked for a new cookie, assigned [f5fb9958-3e29-47f3-a0fd-c3e5e262569a]
+2023-03-08 10:05:50,911 WARN  [qtp533044735-38] AgentService:234 - Agent with UUID [cb7e2315-eb2c-4008-bdda-7538ae607d53] changed IP Address from [172.18.0.1] to [172.18.0.2]
+2023-03-08 10:14:39,443 ERROR [qtp533044735-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+2023-03-08 10:14:39,464 INFO  [qtp533044735-28] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@7dd842b1[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.CreatePipelineConfigCommand@77d45681
+2023-03-08 10:14:39,471 INFO  [qtp533044735-28] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@7dd842b1[displayName=anonymous,username=anonymous] is being processed
+2023-03-08 10:14:39,497 INFO  [qtp533044735-28] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+2023-03-08 10:14:39,513 INFO  [qtp533044735-28] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+2023-03-08 10:14:39,531 INFO  [qtp533044735-28] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:14:39,535 INFO  [qtp533044735-28] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline pipeline1.
+2023-03-08 10:14:39,537 INFO  [qtp533044735-28] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:14:39,539 INFO  [qtp533044735-28] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@7dd842b1[displayName=anonymous,username=anonymous] is completed
+2023-03-08 10:14:39,563 INFO  [qtp533044735-34] PipelineTriggerService:43 - [Pipeline Schedule] [Requested] Manual trigger of pipeline 'pipeline1' requested by anonymous
+2023-03-08 10:14:39,565 INFO  [qtp533044735-34] PipelineTriggerService:46 - [Pipeline Schedule] [Accepted] Manual trigger of pipeline 'pipeline1' accepted for user anonymous
+2023-03-08 10:14:39,575 INFO  [qtp533044735-34] PipelineTriggerService:48 - [Pipeline Schedule] [Processed] Manual trigger of pipeline 'pipeline1' processed with result 'com.thoughtworks.go.serverhealth.ServerHealthState@36c3e8e8[description=,expiryTime=<null>,healthStateLevel=OK,message=,timestamp=Wed Mar 08 10:14:39 GMT 2023,type=<HealthStateType ARTIFACTS_DISK_FULL LogScope[GLOBAL, scope=GLOBAL]>]'
+2023-03-08 10:14:39,597 WARN  [qtp533044735-28] FeatureToggleRepository:69 - Toggles file, /go-working-dir/config/go.feature.toggles does not exist. Saying there are no toggles.
+2023-03-08 10:14:41,625 INFO  [127@MessageListener for MaterialUpdateListener] ScmMaterialUpdater:60 - [Material Update] Found '1' modifications for material 'GitMaterial{url=https://github.com/iamvickyav/spring-boot-h2-war-tomcat.git, branch='master', shallowClone=false, submoduleFolder='null'}' with flyweight '3fae88ea880931bc454f8a90ebb3940cd8ffde3f926f25a9d963dd731d648fa0' using working directory '/go-working-dir/pipelines/flyweight/3b6911ea-0856-4f53-8f81-1c9ae51ff1f7'
+2023-03-08 10:14:42,564 INFO  [ThreadPoolTaskScheduler-9] ScheduleService:160 - [Pipeline Schedule] Scheduling pipeline pipeline1 with build cause [ManualForcedBuildCause: Forced by anonymous]
+2023-03-08 10:14:42,588 INFO  [ThreadPoolTaskScheduler-9] PipelineRepository:78 - Start updating pipeline timeline
+2023-03-08 10:14:42,596 INFO  [ThreadPoolTaskScheduler-9] PipelineRepository:84 - Pipeline timeline updated
+2023-03-08 10:14:43,610 INFO  [111@MessageListener for WorkFinder] BuildAssignmentService:189 - [Agent Assignment] Assigned job [JobIdentifier[pipeline1, 1, 1, stage1, 1, clean, 1]] to agent [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53]]
+2023-03-08 10:14:53,924 INFO  [qtp533044735-30] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Preparing] for [Build [pipeline1/1/stage1/1/clean/1]]
+2023-03-08 10:14:56,115 INFO  [qtp533044735-38] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Building] for [Build [pipeline1/1/stage1/1/clean/1]]
+2023-03-08 10:14:56,200 INFO  [qtp533044735-42] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting result [Failed] for [Build [pipeline1/1/stage1/1/clean/1]]
+2023-03-08 10:14:56,404 INFO  [qtp533044735-37] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Completing] for [Build [pipeline1/1/stage1/1/clean/1]]
+2023-03-08 10:14:56,496 INFO  [qtp533044735-34] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status and result [Completed, Failed] for [Build [pipeline1/1/stage1/1/clean/1]]
+2023-03-08 10:14:56,509 INFO  [qtp533044735-34] Stage:236 - Stage is being completed by transition id: 6
+2023-03-08 10:15:19,767 INFO  [qtp533044735-28] ScheduleService:228 - [Stage Schedule] Scheduling stage stage1 for pipeline pipeline1
+2023-03-08 10:15:26,838 INFO  [111@MessageListener for WorkFinder] BuildAssignmentService:189 - [Agent Assignment] Assigned job [JobIdentifier[pipeline1, 1, 1, stage1, 2, clean, 2]] to agent [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53]]
+2023-03-08 10:15:37,110 INFO  [qtp533044735-37] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Preparing] for [Build [pipeline1/1/stage1/2/clean/2]]
+2023-03-08 10:15:38,462 INFO  [qtp533044735-42] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Building] for [Build [pipeline1/1/stage1/2/clean/2]]
+2023-03-08 10:15:38,698 INFO  [qtp533044735-33] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting result [Failed] for [Build [pipeline1/1/stage1/2/clean/2]]
+2023-03-08 10:15:38,928 INFO  [qtp533044735-26] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Completing] for [Build [pipeline1/1/stage1/2/clean/2]]
+2023-03-08 10:15:39,129 INFO  [qtp533044735-30] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status and result [Completed, Failed] for [Build [pipeline1/1/stage1/2/clean/2]]
+2023-03-08 10:15:39,138 INFO  [qtp533044735-30] Stage:236 - Stage is being completed by transition id: 12
+2023-03-08 10:21:19,654 INFO  [qtp533044735-30] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@da9ef2c[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@a123589
+2023-03-08 10:21:19,656 INFO  [qtp533044735-30] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@da9ef2c[displayName=anonymous,username=anonymous] is being processed
+2023-03-08 10:21:19,660 INFO  [qtp533044735-30] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+2023-03-08 10:21:19,674 INFO  [qtp533044735-30] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+2023-03-08 10:21:19,692 INFO  [qtp533044735-30] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:21:19,694 INFO  [qtp533044735-30] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline pipeline1.
+2023-03-08 10:21:19,695 INFO  [qtp533044735-30] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:21:19,696 INFO  [qtp533044735-30] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@da9ef2c[displayName=anonymous,username=anonymous] is completed
+2023-03-08 10:21:26,684 INFO  [qtp533044735-38] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@68c5a958[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@23e13373
+2023-03-08 10:21:26,686 INFO  [qtp533044735-38] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@68c5a958[displayName=anonymous,username=anonymous] is being processed
+2023-03-08 10:21:26,692 INFO  [qtp533044735-38] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+2023-03-08 10:21:26,710 INFO  [qtp533044735-38] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+2023-03-08 10:21:26,728 INFO  [qtp533044735-38] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:21:26,729 INFO  [qtp533044735-38] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline pipeline1.
+2023-03-08 10:21:26,730 INFO  [qtp533044735-38] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:21:26,731 INFO  [qtp533044735-38] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@68c5a958[displayName=anonymous,username=anonymous] is completed
+2023-03-08 10:22:07,859 INFO  [qtp533044735-30] PipelineTriggerService:43 - [Pipeline Schedule] [Requested] Manual trigger of pipeline 'pipeline1' requested by anonymous
+2023-03-08 10:22:07,861 INFO  [qtp533044735-30] PipelineTriggerService:46 - [Pipeline Schedule] [Accepted] Manual trigger of pipeline 'pipeline1' accepted for user anonymous
+2023-03-08 10:22:07,862 INFO  [qtp533044735-30] PipelineTriggerService:48 - [Pipeline Schedule] [Processed] Manual trigger of pipeline 'pipeline1' processed with result 'com.thoughtworks.go.serverhealth.ServerHealthState@3d317769[description=,expiryTime=<null>,healthStateLevel=OK,message=,timestamp=Wed Mar 08 10:22:07 GMT 2023,type=<HealthStateType ARTIFACTS_DISK_FULL LogScope[GLOBAL, scope=GLOBAL]>]'
+2023-03-08 10:22:08,724 INFO  [ThreadPoolTaskScheduler-1] ScheduleService:160 - [Pipeline Schedule] Scheduling pipeline pipeline1 with build cause [ManualForcedBuildCause: Forced by anonymous]
+2023-03-08 10:22:08,730 INFO  [ThreadPoolTaskScheduler-1] PipelineRepository:78 - Start updating pipeline timeline
+2023-03-08 10:22:08,737 INFO  [ThreadPoolTaskScheduler-1] PipelineRepository:84 - Pipeline timeline updated
+2023-03-08 10:22:22,373 INFO  [111@MessageListener for WorkFinder] BuildAssignmentService:189 - [Agent Assignment] Assigned job [JobIdentifier[pipeline1, 2, 2, tomcat_setup, 1, tomcat_setup, 3]] to agent [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53]]
+2023-03-08 10:22:32,595 INFO  [qtp533044735-31] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Preparing] for [Build [pipeline1/2/tomcat_setup/1/tomcat_setup/3]]
+2023-03-08 10:22:33,862 INFO  [qtp533044735-42] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Building] for [Build [pipeline1/2/tomcat_setup/1/tomcat_setup/3]]
+2023-03-08 10:22:34,095 INFO  [qtp533044735-27] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting result [Failed] for [Build [pipeline1/2/tomcat_setup/1/tomcat_setup/3]]
+2023-03-08 10:22:34,263 INFO  [qtp533044735-34] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Completing] for [Build [pipeline1/2/tomcat_setup/1/tomcat_setup/3]]
+2023-03-08 10:22:34,388 INFO  [qtp533044735-39] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status and result [Completed, Failed] for [Build [pipeline1/2/tomcat_setup/1/tomcat_setup/3]]
+2023-03-08 10:22:34,395 INFO  [qtp533044735-39] Stage:236 - Stage is being completed by transition id: 18
+2023-03-08 10:25:35,063 INFO  [qtp533044735-37] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@26cd186b[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@5648b8b1
+2023-03-08 10:25:35,066 INFO  [qtp533044735-37] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@26cd186b[displayName=anonymous,username=anonymous] is being processed
+2023-03-08 10:25:35,069 INFO  [qtp533044735-37] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+2023-03-08 10:25:35,081 INFO  [qtp533044735-37] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+2023-03-08 10:25:35,100 INFO  [qtp533044735-37] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:25:35,101 INFO  [qtp533044735-37] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline pipeline1.
+2023-03-08 10:25:35,103 INFO  [qtp533044735-37] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:25:35,104 INFO  [qtp533044735-37] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@26cd186b[displayName=anonymous,username=anonymous] is completed
+2023-03-08 10:25:38,331 INFO  [qtp533044735-27] PipelineTriggerService:43 - [Pipeline Schedule] [Requested] Manual trigger of pipeline 'pipeline1' requested by anonymous
+2023-03-08 10:25:38,332 INFO  [qtp533044735-27] PipelineTriggerService:46 - [Pipeline Schedule] [Accepted] Manual trigger of pipeline 'pipeline1' accepted for user anonymous
+2023-03-08 10:25:38,333 INFO  [qtp533044735-27] PipelineTriggerService:48 - [Pipeline Schedule] [Processed] Manual trigger of pipeline 'pipeline1' processed with result 'com.thoughtworks.go.serverhealth.ServerHealthState@4fcdc679[description=,expiryTime=<null>,healthStateLevel=OK,message=,timestamp=Wed Mar 08 10:25:38 GMT 2023,type=<HealthStateType ARTIFACTS_DISK_FULL LogScope[GLOBAL, scope=GLOBAL]>]'
+2023-03-08 10:25:39,794 INFO  [ThreadPoolTaskScheduler-2] ScheduleService:160 - [Pipeline Schedule] Scheduling pipeline pipeline1 with build cause [ManualForcedBuildCause: Forced by anonymous]
+2023-03-08 10:25:39,804 INFO  [ThreadPoolTaskScheduler-2] PipelineRepository:78 - Start updating pipeline timeline
+2023-03-08 10:25:39,809 INFO  [ThreadPoolTaskScheduler-2] PipelineRepository:84 - Pipeline timeline updated
+2023-03-08 10:25:45,982 INFO  [111@MessageListener for WorkFinder] BuildAssignmentService:189 - [Agent Assignment] Assigned job [JobIdentifier[pipeline1, 3, 3, tomcat_setup, 1, tomcat_setup, 4]] to agent [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53]]
+2023-03-08 10:25:56,271 INFO  [qtp533044735-31] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Preparing] for [Build [pipeline1/3/tomcat_setup/1/tomcat_setup/4]]
+2023-03-08 10:25:57,497 INFO  [qtp533044735-31] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Building] for [Build [pipeline1/3/tomcat_setup/1/tomcat_setup/4]]
+2023-03-08 10:25:57,748 INFO  [qtp533044735-43] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting result [Failed] for [Build [pipeline1/3/tomcat_setup/1/tomcat_setup/4]]
+2023-03-08 10:25:57,937 INFO  [qtp533044735-34] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Completing] for [Build [pipeline1/3/tomcat_setup/1/tomcat_setup/4]]
+2023-03-08 10:25:58,103 INFO  [qtp533044735-30] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status and result [Completed, Failed] for [Build [pipeline1/3/tomcat_setup/1/tomcat_setup/4]]
+2023-03-08 10:25:58,112 INFO  [qtp533044735-30] Stage:236 - Stage is being completed by transition id: 24
+2023-03-08 10:27:02,302 INFO  [qtp533044735-40] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@4eaa8af0[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@4a893ec4
+2023-03-08 10:27:02,303 INFO  [qtp533044735-40] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@4eaa8af0[displayName=anonymous,username=anonymous] is being processed
+2023-03-08 10:27:02,306 INFO  [qtp533044735-40] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+2023-03-08 10:27:02,321 INFO  [qtp533044735-40] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+2023-03-08 10:27:02,341 INFO  [qtp533044735-40] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:27:02,344 INFO  [qtp533044735-40] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline pipeline1.
+2023-03-08 10:27:02,346 INFO  [qtp533044735-40] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:27:02,347 INFO  [qtp533044735-40] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@4eaa8af0[displayName=anonymous,username=anonymous] is completed
+2023-03-08 10:27:06,382 INFO  [qtp533044735-33] PipelineTriggerService:43 - [Pipeline Schedule] [Requested] Manual trigger of pipeline 'pipeline1' requested by anonymous
+2023-03-08 10:27:06,384 INFO  [qtp533044735-33] PipelineTriggerService:46 - [Pipeline Schedule] [Accepted] Manual trigger of pipeline 'pipeline1' accepted for user anonymous
+2023-03-08 10:27:06,386 INFO  [qtp533044735-33] PipelineTriggerService:48 - [Pipeline Schedule] [Processed] Manual trigger of pipeline 'pipeline1' processed with result 'com.thoughtworks.go.serverhealth.ServerHealthState@14c2b3b9[description=,expiryTime=<null>,healthStateLevel=OK,message=,timestamp=Wed Mar 08 10:27:06 GMT 2023,type=<HealthStateType ARTIFACTS_DISK_FULL LogScope[GLOBAL, scope=GLOBAL]>]'
+2023-03-08 10:27:07,834 INFO  [ThreadPoolTaskScheduler-9] ScheduleService:160 - [Pipeline Schedule] Scheduling pipeline pipeline1 with build cause [ManualForcedBuildCause: Forced by anonymous]
+2023-03-08 10:27:07,842 INFO  [ThreadPoolTaskScheduler-9] PipelineRepository:78 - Start updating pipeline timeline
+2023-03-08 10:27:07,847 INFO  [ThreadPoolTaskScheduler-9] PipelineRepository:84 - Pipeline timeline updated
+2023-03-08 10:27:08,828 INFO  [111@MessageListener for WorkFinder] BuildAssignmentService:189 - [Agent Assignment] Assigned job [JobIdentifier[pipeline1, 4, 4, tomcat_setup, 1, tomcat_setup, 5]] to agent [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53]]
+2023-03-08 10:27:19,079 INFO  [qtp533044735-31] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Preparing] for [Build [pipeline1/4/tomcat_setup/1/tomcat_setup/5]]
+2023-03-08 10:27:20,306 INFO  [qtp533044735-36] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Building] for [Build [pipeline1/4/tomcat_setup/1/tomcat_setup/5]]
+2023-03-08 10:27:20,579 INFO  [qtp533044735-30] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting result [Failed] for [Build [pipeline1/4/tomcat_setup/1/tomcat_setup/5]]
+2023-03-08 10:27:20,742 INFO  [qtp533044735-33] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Completing] for [Build [pipeline1/4/tomcat_setup/1/tomcat_setup/5]]
+2023-03-08 10:27:20,883 INFO  [qtp533044735-27] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status and result [Completed, Failed] for [Build [pipeline1/4/tomcat_setup/1/tomcat_setup/5]]
+2023-03-08 10:27:20,888 INFO  [qtp533044735-27] Stage:236 - Stage is being completed by transition id: 30
+2023-03-08 10:28:12,543 INFO  [qtp533044735-38] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@363c0bcf[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@35fe0138
+2023-03-08 10:28:12,544 INFO  [qtp533044735-38] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@363c0bcf[displayName=anonymous,username=anonymous] is being processed
+2023-03-08 10:28:12,547 INFO  [qtp533044735-38] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+2023-03-08 10:28:12,557 INFO  [qtp533044735-38] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+2023-03-08 10:28:12,582 INFO  [qtp533044735-38] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:28:12,584 INFO  [qtp533044735-38] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline pipeline1.
+2023-03-08 10:28:12,586 INFO  [qtp533044735-38] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:28:12,586 INFO  [qtp533044735-38] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@363c0bcf[displayName=anonymous,username=anonymous] is completed
+2023-03-08 10:28:15,723 INFO  [qtp533044735-36] PipelineTriggerService:43 - [Pipeline Schedule] [Requested] Manual trigger of pipeline 'pipeline1' requested by anonymous
+2023-03-08 10:28:15,725 INFO  [qtp533044735-36] PipelineTriggerService:46 - [Pipeline Schedule] [Accepted] Manual trigger of pipeline 'pipeline1' accepted for user anonymous
+2023-03-08 10:28:15,726 INFO  [qtp533044735-36] PipelineTriggerService:48 - [Pipeline Schedule] [Processed] Manual trigger of pipeline 'pipeline1' processed with result 'com.thoughtworks.go.serverhealth.ServerHealthState@2355fc49[description=,expiryTime=<null>,healthStateLevel=OK,message=,timestamp=Wed Mar 08 10:28:15 GMT 2023,type=<HealthStateType ARTIFACTS_DISK_FULL LogScope[GLOBAL, scope=GLOBAL]>]'
+2023-03-08 10:28:16,867 INFO  [ThreadPoolTaskScheduler-6] ScheduleService:160 - [Pipeline Schedule] Scheduling pipeline pipeline1 with build cause [ManualForcedBuildCause: Forced by anonymous]
+2023-03-08 10:28:16,874 INFO  [ThreadPoolTaskScheduler-6] PipelineRepository:78 - Start updating pipeline timeline
+2023-03-08 10:28:16,880 INFO  [ThreadPoolTaskScheduler-6] PipelineRepository:84 - Pipeline timeline updated
+2023-03-08 10:28:21,593 INFO  [111@MessageListener for WorkFinder] BuildAssignmentService:189 - [Agent Assignment] Assigned job [JobIdentifier[pipeline1, 5, 5, tomcat_setup, 1, tomcat_setup, 6]] to agent [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53]]
+2023-03-08 10:28:31,801 INFO  [qtp533044735-36] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Preparing] for [Build [pipeline1/5/tomcat_setup/1/tomcat_setup/6]]
+2023-03-08 10:28:32,962 INFO  [qtp533044735-31] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Building] for [Build [pipeline1/5/tomcat_setup/1/tomcat_setup/6]]
+2023-03-08 10:28:33,194 INFO  [qtp533044735-40] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting result [Failed] for [Build [pipeline1/5/tomcat_setup/1/tomcat_setup/6]]
+2023-03-08 10:28:33,356 INFO  [qtp533044735-33] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Completing] for [Build [pipeline1/5/tomcat_setup/1/tomcat_setup/6]]
+2023-03-08 10:28:33,494 INFO  [qtp533044735-36] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status and result [Completed, Failed] for [Build [pipeline1/5/tomcat_setup/1/tomcat_setup/6]]
+2023-03-08 10:28:33,499 INFO  [qtp533044735-36] Stage:236 - Stage is being completed by transition id: 36
+2023-03-08 10:29:26,552 INFO  [qtp533044735-38] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@51a06ed6[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@6c0e85d3
+2023-03-08 10:29:26,554 INFO  [qtp533044735-38] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@51a06ed6[displayName=anonymous,username=anonymous] is being processed
+2023-03-08 10:29:26,557 INFO  [qtp533044735-38] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+2023-03-08 10:29:26,566 INFO  [qtp533044735-38] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+2023-03-08 10:29:26,582 INFO  [qtp533044735-38] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:29:26,584 INFO  [qtp533044735-38] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline pipeline1.
+2023-03-08 10:29:26,586 INFO  [qtp533044735-38] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:29:26,587 INFO  [qtp533044735-38] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@51a06ed6[displayName=anonymous,username=anonymous] is completed
+2023-03-08 10:29:34,029 INFO  [qtp533044735-38] PipelineTriggerService:43 - [Pipeline Schedule] [Requested] Manual trigger of pipeline 'pipeline1' requested by anonymous
+2023-03-08 10:29:34,030 INFO  [qtp533044735-38] PipelineTriggerService:46 - [Pipeline Schedule] [Accepted] Manual trigger of pipeline 'pipeline1' accepted for user anonymous
+2023-03-08 10:29:34,032 INFO  [qtp533044735-38] PipelineTriggerService:48 - [Pipeline Schedule] [Processed] Manual trigger of pipeline 'pipeline1' processed with result 'com.thoughtworks.go.serverhealth.ServerHealthState@4d2caea9[description=,expiryTime=<null>,healthStateLevel=OK,message=,timestamp=Wed Mar 08 10:29:34 GMT 2023,type=<HealthStateType ARTIFACTS_DISK_FULL LogScope[GLOBAL, scope=GLOBAL]>]'
+2023-03-08 10:29:34,905 INFO  [ThreadPoolTaskScheduler-4] ScheduleService:160 - [Pipeline Schedule] Scheduling pipeline pipeline1 with build cause [ManualForcedBuildCause: Forced by anonymous]
+2023-03-08 10:29:34,912 INFO  [ThreadPoolTaskScheduler-4] PipelineRepository:78 - Start updating pipeline timeline
+2023-03-08 10:29:34,917 INFO  [ThreadPoolTaskScheduler-4] PipelineRepository:84 - Pipeline timeline updated
+2023-03-08 10:29:44,277 INFO  [111@MessageListener for WorkFinder] BuildAssignmentService:189 - [Agent Assignment] Assigned job [JobIdentifier[pipeline1, 6, 6, tomcat_setup, 1, tomcat_setup, 7]] to agent [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53]]
+2023-03-08 10:29:54,492 INFO  [qtp533044735-40] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Preparing] for [Build [pipeline1/6/tomcat_setup/1/tomcat_setup/7]]
+2023-03-08 10:29:55,931 INFO  [qtp533044735-31] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Building] for [Build [pipeline1/6/tomcat_setup/1/tomcat_setup/7]]
+2023-03-08 10:29:56,188 INFO  [qtp533044735-37] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting result [Passed] for [Build [pipeline1/6/tomcat_setup/1/tomcat_setup/7]]
+2023-03-08 10:29:56,346 INFO  [qtp533044735-36] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Completing] for [Build [pipeline1/6/tomcat_setup/1/tomcat_setup/7]]
+2023-03-08 10:29:56,478 INFO  [qtp533044735-33] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status and result [Completed, Passed] for [Build [pipeline1/6/tomcat_setup/1/tomcat_setup/7]]
+2023-03-08 10:29:56,483 INFO  [qtp533044735-33] Stage:236 - Stage is being completed by transition id: 42
+2023-03-08 10:29:56,805 INFO  [qtp533044735-33] ScheduleService:228 - [Stage Schedule] Scheduling stage stage1 for pipeline pipeline1
+2023-03-08 10:30:06,906 INFO  [111@MessageListener for WorkFinder] BuildAssignmentService:189 - [Agent Assignment] Assigned job [JobIdentifier[pipeline1, 6, 6, stage1, 1, clean, 8]] to agent [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53]]
+2023-03-08 10:30:17,143 INFO  [qtp533044735-27] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Preparing] for [Build [pipeline1/6/stage1/1/clean/8]]
+2023-03-08 10:30:18,326 INFO  [qtp533044735-38] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Building] for [Build [pipeline1/6/stage1/1/clean/8]]
+2023-03-08 10:30:18,498 INFO  [qtp533044735-34] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting result [Failed] for [Build [pipeline1/6/stage1/1/clean/8]]
+2023-03-08 10:30:18,685 INFO  [qtp533044735-37] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Completing] for [Build [pipeline1/6/stage1/1/clean/8]]
+2023-03-08 10:30:18,859 INFO  [qtp533044735-31] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status and result [Completed, Failed] for [Build [pipeline1/6/stage1/1/clean/8]]
+2023-03-08 10:30:18,866 INFO  [qtp533044735-31] Stage:236 - Stage is being completed by transition id: 48
+2023-03-08 10:31:10,751 INFO  [qtp533044735-33] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@5f4fb6eb[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@5359fac1
+2023-03-08 10:31:10,753 INFO  [qtp533044735-33] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@5f4fb6eb[displayName=anonymous,username=anonymous] is being processed
+2023-03-08 10:31:10,755 INFO  [qtp533044735-33] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+2023-03-08 10:31:10,766 INFO  [qtp533044735-33] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+2023-03-08 10:31:10,783 INFO  [qtp533044735-33] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:31:10,784 INFO  [qtp533044735-33] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline pipeline1.
+2023-03-08 10:31:10,785 INFO  [qtp533044735-33] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:31:10,787 INFO  [qtp533044735-33] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@5f4fb6eb[displayName=anonymous,username=anonymous] is completed
+2023-03-08 10:31:17,190 INFO  [qtp533044735-31] PipelineTriggerService:43 - [Pipeline Schedule] [Requested] Manual trigger of pipeline 'pipeline1' requested by anonymous
+2023-03-08 10:31:17,192 INFO  [qtp533044735-31] PipelineTriggerService:46 - [Pipeline Schedule] [Accepted] Manual trigger of pipeline 'pipeline1' accepted for user anonymous
+2023-03-08 10:31:17,194 INFO  [qtp533044735-31] PipelineTriggerService:48 - [Pipeline Schedule] [Processed] Manual trigger of pipeline 'pipeline1' processed with result 'com.thoughtworks.go.serverhealth.ServerHealthState@29bf5b84[description=,expiryTime=<null>,healthStateLevel=OK,message=,timestamp=Wed Mar 08 10:31:17 GMT 2023,type=<HealthStateType ARTIFACTS_DISK_FULL LogScope[GLOBAL, scope=GLOBAL]>]'
+2023-03-08 10:31:17,949 INFO  [ThreadPoolTaskScheduler-8] ScheduleService:160 - [Pipeline Schedule] Scheduling pipeline pipeline1 with build cause [ManualForcedBuildCause: Forced by anonymous]
+2023-03-08 10:31:17,954 INFO  [ThreadPoolTaskScheduler-8] PipelineRepository:78 - Start updating pipeline timeline
+2023-03-08 10:31:17,957 INFO  [ThreadPoolTaskScheduler-8] PipelineRepository:84 - Pipeline timeline updated
+2023-03-08 10:31:19,648 INFO  [111@MessageListener for WorkFinder] BuildAssignmentService:189 - [Agent Assignment] Assigned job [JobIdentifier[pipeline1, 7, 7, tomcat_setup, 1, tomcat_setup, 9]] to agent [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53]]
+2023-03-08 10:31:29,989 INFO  [qtp533044735-36] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Preparing] for [Build [pipeline1/7/tomcat_setup/1/tomcat_setup/9]]
+2023-03-08 10:31:31,170 INFO  [qtp533044735-34] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Building] for [Build [pipeline1/7/tomcat_setup/1/tomcat_setup/9]]
+2023-03-08 10:31:31,309 INFO  [qtp533044735-38] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting result [Failed] for [Build [pipeline1/7/tomcat_setup/1/tomcat_setup/9]]
+2023-03-08 10:31:31,460 INFO  [qtp533044735-40] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Completing] for [Build [pipeline1/7/tomcat_setup/1/tomcat_setup/9]]
+2023-03-08 10:31:31,585 INFO  [qtp533044735-31] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status and result [Completed, Failed] for [Build [pipeline1/7/tomcat_setup/1/tomcat_setup/9]]
+2023-03-08 10:31:31,589 INFO  [qtp533044735-31] Stage:236 - Stage is being completed by transition id: 54
+2023-03-08 10:33:13,630 INFO  [qtp533044735-33] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@6053c853[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@445048e8
+2023-03-08 10:33:13,632 INFO  [qtp533044735-33] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@6053c853[displayName=anonymous,username=anonymous] is being processed
+2023-03-08 10:33:13,635 INFO  [qtp533044735-33] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+2023-03-08 10:33:13,652 ERROR [qtp533044735-33] GoConfigDao:97 - Config update for entity failed
+java.lang.RuntimeException: failed to save : Command is invalid. "ls " should conform to the pattern - \S(.*\S)?
+	at com.thoughtworks.go.config.GoFileConfigDataSource.trySavingEntity(GoFileConfigDataSource.java:508)
+	at com.thoughtworks.go.config.GoFileConfigDataSource.writeEntityWithLock(GoFileConfigDataSource.java:300)
+	at com.thoughtworks.go.config.CachedGoConfig.writeEntityWithLock(CachedGoConfig.java:160)
+	at com.thoughtworks.go.config.GoConfigDao.updateConfig(GoConfigDao.java:95)
+	at com.thoughtworks.go.server.service.GoConfigService.updateConfig(GoConfigService.java:287)
+	at com.thoughtworks.go.server.service.PipelineConfigService.update(PipelineConfigService.java:133)
+	at com.thoughtworks.go.server.service.PipelineConfigService.updatePipelineConfig(PipelineConfigService.java:154)
+	at com.thoughtworks.go.apiv11.admin.pipelineconfig.PipelineConfigControllerV11.update(PipelineConfigControllerV11.java:132)
+	at spark.RouteImpl$1.handle(RouteImpl.java:72)
+	at spark.RouteImpl$1.handle(RouteImpl.java:72)
+	at spark.http.matching.Routes.execute(Routes.java:61)
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:130)
+	at spark.servlet.SparkFilter.doFilter(SparkFilter.java:173)
+	at com.thoughtworks.go.spark.SparkPreFilter.doFilter(SparkPreFilter.java:63)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:626)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:618)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:229)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:81)
+	at org.tuckey.web.filters.urlrewrite.NormalRewrittenUrl.doRewrite(NormalRewrittenUrl.java:213)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:171)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:381)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at com.thoughtworks.go.server.web.FlashLoadingFilter.doFilterInternal(FlashLoadingFilter.java:38)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:208)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:185)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at com.thoughtworks.go.server.newsecurity.filters.DenyIfRefererIsNotFilesFilter.doFilterInternal(DenyIfRefererIsNotFilesFilter.java:52)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:185)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at com.thoughtworks.go.server.newsecurity.filters.VerifyAuthorityFilter.doFilterInternal(VerifyAuthorityFilter.java:57)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:185)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at com.thoughtworks.go.server.newsecurity.filters.AbstractUserEnabledCheckFilter.doFilterInternal(AbstractUserEnabledCheckFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:185)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.thoughtworks.go.server.newsecurity.filters.ThreadLocalUserFilter.doFilterInternal(ThreadLocalUserFilter.java:41)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at com.thoughtworks.go.server.newsecurity.filters.AccessTokenAuthenticationFilter.filterWhenSecurityDisabled(AccessTokenAuthenticationFilter.java:170)
+	at com.thoughtworks.go.server.newsecurity.filters.AccessTokenAuthenticationFilter.doFilterInternal(AccessTokenAuthenticationFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.thoughtworks.go.server.newsecurity.filters.AbstractBasicAuthenticationFilter.filterWhenSecurityDisabled(AbstractBasicAuthenticationFilter.java:112)
+	at com.thoughtworks.go.server.newsecurity.filters.AbstractBasicAuthenticationFilter.doFilterInternal(AbstractBasicAuthenticationFilter.java:70)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.thoughtworks.go.server.newsecurity.filters.AssumeAnonymousUserFilter.doFilterInternal(AssumeAnonymousUserFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.thoughtworks.go.server.newsecurity.filters.AbstractReAuthenticationFilter.doFilterInternal(AbstractReAuthenticationFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.thoughtworks.go.server.newsecurity.filters.InvalidateAuthenticationOnSecurityConfigChangeFilter.doFilterInternal(InvalidateAuthenticationOnSecurityConfigChangeFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:185)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:208)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:185)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at com.thoughtworks.go.server.newsecurity.filters.AlwaysCreateSessionFilter.doFilterInternal(AlwaysCreateSessionFilter.java:40)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.thoughtworks.go.server.newsecurity.filters.AbstractSessionReduceIdleTimeoutFilter.doFilterInternal(AbstractSessionReduceIdleTimeoutFilter.java:44)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:185)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.thoughtworks.go.server.newsecurity.filters.ModeAwareFilter.doFilter(ModeAwareFilter.java:79)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.thoughtworks.go.server.web.BackupFilter.doFilterInternal(BackupFilter.java:79)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at com.thoughtworks.go.server.newsecurity.filterchains.MainFilterChain.doFilter(MainFilterChain.java:79)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at com.thoughtworks.go.server.web.DefaultHeadersFilter.doFilter(DefaultHeadersFilter.java:51)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:234)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-03-08 10:33:13,654 INFO  [qtp533044735-33] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@6053c853[displayName=anonymous,username=anonymous] is completed
+2023-03-08 10:33:13,656 ERROR [qtp533044735-33] PipelineConfigService:140 - failed to save : Command is invalid. "ls " should conform to the pattern - \S(.*\S)?
+java.lang.RuntimeException: failed to save : Command is invalid. "ls " should conform to the pattern - \S(.*\S)?
+	at com.thoughtworks.go.config.GoFileConfigDataSource.trySavingEntity(GoFileConfigDataSource.java:508)
+	at com.thoughtworks.go.config.GoFileConfigDataSource.writeEntityWithLock(GoFileConfigDataSource.java:300)
+	at com.thoughtworks.go.config.CachedGoConfig.writeEntityWithLock(CachedGoConfig.java:160)
+	at com.thoughtworks.go.config.GoConfigDao.updateConfig(GoConfigDao.java:95)
+	at com.thoughtworks.go.server.service.GoConfigService.updateConfig(GoConfigService.java:287)
+	at com.thoughtworks.go.server.service.PipelineConfigService.update(PipelineConfigService.java:133)
+	at com.thoughtworks.go.server.service.PipelineConfigService.updatePipelineConfig(PipelineConfigService.java:154)
+	at com.thoughtworks.go.apiv11.admin.pipelineconfig.PipelineConfigControllerV11.update(PipelineConfigControllerV11.java:132)
+	at spark.RouteImpl$1.handle(RouteImpl.java:72)
+	at spark.RouteImpl$1.handle(RouteImpl.java:72)
+	at spark.http.matching.Routes.execute(Routes.java:61)
+	at spark.http.matching.MatcherFilter.doFilter(MatcherFilter.java:130)
+	at spark.servlet.SparkFilter.doFilter(SparkFilter.java:173)
+	at com.thoughtworks.go.spark.SparkPreFilter.doFilter(SparkPreFilter.java:63)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:626)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:618)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:229)
+	at org.eclipse.jetty.server.Dispatcher.forward(Dispatcher.java:81)
+	at org.tuckey.web.filters.urlrewrite.NormalRewrittenUrl.doRewrite(NormalRewrittenUrl.java:213)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.handleRewrite(RuleChain.java:171)
+	at org.tuckey.web.filters.urlrewrite.RuleChain.doRules(RuleChain.java:145)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriter.processRequest(UrlRewriter.java:92)
+	at org.tuckey.web.filters.urlrewrite.UrlRewriteFilter.doFilter(UrlRewriteFilter.java:381)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at com.thoughtworks.go.server.web.FlashLoadingFilter.doFilterInternal(FlashLoadingFilter.java:38)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:208)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:185)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at com.thoughtworks.go.server.newsecurity.filters.DenyIfRefererIsNotFilesFilter.doFilterInternal(DenyIfRefererIsNotFilesFilter.java:52)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:185)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at com.thoughtworks.go.server.newsecurity.filters.VerifyAuthorityFilter.doFilterInternal(VerifyAuthorityFilter.java:57)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:185)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at com.thoughtworks.go.server.newsecurity.filters.AbstractUserEnabledCheckFilter.doFilterInternal(AbstractUserEnabledCheckFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:185)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.thoughtworks.go.server.newsecurity.filters.ThreadLocalUserFilter.doFilterInternal(ThreadLocalUserFilter.java:41)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at com.thoughtworks.go.server.newsecurity.filters.AccessTokenAuthenticationFilter.filterWhenSecurityDisabled(AccessTokenAuthenticationFilter.java:170)
+	at com.thoughtworks.go.server.newsecurity.filters.AccessTokenAuthenticationFilter.doFilterInternal(AccessTokenAuthenticationFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.thoughtworks.go.server.newsecurity.filters.AbstractBasicAuthenticationFilter.filterWhenSecurityDisabled(AbstractBasicAuthenticationFilter.java:112)
+	at com.thoughtworks.go.server.newsecurity.filters.AbstractBasicAuthenticationFilter.doFilterInternal(AbstractBasicAuthenticationFilter.java:70)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.thoughtworks.go.server.newsecurity.filters.AssumeAnonymousUserFilter.doFilterInternal(AssumeAnonymousUserFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.thoughtworks.go.server.newsecurity.filters.AbstractReAuthenticationFilter.doFilterInternal(AbstractReAuthenticationFilter.java:66)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.thoughtworks.go.server.newsecurity.filters.InvalidateAuthenticationOnSecurityConfigChangeFilter.doFilterInternal(InvalidateAuthenticationOnSecurityConfigChangeFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:185)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:208)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:185)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317)
+	at com.thoughtworks.go.server.newsecurity.filters.AlwaysCreateSessionFilter.doFilterInternal(AlwaysCreateSessionFilter.java:40)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.thoughtworks.go.server.newsecurity.filters.AbstractSessionReduceIdleTimeoutFilter.doFilterInternal(AbstractSessionReduceIdleTimeoutFilter.java:44)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:185)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.thoughtworks.go.server.newsecurity.filters.ModeAwareFilter.doFilter(ModeAwareFilter.java:79)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at com.thoughtworks.go.server.web.BackupFilter.doFilterInternal(BackupFilter.java:79)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at com.thoughtworks.go.server.newsecurity.filterchains.MainFilterChain.doFilter(MainFilterChain.java:79)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at com.thoughtworks.go.server.web.DefaultHeadersFilter.doFilter(DefaultHeadersFilter.java:51)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1626)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:552)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:772)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1440)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:505)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1355)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:234)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:487)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:732)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:479)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2023-03-08 10:33:36,371 INFO  [qtp533044735-43] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@621d8a34[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@50531143
+2023-03-08 10:33:36,373 INFO  [qtp533044735-43] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@621d8a34[displayName=anonymous,username=anonymous] is being processed
+2023-03-08 10:33:36,377 INFO  [qtp533044735-43] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+2023-03-08 10:33:36,387 INFO  [qtp533044735-43] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+2023-03-08 10:33:36,410 INFO  [qtp533044735-43] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:33:36,411 INFO  [qtp533044735-43] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline pipeline1.
+2023-03-08 10:33:36,412 INFO  [qtp533044735-43] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:33:36,413 INFO  [qtp533044735-43] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@621d8a34[displayName=anonymous,username=anonymous] is completed
+2023-03-08 10:33:43,899 INFO  [qtp533044735-43] PipelineTriggerService:43 - [Pipeline Schedule] [Requested] Manual trigger of pipeline 'pipeline1' requested by anonymous
+2023-03-08 10:33:43,902 INFO  [qtp533044735-43] PipelineTriggerService:46 - [Pipeline Schedule] [Accepted] Manual trigger of pipeline 'pipeline1' accepted for user anonymous
+2023-03-08 10:33:43,904 INFO  [qtp533044735-43] PipelineTriggerService:48 - [Pipeline Schedule] [Processed] Manual trigger of pipeline 'pipeline1' processed with result 'com.thoughtworks.go.serverhealth.ServerHealthState@2e09672f[description=,expiryTime=<null>,healthStateLevel=OK,message=,timestamp=Wed Mar 08 10:33:43 GMT 2023,type=<HealthStateType ARTIFACTS_DISK_FULL LogScope[GLOBAL, scope=GLOBAL]>]'
+2023-03-08 10:33:44,998 INFO  [ThreadPoolTaskScheduler-1] ScheduleService:160 - [Pipeline Schedule] Scheduling pipeline pipeline1 with build cause [ManualForcedBuildCause: Forced by anonymous]
+2023-03-08 10:33:45,004 INFO  [ThreadPoolTaskScheduler-1] PipelineRepository:78 - Start updating pipeline timeline
+2023-03-08 10:33:45,007 INFO  [ThreadPoolTaskScheduler-1] PipelineRepository:84 - Pipeline timeline updated
+2023-03-08 10:33:52,869 INFO  [111@MessageListener for WorkFinder] BuildAssignmentService:189 - [Agent Assignment] Assigned job [JobIdentifier[pipeline1, 8, 8, tomcat_setup, 1, tomcat_setup, 10]] to agent [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53]]
+2023-03-08 10:34:03,075 INFO  [qtp533044735-31] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Preparing] for [Build [pipeline1/8/tomcat_setup/1/tomcat_setup/10]]
+2023-03-08 10:34:04,591 INFO  [qtp533044735-34] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Building] for [Build [pipeline1/8/tomcat_setup/1/tomcat_setup/10]]
+2023-03-08 10:34:04,864 INFO  [qtp533044735-38] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting result [Failed] for [Build [pipeline1/8/tomcat_setup/1/tomcat_setup/10]]
+2023-03-08 10:34:05,013 INFO  [qtp533044735-36] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Completing] for [Build [pipeline1/8/tomcat_setup/1/tomcat_setup/10]]
+2023-03-08 10:34:05,147 INFO  [qtp533044735-27] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status and result [Completed, Failed] for [Build [pipeline1/8/tomcat_setup/1/tomcat_setup/10]]
+2023-03-08 10:34:05,151 INFO  [qtp533044735-27] Stage:236 - Stage is being completed by transition id: 60
+2023-03-08 10:36:45,439 INFO  [qtp533044735-42] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@36f115ee[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@1795dc1f
+2023-03-08 10:36:45,441 INFO  [qtp533044735-42] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@36f115ee[displayName=anonymous,username=anonymous] is being processed
+2023-03-08 10:36:45,443 INFO  [qtp533044735-42] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+2023-03-08 10:36:45,454 INFO  [qtp533044735-42] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+2023-03-08 10:36:45,475 INFO  [qtp533044735-42] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:36:45,477 INFO  [qtp533044735-42] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline pipeline1.
+2023-03-08 10:36:45,478 INFO  [qtp533044735-42] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:36:45,480 INFO  [qtp533044735-42] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@36f115ee[displayName=anonymous,username=anonymous] is completed
+2023-03-08 10:36:48,326 INFO  [qtp533044735-34] PipelineTriggerService:43 - [Pipeline Schedule] [Requested] Manual trigger of pipeline 'pipeline1' requested by anonymous
+2023-03-08 10:36:48,328 INFO  [qtp533044735-34] PipelineTriggerService:46 - [Pipeline Schedule] [Accepted] Manual trigger of pipeline 'pipeline1' accepted for user anonymous
+2023-03-08 10:36:48,330 INFO  [qtp533044735-34] PipelineTriggerService:48 - [Pipeline Schedule] [Processed] Manual trigger of pipeline 'pipeline1' processed with result 'com.thoughtworks.go.serverhealth.ServerHealthState@6942876c[description=,expiryTime=<null>,healthStateLevel=OK,message=,timestamp=Wed Mar 08 10:36:48 GMT 2023,type=<HealthStateType ARTIFACTS_DISK_FULL LogScope[GLOBAL, scope=GLOBAL]>]'
+2023-03-08 10:36:50,056 INFO  [ThreadPoolTaskScheduler-3] ScheduleService:160 - [Pipeline Schedule] Scheduling pipeline pipeline1 with build cause [ManualForcedBuildCause: Forced by anonymous]
+2023-03-08 10:36:50,063 INFO  [ThreadPoolTaskScheduler-3] PipelineRepository:78 - Start updating pipeline timeline
+2023-03-08 10:36:50,067 INFO  [ThreadPoolTaskScheduler-3] PipelineRepository:84 - Pipeline timeline updated
+2023-03-08 10:36:56,552 INFO  [111@MessageListener for WorkFinder] BuildAssignmentService:189 - [Agent Assignment] Assigned job [JobIdentifier[pipeline1, 9, 9, tomcat_setup, 1, tomcat_setup, 11]] to agent [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53]]
+2023-03-08 10:37:06,760 INFO  [qtp533044735-39] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Preparing] for [Build [pipeline1/9/tomcat_setup/1/tomcat_setup/11]]
+2023-03-08 10:37:08,234 INFO  [qtp533044735-30] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Building] for [Build [pipeline1/9/tomcat_setup/1/tomcat_setup/11]]
+2023-03-08 10:37:08,379 INFO  [qtp533044735-42] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting result [Failed] for [Build [pipeline1/9/tomcat_setup/1/tomcat_setup/11]]
+2023-03-08 10:37:08,590 INFO  [qtp533044735-28] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Completing] for [Build [pipeline1/9/tomcat_setup/1/tomcat_setup/11]]
+2023-03-08 10:37:08,738 INFO  [qtp533044735-40] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status and result [Completed, Failed] for [Build [pipeline1/9/tomcat_setup/1/tomcat_setup/11]]
+2023-03-08 10:37:08,745 INFO  [qtp533044735-40] Stage:236 - Stage is being completed by transition id: 66
+2023-03-08 10:42:18,078 INFO  [qtp533044735-30] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@1cd0debf[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@332fbb66
+2023-03-08 10:42:18,080 INFO  [qtp533044735-30] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@1cd0debf[displayName=anonymous,username=anonymous] is being processed
+2023-03-08 10:42:18,083 INFO  [qtp533044735-30] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+2023-03-08 10:42:18,092 INFO  [qtp533044735-30] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+2023-03-08 10:42:18,108 INFO  [qtp533044735-30] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:42:18,110 INFO  [qtp533044735-30] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline pipeline1.
+2023-03-08 10:42:18,112 INFO  [qtp533044735-30] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:42:18,113 INFO  [qtp533044735-30] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@1cd0debf[displayName=anonymous,username=anonymous] is completed
+2023-03-08 10:43:48,338 INFO  [qtp533044735-30] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@47c26b66[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@62cd5e3
+2023-03-08 10:43:48,340 INFO  [qtp533044735-30] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@47c26b66[displayName=anonymous,username=anonymous] is being processed
+2023-03-08 10:43:48,343 INFO  [qtp533044735-30] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+2023-03-08 10:43:48,353 INFO  [qtp533044735-30] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+2023-03-08 10:43:48,375 INFO  [qtp533044735-30] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:43:48,377 INFO  [qtp533044735-30] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline pipeline1.
+2023-03-08 10:43:48,379 INFO  [qtp533044735-30] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:43:48,380 INFO  [qtp533044735-30] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@47c26b66[displayName=anonymous,username=anonymous] is completed
+2023-03-08 10:44:36,720 INFO  [qtp533044735-40] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@2f332802[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@72daa011
+2023-03-08 10:44:36,722 INFO  [qtp533044735-40] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@2f332802[displayName=anonymous,username=anonymous] is being processed
+2023-03-08 10:44:36,724 INFO  [qtp533044735-40] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+2023-03-08 10:44:36,732 INFO  [qtp533044735-40] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+2023-03-08 10:44:36,744 INFO  [qtp533044735-40] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:44:36,746 INFO  [qtp533044735-40] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline pipeline1.
+2023-03-08 10:44:36,747 INFO  [qtp533044735-40] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:44:36,748 INFO  [qtp533044735-40] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@2f332802[displayName=anonymous,username=anonymous] is completed
+2023-03-08 10:44:50,790 INFO  [qtp533044735-30] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@1c54a9dd[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.UpdatePipelineConfigCommand@75525be9
+2023-03-08 10:44:50,792 INFO  [qtp533044735-30] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@1c54a9dd[displayName=anonymous,username=anonymous] is being processed
+2023-03-08 10:44:50,797 INFO  [qtp533044735-30] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+2023-03-08 10:44:50,812 INFO  [qtp533044735-30] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+2023-03-08 10:44:50,828 INFO  [qtp533044735-30] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:44:50,830 INFO  [qtp533044735-30] BuildAssignmentService:121 - [Configuration Changed] Removing deleted jobs for pipeline pipeline1.
+2023-03-08 10:44:50,831 INFO  [qtp533044735-30] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.PipelineConfig config listeners
+2023-03-08 10:44:50,832 INFO  [qtp533044735-30] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@1c54a9dd[displayName=anonymous,username=anonymous] is completed
+2023-03-08 10:45:47,475 INFO  [qtp533044735-26] PipelineTriggerService:43 - [Pipeline Schedule] [Requested] Manual trigger of pipeline 'pipeline1' requested by anonymous
+2023-03-08 10:45:47,476 INFO  [qtp533044735-26] PipelineTriggerService:46 - [Pipeline Schedule] [Accepted] Manual trigger of pipeline 'pipeline1' accepted for user anonymous
+2023-03-08 10:45:47,478 INFO  [qtp533044735-26] PipelineTriggerService:48 - [Pipeline Schedule] [Processed] Manual trigger of pipeline 'pipeline1' processed with result 'com.thoughtworks.go.serverhealth.ServerHealthState@512c4afe[description=,expiryTime=<null>,healthStateLevel=OK,message=,timestamp=Wed Mar 08 10:45:47 GMT 2023,type=<HealthStateType ARTIFACTS_DISK_FULL LogScope[GLOBAL, scope=GLOBAL]>]'
+2023-03-08 10:45:49,201 INFO  [ThreadPoolTaskScheduler-1] ScheduleService:160 - [Pipeline Schedule] Scheduling pipeline pipeline1 with build cause [ManualForcedBuildCause: Forced by anonymous]
+2023-03-08 10:45:49,205 INFO  [ThreadPoolTaskScheduler-1] PipelineRepository:78 - Start updating pipeline timeline
+2023-03-08 10:45:49,209 INFO  [ThreadPoolTaskScheduler-1] PipelineRepository:84 - Pipeline timeline updated
+2023-03-08 10:46:02,870 INFO  [111@MessageListener for WorkFinder] BuildAssignmentService:189 - [Agent Assignment] Assigned job [JobIdentifier[pipeline1, 10, 10, stage1, 1, clean, 12]] to agent [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53]]
+2023-03-08 10:46:13,071 INFO  [qtp533044735-34] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Preparing] for [Build [pipeline1/10/stage1/1/clean/12]]
+2023-03-08 10:46:14,229 INFO  [qtp533044735-40] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Building] for [Build [pipeline1/10/stage1/1/clean/12]]
+2023-03-08 10:46:14,401 INFO  [qtp533044735-28] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting result [Failed] for [Build [pipeline1/10/stage1/1/clean/12]]
+2023-03-08 10:46:14,567 INFO  [qtp533044735-31] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status [Completing] for [Build [pipeline1/10/stage1/1/clean/12]]
+2023-03-08 10:46:14,704 INFO  [qtp533044735-43] BuildRepositoryRemoteImpl:96 - [Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53, f5fb9958-3e29-47f3-a0fd-c3e5e262569a]] is reporting status and result [Completed, Failed] for [Build [pipeline1/10/stage1/1/clean/12]]
+2023-03-08 10:46:14,708 INFO  [qtp533044735-43] Stage:236 - Stage is being completed by transition id: 72

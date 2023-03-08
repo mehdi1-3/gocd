@@ -1,0 +1,1617 @@
+2023-03-08 10:01:14,172 INFO  [main] ClassPathXmlApplicationContext:583 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@7193666c: startup date [Wed Mar 08 10:01:14 GMT 2023]; root of context hierarchy
+2023-03-08 10:01:14,198 INFO  [main] XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext.xml]
+2023-03-08 10:01:14,314 INFO  [main] XmlBeanDefinitionReader:317 - Loading XML bean definitions from class path resource [applicationContext-plugin-infra.xml]
+2023-03-08 10:01:14,452 INFO  [main] DefaultListableBeanFactory:821 - Overriding bean definition for bean 'pluginLoader' with a different definition: replacing [Generic bean: class [com.thoughtworks.go.plugin.infra.PluginLoader]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in URL [jar:onejar:lib/go-plugin-infra-22.3.0-15301.jar!/com/thoughtworks/go/plugin/infra/PluginLoader.class]] with [Generic bean: class [com.thoughtworks.go.plugin.infra.PluginLoader]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in class path resource [applicationContext-plugin-infra.xml]]
+2023-03-08 10:01:14,598 INFO  [main] AutowiredAnnotationBeanPostProcessor:156 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2023-03-08 10:01:14,708 INFO  [main] AgentStatusHttpd:90 - Agent status HTTP API server running on http://localhost:8152.
+2023-03-08 10:01:15,589 INFO  [main] ThreadPoolTaskScheduler:166 - Initializing ExecutorService 'scheduler'
+2023-03-08 10:01:15,904 INFO  [main] DefaultPluginJarChangeListener:67 - Plugin load starting: /go/plugins/bundled/gocd-yum-repository-poller-plugin.jar
+2023-03-08 10:01:16,074 INFO  [main] DefaultPluginJarChangeListener:74 - Plugin load finished: /go/plugins/bundled/gocd-yum-repository-poller-plugin.jar
+2023-03-08 10:01:16,669 INFO  [scheduler-1] SslInfrastructureService:78 - [Agent Registration] Starting to register agent.
+2023-03-08 10:01:16,671 INFO  [scheduler-1] SslInfrastructureService:88 - [Agent Registration] Fetching token from server.
+2023-03-08 10:01:16,717 INFO  [scheduler-1] TokenRequester:56 - The server has generated token for the agent.
+2023-03-08 10:01:16,725 INFO  [scheduler-1] SslInfrastructureService:91 - [Agent Registration] Got a token from server.
+2023-03-08 10:01:17,191 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:01:17,193 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 14 common frames omitted
+2023-03-08 10:01:22,256 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:01:22,257 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 14 common frames omitted
+2023-03-08 10:01:27,313 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:01:27,314 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 14 common frames omitted
+2023-03-08 10:01:32,366 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:01:32,367 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 14 common frames omitted
+2023-03-08 10:01:37,419 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:01:37,421 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 14 common frames omitted
+2023-03-08 10:01:42,474 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:01:42,476 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 14 common frames omitted
+2023-03-08 10:01:47,536 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:01:47,537 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 14 common frames omitted
+2023-03-08 10:01:52,585 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:01:52,587 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 14 common frames omitted
+2023-03-08 10:01:57,646 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:01:57,647 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 14 common frames omitted
+2023-03-08 10:02:02,703 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:02:02,704 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 14 common frames omitted
+2023-03-08 10:02:07,786 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:02:07,787 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 14 common frames omitted
+2023-03-08 10:02:12,846 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:02:12,847 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 14 common frames omitted
+2023-03-08 10:02:17,935 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:02:17,937 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 14 common frames omitted
+2023-03-08 10:02:23,018 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:02:23,020 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 14 common frames omitted
+2023-03-08 10:02:28,107 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:02:28,109 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 14 common frames omitted
+2023-03-08 10:02:33,165 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:02:33,166 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 14 common frames omitted
+2023-03-08 10:02:38,243 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:02:38,244 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:02:43,304 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:02:43,305 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:02:48,355 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:02:48,357 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:02:53,436 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:02:53,438 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:02:58,493 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:02:58,494 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:03:03,578 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:03:03,580 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:03:08,646 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:03:08,648 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:03:13,698 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:03:13,699 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:03:18,751 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:03:18,753 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:03:23,806 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:03:23,808 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:03:28,894 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:03:28,896 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:03:33,947 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:03:33,949 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:03:39,034 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:03:39,036 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:03:44,105 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:03:44,107 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:03:49,160 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:03:49,162 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:03:54,221 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:03:54,223 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:03:59,294 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:03:59,296 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:04:04,380 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:04:04,382 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:04:09,462 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:04:09,463 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:04:14,547 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:04:14,549 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:04:19,619 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:04:19,620 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:04:24,693 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:04:24,694 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:04:29,746 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:04:29,749 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:04:34,823 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:04:34,825 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:04:39,874 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:04:39,875 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:04:44,962 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:04:44,963 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:04:50,045 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:04:50,047 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:04:55,135 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:04:55,137 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:05:00,212 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:05:00,213 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:05:05,295 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:05:05,297 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:05:10,390 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:05:10,394 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:05:15,471 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:05:15,472 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:05:20,528 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:05:20,530 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:05:25,584 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:05:25,585 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:05:30,649 ERROR [scheduler-2] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:05:30,654 ERROR [scheduler-2] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:05:35,720 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:05:35,721 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:05:40,795 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:05:40,797 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:05:45,855 ERROR [scheduler-3] RemotingClient:162 - Server responded to action `ping` with: status[403 Forbidden], body[]
+2023-03-08 10:05:45,857 ERROR [scheduler-3] AgentHTTPClientController:104 - Error occurred when agent tried to ping server: 
+java.lang.RuntimeException: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:117)
+	at com.thoughtworks.go.agent.RemotingClient.ping(RemotingClient.java:73)
+	at com.thoughtworks.go.agent.AgentHTTPClientController.ping(AgentHTTPClientController.java:99)
+	at jdk.internal.reflect.GeneratedMethodAccessor13.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:65)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(Unknown Source)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.client.ClientProtocolException: The server returned status code 403. Possible reasons include:
+   - This agent has been deleted from the configuration
+   - This agent is pending approval
+	at com.thoughtworks.go.agent.RemotingClient.validateResponse(RemotingClient.java:140)
+	at com.thoughtworks.go.agent.RemotingClient.post(RemotingClient.java:113)
+	... 13 common frames omitted
+2023-03-08 10:05:49,511 INFO  [scheduler-1] SslInfrastructureService:170 - This agent is now approved by the server.
+2023-03-08 10:05:49,513 INFO  [scheduler-1] SslInfrastructureService:119 - [Agent Registration] Retrieved registration from Go server.
+2023-03-08 10:05:49,572 INFO  [scheduler-1] SslInfrastructureService:81 - [Agent Registration] Successfully registered agent.
+2023-03-08 10:05:49,583 INFO  [scheduler-1] AgentHTTPClientController:129 - About to get cookie from the server.
+2023-03-08 10:05:49,643 INFO  [scheduler-1] AgentHTTPClientController:132 - Got cookie: f5fb9958-3e29-47f3-a0fd-c3e5e262569a
+2023-03-08 10:14:53,886 INFO  [scheduler-2] HttpService:125 - Got back 200 from server
+2023-03-08 10:14:53,889 INFO  [scheduler-2] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Preparing] to Go Server for Build [pipeline1/1/stage1/1/clean/1]
+2023-03-08 10:14:56,088 INFO  [scheduler-2] HttpService:125 - Got back 200 from server
+2023-03-08 10:14:56,090 INFO  [scheduler-2] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Building] to Go Server for Build [pipeline1/1/stage1/1/clean/1]
+2023-03-08 10:14:56,126 INFO  [scheduler-2] CommandLine:316 - Running command: mvn clean
+2023-03-08 10:14:56,129 ERROR [scheduler-2] ProcessManager:101 - [Command Line] Failed executing [mvn clean]
+2023-03-08 10:14:56,130 ERROR [scheduler-2] ProcessManager:102 - [Command Line] Agent's Environment Variables: {PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin, WRAPPER_PID=89, WRAPPER_WORKING_DIR=/go, AGENT_STARTUP_ARGS=-Xms128m -Xmx256m -Dgo.console.stdout=true  -Dgo.console.stdout=true , WRAPPER_JAVA_VERSION_MINOR=0, WRAPPER_OS=linux, WRAPPER_HOSTNAME=d32686145094, LANG=en_US.UTF-8, WRAPPER_BITS=64, WRAPPER_BIN_DIR=/go-agent/wrapper, WRAPPER_VERSION=3.5.50, WRAPPER_BASE_NAME=wrapper, WRAPPER_HOST_NAME=d32686145094, WRAPPER_CONF_DIR=/go-agent/wrapper-config, WRAPPER_LANG=en, WRAPPER_JAVA_VENDOR=OpenJDK, PWD=/, WRAPPER_FILE_SEPARATOR=/, LANGUAGE=en_US:en, GOCD_AGENT_JVM_OPTS=, AGENT_KEY=123456789, WRAPPER_INIT_DIR=/, GO_SERVER_URL=http://172.20.10.3:8153/go, GO_JAVA_HOME=/gocd-jre, WRAPPER_PATH_SEPARATOR=:, WRAPPER_EDITION=Standard, HOSTNAME=d32686145094, WRAPPER_JAVA_VERSION_MAJOR=17, LC_ALL=en_US.UTF-8, WRAPPER_JAVA_VERSION_REVISION=5, WRAPPER_RUN_MODE=console, WRAPPER_ARCH=x86, WRAPPER_JAVA_VERSION=17.0.5, HOME=/home/go, SHLVL=1}
+2023-03-08 10:14:56,132 WARN  [scheduler-2] CommandLine:48 - Error happened while attempting to execute 'mvn clean'. 
+Please make sure [mvn] can be executed on this agent.
+
+2023-03-08 10:14:56,133 WARN  [scheduler-2] CommandLine:48 - [Debug Information] Environment variable PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2023-03-08 10:14:56,133 ERROR [scheduler-2] CommandLine:336 - [Command Line] Error happened while attempting to execute 'mvn clean'. 
+Please make sure [mvn] can be executed on this agent.
+. Path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2023-03-08 10:14:56,135 WARN  [scheduler-2] BaseCommandBuilder:113 - exec error
+2023-03-08 10:14:56,136 WARN  [scheduler-2] BaseCommandBuilder:109 - Could not execute command: mvn clean
+2023-03-08 10:14:56,173 INFO  [scheduler-2] HttpService:125 - Got back 200 from server
+2023-03-08 10:14:56,174 INFO  [scheduler-2] DefaultGoPublisher:95 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/1/stage1/1/clean/1]
+2023-03-08 10:14:56,340 INFO  [scheduler-2] HttpService:125 - Got back 200 from server
+2023-03-08 10:14:56,343 INFO  [scheduler-2] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Completing] to Go Server for Build [pipeline1/1/stage1/1/clean/1]
+2023-03-08 10:14:56,419 INFO  [scheduler-2] ArtifactsPublisher:68 - Pluggable metadata folder is empty.
+2023-03-08 10:14:56,420 INFO  [scheduler-2] DefaultGoPublisher:101 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/1/stage1/1/clean/1]
+2023-03-08 10:14:56,462 INFO  [scheduler-2] HttpService:125 - Got back 200 from server
+2023-03-08 10:14:56,637 INFO  [scheduler-2] DefaultGoPublisher:83 - Stopping Transmission for Build [pipeline1/1/stage1/1/clean/1]
+2023-03-08 10:15:37,079 INFO  [scheduler-2] HttpService:125 - Got back 200 from server
+2023-03-08 10:15:37,080 INFO  [scheduler-2] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Preparing] to Go Server for Build [pipeline1/1/stage1/2/clean/2]
+2023-03-08 10:15:38,433 INFO  [scheduler-2] HttpService:125 - Got back 200 from server
+2023-03-08 10:15:38,435 INFO  [scheduler-2] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Building] to Go Server for Build [pipeline1/1/stage1/2/clean/2]
+2023-03-08 10:15:38,470 INFO  [scheduler-2] CommandLine:316 - Running command: mvn clean
+2023-03-08 10:15:38,472 ERROR [scheduler-2] ProcessManager:101 - [Command Line] Failed executing [mvn clean]
+2023-03-08 10:15:38,473 ERROR [scheduler-2] ProcessManager:102 - [Command Line] Agent's Environment Variables: {PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin, WRAPPER_PID=89, WRAPPER_WORKING_DIR=/go, AGENT_STARTUP_ARGS=-Xms128m -Xmx256m -Dgo.console.stdout=true  -Dgo.console.stdout=true , WRAPPER_JAVA_VERSION_MINOR=0, WRAPPER_OS=linux, WRAPPER_HOSTNAME=d32686145094, LANG=en_US.UTF-8, WRAPPER_BITS=64, WRAPPER_BIN_DIR=/go-agent/wrapper, WRAPPER_VERSION=3.5.50, WRAPPER_BASE_NAME=wrapper, WRAPPER_HOST_NAME=d32686145094, WRAPPER_CONF_DIR=/go-agent/wrapper-config, WRAPPER_LANG=en, WRAPPER_JAVA_VENDOR=OpenJDK, PWD=/, WRAPPER_FILE_SEPARATOR=/, LANGUAGE=en_US:en, GOCD_AGENT_JVM_OPTS=, AGENT_KEY=123456789, WRAPPER_INIT_DIR=/, GO_SERVER_URL=http://172.20.10.3:8153/go, GO_JAVA_HOME=/gocd-jre, WRAPPER_PATH_SEPARATOR=:, WRAPPER_EDITION=Standard, HOSTNAME=d32686145094, WRAPPER_JAVA_VERSION_MAJOR=17, LC_ALL=en_US.UTF-8, WRAPPER_JAVA_VERSION_REVISION=5, WRAPPER_RUN_MODE=console, WRAPPER_ARCH=x86, WRAPPER_JAVA_VERSION=17.0.5, HOME=/home/go, SHLVL=1}
+2023-03-08 10:15:38,474 WARN  [scheduler-2] CommandLine:48 - Error happened while attempting to execute 'mvn clean'. 
+Please make sure [mvn] can be executed on this agent.
+
+2023-03-08 10:15:38,475 WARN  [scheduler-2] CommandLine:48 - [Debug Information] Environment variable PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2023-03-08 10:15:38,476 ERROR [scheduler-2] CommandLine:336 - [Command Line] Error happened while attempting to execute 'mvn clean'. 
+Please make sure [mvn] can be executed on this agent.
+. Path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2023-03-08 10:15:38,477 WARN  [scheduler-2] BaseCommandBuilder:113 - exec error
+2023-03-08 10:15:38,478 WARN  [scheduler-2] BaseCommandBuilder:109 - Could not execute command: mvn clean
+2023-03-08 10:15:38,667 INFO  [scheduler-2] HttpService:125 - Got back 200 from server
+2023-03-08 10:15:38,668 INFO  [scheduler-2] DefaultGoPublisher:95 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/1/stage1/2/clean/2]
+2023-03-08 10:15:38,902 INFO  [scheduler-2] HttpService:125 - Got back 200 from server
+2023-03-08 10:15:38,903 INFO  [scheduler-2] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Completing] to Go Server for Build [pipeline1/1/stage1/2/clean/2]
+2023-03-08 10:15:38,936 INFO  [scheduler-2] ArtifactsPublisher:68 - Pluggable metadata folder is empty.
+2023-03-08 10:15:38,937 INFO  [scheduler-2] DefaultGoPublisher:101 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/1/stage1/2/clean/2]
+2023-03-08 10:15:39,098 INFO  [scheduler-2] HttpService:125 - Got back 200 from server
+2023-03-08 10:15:39,578 INFO  [scheduler-2] DefaultGoPublisher:83 - Stopping Transmission for Build [pipeline1/1/stage1/2/clean/2]
+2023-03-08 10:22:32,566 INFO  [scheduler-2] HttpService:125 - Got back 200 from server
+2023-03-08 10:22:32,567 INFO  [scheduler-2] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Preparing] to Go Server for Build [pipeline1/2/tomcat_setup/1/tomcat_setup/3]
+2023-03-08 10:22:33,832 INFO  [scheduler-2] HttpService:125 - Got back 200 from server
+2023-03-08 10:22:33,834 INFO  [scheduler-2] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Building] to Go Server for Build [pipeline1/2/tomcat_setup/1/tomcat_setup/3]
+2023-03-08 10:22:33,869 INFO  [scheduler-2] CommandLine:316 - Running command: /bin/bash start_tomcat.sh /opt/tomcat-8.5.41/
+2023-03-08 10:22:33,872 WARN  [Thread-87] CommandLine:48 - /bin/bash: start_tomcat.sh /opt/tomcat-8.5.41/: No such file or directory
+2023-03-08 10:22:33,974 WARN  [scheduler-2] BaseCommandBuilder:113 - return code is 127
+2023-03-08 10:22:34,069 INFO  [scheduler-2] HttpService:125 - Got back 200 from server
+2023-03-08 10:22:34,070 INFO  [scheduler-2] DefaultGoPublisher:95 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/2/tomcat_setup/1/tomcat_setup/3]
+2023-03-08 10:22:34,233 INFO  [scheduler-2] HttpService:125 - Got back 200 from server
+2023-03-08 10:22:34,235 INFO  [scheduler-2] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Completing] to Go Server for Build [pipeline1/2/tomcat_setup/1/tomcat_setup/3]
+2023-03-08 10:22:34,269 INFO  [scheduler-2] ArtifactsPublisher:68 - Pluggable metadata folder is empty.
+2023-03-08 10:22:34,269 INFO  [scheduler-2] DefaultGoPublisher:101 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/2/tomcat_setup/1/tomcat_setup/3]
+2023-03-08 10:22:34,362 INFO  [scheduler-2] HttpService:125 - Got back 200 from server
+2023-03-08 10:22:34,752 INFO  [scheduler-2] DefaultGoPublisher:83 - Stopping Transmission for Build [pipeline1/2/tomcat_setup/1/tomcat_setup/3]
+2023-03-08 10:25:56,243 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:25:56,244 INFO  [scheduler-3] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Preparing] to Go Server for Build [pipeline1/3/tomcat_setup/1/tomcat_setup/4]
+2023-03-08 10:25:57,466 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:25:57,468 INFO  [scheduler-3] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Building] to Go Server for Build [pipeline1/3/tomcat_setup/1/tomcat_setup/4]
+2023-03-08 10:25:57,503 INFO  [scheduler-3] CommandLine:316 - Running command: /bin/bash ./start_tomcat.sh /opt/tomcat-8.5.41/
+2023-03-08 10:25:57,508 WARN  [Thread-117] CommandLine:48 - /bin/bash: ./start_tomcat.sh /opt/tomcat-8.5.41/: No such file or directory
+2023-03-08 10:25:57,608 WARN  [scheduler-3] BaseCommandBuilder:113 - return code is 127
+2023-03-08 10:25:57,717 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:25:57,718 INFO  [scheduler-3] DefaultGoPublisher:95 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/3/tomcat_setup/1/tomcat_setup/4]
+2023-03-08 10:25:57,902 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:25:57,903 INFO  [scheduler-3] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Completing] to Go Server for Build [pipeline1/3/tomcat_setup/1/tomcat_setup/4]
+2023-03-08 10:25:57,944 INFO  [scheduler-3] ArtifactsPublisher:68 - Pluggable metadata folder is empty.
+2023-03-08 10:25:57,945 INFO  [scheduler-3] DefaultGoPublisher:101 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/3/tomcat_setup/1/tomcat_setup/4]
+2023-03-08 10:25:58,069 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:25:58,432 INFO  [scheduler-3] DefaultGoPublisher:83 - Stopping Transmission for Build [pipeline1/3/tomcat_setup/1/tomcat_setup/4]
+2023-03-08 10:27:19,027 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:27:19,029 INFO  [scheduler-3] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Preparing] to Go Server for Build [pipeline1/4/tomcat_setup/1/tomcat_setup/5]
+2023-03-08 10:27:20,276 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:27:20,278 INFO  [scheduler-3] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Building] to Go Server for Build [pipeline1/4/tomcat_setup/1/tomcat_setup/5]
+2023-03-08 10:27:20,313 INFO  [scheduler-3] CommandLine:316 - Running command: /bin/bash ./start_tomcat.sh 
+2023-03-08 10:27:20,321 WARN  [Thread-147] CommandLine:48 - /bin/bash: ./start_tomcat.sh : No such file or directory
+2023-03-08 10:27:20,421 WARN  [scheduler-3] BaseCommandBuilder:113 - return code is 127
+2023-03-08 10:27:20,547 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:27:20,549 INFO  [scheduler-3] DefaultGoPublisher:95 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/4/tomcat_setup/1/tomcat_setup/5]
+2023-03-08 10:27:20,714 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:27:20,715 INFO  [scheduler-3] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Completing] to Go Server for Build [pipeline1/4/tomcat_setup/1/tomcat_setup/5]
+2023-03-08 10:27:20,749 INFO  [scheduler-3] ArtifactsPublisher:68 - Pluggable metadata folder is empty.
+2023-03-08 10:27:20,751 INFO  [scheduler-3] DefaultGoPublisher:101 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/4/tomcat_setup/1/tomcat_setup/5]
+2023-03-08 10:27:20,855 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:27:21,231 INFO  [scheduler-3] DefaultGoPublisher:83 - Stopping Transmission for Build [pipeline1/4/tomcat_setup/1/tomcat_setup/5]
+2023-03-08 10:28:31,772 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:28:31,774 INFO  [scheduler-1] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Preparing] to Go Server for Build [pipeline1/5/tomcat_setup/1/tomcat_setup/6]
+2023-03-08 10:28:32,936 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:28:32,938 INFO  [scheduler-1] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Building] to Go Server for Build [pipeline1/5/tomcat_setup/1/tomcat_setup/6]
+2023-03-08 10:28:32,967 INFO  [scheduler-1] CommandLine:316 - Running command: /bin/bash pwd
+2023-03-08 10:28:32,971 WARN  [Thread-177] CommandLine:48 - /bin/pwd: /bin/pwd: cannot execute binary file
+2023-03-08 10:28:33,072 WARN  [scheduler-1] BaseCommandBuilder:113 - return code is 126
+2023-03-08 10:28:33,167 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:28:33,168 INFO  [scheduler-1] DefaultGoPublisher:95 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/5/tomcat_setup/1/tomcat_setup/6]
+2023-03-08 10:28:33,324 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:28:33,325 INFO  [scheduler-1] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Completing] to Go Server for Build [pipeline1/5/tomcat_setup/1/tomcat_setup/6]
+2023-03-08 10:28:33,362 INFO  [scheduler-1] ArtifactsPublisher:68 - Pluggable metadata folder is empty.
+2023-03-08 10:28:33,362 INFO  [scheduler-1] DefaultGoPublisher:101 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/5/tomcat_setup/1/tomcat_setup/6]
+2023-03-08 10:28:33,465 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:28:33,854 INFO  [scheduler-1] DefaultGoPublisher:83 - Stopping Transmission for Build [pipeline1/5/tomcat_setup/1/tomcat_setup/6]
+2023-03-08 10:29:54,459 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:29:54,461 INFO  [scheduler-1] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Preparing] to Go Server for Build [pipeline1/6/tomcat_setup/1/tomcat_setup/7]
+2023-03-08 10:29:55,904 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:29:55,906 INFO  [scheduler-1] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Building] to Go Server for Build [pipeline1/6/tomcat_setup/1/tomcat_setup/7]
+2023-03-08 10:29:55,936 INFO  [scheduler-1] CommandLine:316 - Running command: pwd 
+2023-03-08 10:29:55,939 INFO  [Thread-206] CommandLine:51 - /godata/pipelines/pipeline1
+2023-03-08 10:29:56,160 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:29:56,161 INFO  [scheduler-1] DefaultGoPublisher:95 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Passed] to Go Server for Build [pipeline1/6/tomcat_setup/1/tomcat_setup/7]
+2023-03-08 10:29:56,318 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:29:56,319 INFO  [scheduler-1] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Completing] to Go Server for Build [pipeline1/6/tomcat_setup/1/tomcat_setup/7]
+2023-03-08 10:29:56,351 INFO  [scheduler-1] ArtifactsPublisher:68 - Pluggable metadata folder is empty.
+2023-03-08 10:29:56,352 INFO  [scheduler-1] DefaultGoPublisher:101 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Passed] to Go Server for Build [pipeline1/6/tomcat_setup/1/tomcat_setup/7]
+2023-03-08 10:29:56,452 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:29:56,818 INFO  [scheduler-1] DefaultGoPublisher:83 - Stopping Transmission for Build [pipeline1/6/tomcat_setup/1/tomcat_setup/7]
+2023-03-08 10:30:17,114 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:30:17,116 INFO  [scheduler-1] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Preparing] to Go Server for Build [pipeline1/6/stage1/1/clean/8]
+2023-03-08 10:30:18,295 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:30:18,297 INFO  [scheduler-1] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Building] to Go Server for Build [pipeline1/6/stage1/1/clean/8]
+2023-03-08 10:30:18,331 INFO  [scheduler-1] CommandLine:316 - Running command: mvn clean
+2023-03-08 10:30:18,334 ERROR [scheduler-1] ProcessManager:101 - [Command Line] Failed executing [mvn clean]
+2023-03-08 10:30:18,335 ERROR [scheduler-1] ProcessManager:102 - [Command Line] Agent's Environment Variables: {PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin, WRAPPER_PID=89, WRAPPER_WORKING_DIR=/go, AGENT_STARTUP_ARGS=-Xms128m -Xmx256m -Dgo.console.stdout=true  -Dgo.console.stdout=true , WRAPPER_JAVA_VERSION_MINOR=0, WRAPPER_OS=linux, WRAPPER_HOSTNAME=d32686145094, LANG=en_US.UTF-8, WRAPPER_BITS=64, WRAPPER_BIN_DIR=/go-agent/wrapper, WRAPPER_VERSION=3.5.50, WRAPPER_BASE_NAME=wrapper, WRAPPER_HOST_NAME=d32686145094, WRAPPER_CONF_DIR=/go-agent/wrapper-config, WRAPPER_LANG=en, WRAPPER_JAVA_VENDOR=OpenJDK, PWD=/, WRAPPER_FILE_SEPARATOR=/, LANGUAGE=en_US:en, GOCD_AGENT_JVM_OPTS=, AGENT_KEY=123456789, WRAPPER_INIT_DIR=/, GO_SERVER_URL=http://172.20.10.3:8153/go, GO_JAVA_HOME=/gocd-jre, WRAPPER_PATH_SEPARATOR=:, WRAPPER_EDITION=Standard, HOSTNAME=d32686145094, WRAPPER_JAVA_VERSION_MAJOR=17, LC_ALL=en_US.UTF-8, WRAPPER_JAVA_VERSION_REVISION=5, WRAPPER_RUN_MODE=console, WRAPPER_ARCH=x86, WRAPPER_JAVA_VERSION=17.0.5, HOME=/home/go, SHLVL=1}
+2023-03-08 10:30:18,335 WARN  [scheduler-1] CommandLine:48 - Error happened while attempting to execute 'mvn clean'. 
+Please make sure [mvn] can be executed on this agent.
+
+2023-03-08 10:30:18,337 WARN  [scheduler-1] CommandLine:48 - [Debug Information] Environment variable PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2023-03-08 10:30:18,337 ERROR [scheduler-1] CommandLine:336 - [Command Line] Error happened while attempting to execute 'mvn clean'. 
+Please make sure [mvn] can be executed on this agent.
+. Path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2023-03-08 10:30:18,338 WARN  [scheduler-1] BaseCommandBuilder:113 - exec error
+2023-03-08 10:30:18,338 WARN  [scheduler-1] BaseCommandBuilder:109 - Could not execute command: mvn clean
+2023-03-08 10:30:18,472 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:30:18,473 INFO  [scheduler-1] DefaultGoPublisher:95 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/6/stage1/1/clean/8]
+2023-03-08 10:30:18,651 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:30:18,652 INFO  [scheduler-1] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Completing] to Go Server for Build [pipeline1/6/stage1/1/clean/8]
+2023-03-08 10:30:18,692 INFO  [scheduler-1] ArtifactsPublisher:68 - Pluggable metadata folder is empty.
+2023-03-08 10:30:18,693 INFO  [scheduler-1] DefaultGoPublisher:101 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/6/stage1/1/clean/8]
+2023-03-08 10:30:18,826 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:30:19,254 INFO  [scheduler-1] DefaultGoPublisher:83 - Stopping Transmission for Build [pipeline1/6/stage1/1/clean/8]
+2023-03-08 10:31:29,952 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:31:29,954 INFO  [scheduler-1] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Preparing] to Go Server for Build [pipeline1/7/tomcat_setup/1/tomcat_setup/9]
+2023-03-08 10:31:31,142 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:31:31,144 INFO  [scheduler-1] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Building] to Go Server for Build [pipeline1/7/tomcat_setup/1/tomcat_setup/9]
+2023-03-08 10:31:31,175 INFO  [scheduler-1] CommandLine:316 - Running command: ls -al 
+2023-03-08 10:31:31,177 ERROR [scheduler-1] ProcessManager:101 - [Command Line] Failed executing ["ls -al" ]
+2023-03-08 10:31:31,179 ERROR [scheduler-1] ProcessManager:102 - [Command Line] Agent's Environment Variables: {PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin, WRAPPER_PID=89, WRAPPER_WORKING_DIR=/go, AGENT_STARTUP_ARGS=-Xms128m -Xmx256m -Dgo.console.stdout=true  -Dgo.console.stdout=true , WRAPPER_JAVA_VERSION_MINOR=0, WRAPPER_OS=linux, WRAPPER_HOSTNAME=d32686145094, LANG=en_US.UTF-8, WRAPPER_BITS=64, WRAPPER_BIN_DIR=/go-agent/wrapper, WRAPPER_VERSION=3.5.50, WRAPPER_BASE_NAME=wrapper, WRAPPER_HOST_NAME=d32686145094, WRAPPER_CONF_DIR=/go-agent/wrapper-config, WRAPPER_LANG=en, WRAPPER_JAVA_VENDOR=OpenJDK, PWD=/, WRAPPER_FILE_SEPARATOR=/, LANGUAGE=en_US:en, GOCD_AGENT_JVM_OPTS=, AGENT_KEY=123456789, WRAPPER_INIT_DIR=/, GO_SERVER_URL=http://172.20.10.3:8153/go, GO_JAVA_HOME=/gocd-jre, WRAPPER_PATH_SEPARATOR=:, WRAPPER_EDITION=Standard, HOSTNAME=d32686145094, WRAPPER_JAVA_VERSION_MAJOR=17, LC_ALL=en_US.UTF-8, WRAPPER_JAVA_VERSION_REVISION=5, WRAPPER_RUN_MODE=console, WRAPPER_ARCH=x86, WRAPPER_JAVA_VERSION=17.0.5, HOME=/home/go, SHLVL=1}
+2023-03-08 10:31:31,179 WARN  [scheduler-1] CommandLine:48 - Error happened while attempting to execute 'ls -al '. 
+Please make sure [ls -al] can be executed on this agent.
+
+2023-03-08 10:31:31,181 WARN  [scheduler-1] CommandLine:48 - [Debug Information] Environment variable PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2023-03-08 10:31:31,181 ERROR [scheduler-1] CommandLine:336 - [Command Line] Error happened while attempting to execute 'ls -al '. 
+Please make sure [ls -al] can be executed on this agent.
+. Path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2023-03-08 10:31:31,182 WARN  [scheduler-1] BaseCommandBuilder:113 - exec error
+2023-03-08 10:31:31,183 WARN  [scheduler-1] BaseCommandBuilder:109 - Could not execute command: ls -al 
+2023-03-08 10:31:31,281 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:31:31,282 INFO  [scheduler-1] DefaultGoPublisher:95 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/7/tomcat_setup/1/tomcat_setup/9]
+2023-03-08 10:31:31,433 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:31:31,434 INFO  [scheduler-1] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Completing] to Go Server for Build [pipeline1/7/tomcat_setup/1/tomcat_setup/9]
+2023-03-08 10:31:31,465 INFO  [scheduler-1] ArtifactsPublisher:68 - Pluggable metadata folder is empty.
+2023-03-08 10:31:31,465 INFO  [scheduler-1] DefaultGoPublisher:101 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/7/tomcat_setup/1/tomcat_setup/9]
+2023-03-08 10:31:31,560 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:31:31,924 INFO  [scheduler-1] DefaultGoPublisher:83 - Stopping Transmission for Build [pipeline1/7/tomcat_setup/1/tomcat_setup/9]
+2023-03-08 10:34:03,046 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:34:03,048 INFO  [scheduler-3] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Preparing] to Go Server for Build [pipeline1/8/tomcat_setup/1/tomcat_setup/10]
+2023-03-08 10:34:04,559 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:34:04,560 INFO  [scheduler-3] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Building] to Go Server for Build [pipeline1/8/tomcat_setup/1/tomcat_setup/10]
+2023-03-08 10:34:04,596 INFO  [scheduler-3] CommandLine:316 - Running command: ls 
+2023-03-08 10:34:04,598 WARN  [Thread-293] CommandLine:48 - ls: : No such file or directory
+2023-03-08 10:34:04,698 WARN  [scheduler-3] BaseCommandBuilder:113 - return code is 1
+2023-03-08 10:34:04,832 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:34:04,834 INFO  [scheduler-3] DefaultGoPublisher:95 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/8/tomcat_setup/1/tomcat_setup/10]
+2023-03-08 10:34:04,985 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:34:04,986 INFO  [scheduler-3] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Completing] to Go Server for Build [pipeline1/8/tomcat_setup/1/tomcat_setup/10]
+2023-03-08 10:34:05,018 INFO  [scheduler-3] ArtifactsPublisher:68 - Pluggable metadata folder is empty.
+2023-03-08 10:34:05,019 INFO  [scheduler-3] DefaultGoPublisher:101 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/8/tomcat_setup/1/tomcat_setup/10]
+2023-03-08 10:34:05,119 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:34:05,477 INFO  [scheduler-3] DefaultGoPublisher:83 - Stopping Transmission for Build [pipeline1/8/tomcat_setup/1/tomcat_setup/10]
+2023-03-08 10:37:06,730 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:37:06,732 INFO  [scheduler-3] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Preparing] to Go Server for Build [pipeline1/9/tomcat_setup/1/tomcat_setup/11]
+2023-03-08 10:37:08,205 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:37:08,207 INFO  [scheduler-3] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Building] to Go Server for Build [pipeline1/9/tomcat_setup/1/tomcat_setup/11]
+2023-03-08 10:37:08,240 INFO  [scheduler-3] CommandLine:316 - Running command: ./start_tomcat.sh 
+2023-03-08 10:37:08,242 ERROR [scheduler-3] ProcessManager:101 - [Command Line] Failed executing [./start_tomcat.sh ]
+2023-03-08 10:37:08,243 ERROR [scheduler-3] ProcessManager:102 - [Command Line] Agent's Environment Variables: {PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin, WRAPPER_PID=89, WRAPPER_WORKING_DIR=/go, AGENT_STARTUP_ARGS=-Xms128m -Xmx256m -Dgo.console.stdout=true  -Dgo.console.stdout=true , WRAPPER_JAVA_VERSION_MINOR=0, WRAPPER_OS=linux, WRAPPER_HOSTNAME=d32686145094, LANG=en_US.UTF-8, WRAPPER_BITS=64, WRAPPER_BIN_DIR=/go-agent/wrapper, WRAPPER_VERSION=3.5.50, WRAPPER_BASE_NAME=wrapper, WRAPPER_HOST_NAME=d32686145094, WRAPPER_CONF_DIR=/go-agent/wrapper-config, WRAPPER_LANG=en, WRAPPER_JAVA_VENDOR=OpenJDK, PWD=/, WRAPPER_FILE_SEPARATOR=/, LANGUAGE=en_US:en, GOCD_AGENT_JVM_OPTS=, AGENT_KEY=123456789, WRAPPER_INIT_DIR=/, GO_SERVER_URL=http://172.20.10.3:8153/go, GO_JAVA_HOME=/gocd-jre, WRAPPER_PATH_SEPARATOR=:, WRAPPER_EDITION=Standard, HOSTNAME=d32686145094, WRAPPER_JAVA_VERSION_MAJOR=17, LC_ALL=en_US.UTF-8, WRAPPER_JAVA_VERSION_REVISION=5, WRAPPER_RUN_MODE=console, WRAPPER_ARCH=x86, WRAPPER_JAVA_VERSION=17.0.5, HOME=/home/go, SHLVL=1}
+2023-03-08 10:37:08,243 WARN  [scheduler-3] CommandLine:48 - Error happened while attempting to execute './start_tomcat.sh '. 
+Please make sure [./start_tomcat.sh] can be executed on this agent.
+
+2023-03-08 10:37:08,244 WARN  [scheduler-3] CommandLine:48 - [Debug Information] Environment variable PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2023-03-08 10:37:08,245 ERROR [scheduler-3] CommandLine:336 - [Command Line] Error happened while attempting to execute './start_tomcat.sh '. 
+Please make sure [./start_tomcat.sh] can be executed on this agent.
+. Path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2023-03-08 10:37:08,246 WARN  [scheduler-3] BaseCommandBuilder:113 - exec error
+2023-03-08 10:37:08,246 WARN  [scheduler-3] BaseCommandBuilder:109 - Could not execute command: ./start_tomcat.sh 
+2023-03-08 10:37:08,351 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:37:08,352 INFO  [scheduler-3] DefaultGoPublisher:95 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/9/tomcat_setup/1/tomcat_setup/11]
+2023-03-08 10:37:08,557 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:37:08,558 INFO  [scheduler-3] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Completing] to Go Server for Build [pipeline1/9/tomcat_setup/1/tomcat_setup/11]
+2023-03-08 10:37:08,597 INFO  [scheduler-3] ArtifactsPublisher:68 - Pluggable metadata folder is empty.
+2023-03-08 10:37:08,600 INFO  [scheduler-3] DefaultGoPublisher:101 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/9/tomcat_setup/1/tomcat_setup/11]
+2023-03-08 10:37:08,708 INFO  [scheduler-3] HttpService:125 - Got back 200 from server
+2023-03-08 10:37:09,064 INFO  [scheduler-3] DefaultGoPublisher:83 - Stopping Transmission for Build [pipeline1/9/tomcat_setup/1/tomcat_setup/11]
+2023-03-08 10:46:13,044 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:46:13,045 INFO  [scheduler-1] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Preparing] to Go Server for Build [pipeline1/10/stage1/1/clean/12]
+2023-03-08 10:46:14,198 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:46:14,199 INFO  [scheduler-1] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Building] to Go Server for Build [pipeline1/10/stage1/1/clean/12]
+2023-03-08 10:46:14,234 INFO  [scheduler-1] CommandLine:316 - Running command: mvn clean
+2023-03-08 10:46:14,238 ERROR [scheduler-1] ProcessManager:101 - [Command Line] Failed executing [mvn clean]
+2023-03-08 10:46:14,239 ERROR [scheduler-1] ProcessManager:102 - [Command Line] Agent's Environment Variables: {PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin, WRAPPER_PID=89, WRAPPER_WORKING_DIR=/go, AGENT_STARTUP_ARGS=-Xms128m -Xmx256m -Dgo.console.stdout=true  -Dgo.console.stdout=true , WRAPPER_JAVA_VERSION_MINOR=0, WRAPPER_OS=linux, WRAPPER_HOSTNAME=d32686145094, LANG=en_US.UTF-8, WRAPPER_BITS=64, WRAPPER_BIN_DIR=/go-agent/wrapper, WRAPPER_VERSION=3.5.50, WRAPPER_BASE_NAME=wrapper, WRAPPER_HOST_NAME=d32686145094, WRAPPER_CONF_DIR=/go-agent/wrapper-config, WRAPPER_LANG=en, WRAPPER_JAVA_VENDOR=OpenJDK, PWD=/, WRAPPER_FILE_SEPARATOR=/, LANGUAGE=en_US:en, GOCD_AGENT_JVM_OPTS=, AGENT_KEY=123456789, WRAPPER_INIT_DIR=/, GO_SERVER_URL=http://172.20.10.3:8153/go, GO_JAVA_HOME=/gocd-jre, WRAPPER_PATH_SEPARATOR=:, WRAPPER_EDITION=Standard, HOSTNAME=d32686145094, WRAPPER_JAVA_VERSION_MAJOR=17, LC_ALL=en_US.UTF-8, WRAPPER_JAVA_VERSION_REVISION=5, WRAPPER_RUN_MODE=console, WRAPPER_ARCH=x86, WRAPPER_JAVA_VERSION=17.0.5, HOME=/home/go, SHLVL=1}
+2023-03-08 10:46:14,240 WARN  [scheduler-1] CommandLine:48 - Error happened while attempting to execute 'mvn clean'. 
+Please make sure [mvn] can be executed on this agent.
+
+2023-03-08 10:46:14,241 WARN  [scheduler-1] CommandLine:48 - [Debug Information] Environment variable PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2023-03-08 10:46:14,242 ERROR [scheduler-1] CommandLine:336 - [Command Line] Error happened while attempting to execute 'mvn clean'. 
+Please make sure [mvn] can be executed on this agent.
+. Path: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+2023-03-08 10:46:14,243 WARN  [scheduler-1] BaseCommandBuilder:113 - exec error
+2023-03-08 10:46:14,243 WARN  [scheduler-1] BaseCommandBuilder:109 - Could not execute command: mvn clean
+2023-03-08 10:46:14,362 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:46:14,363 INFO  [scheduler-1] DefaultGoPublisher:95 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/10/stage1/1/clean/12]
+2023-03-08 10:46:14,540 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:46:14,540 INFO  [scheduler-1] DefaultGoPublisher:89 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting status [Completing] to Go Server for Build [pipeline1/10/stage1/1/clean/12]
+2023-03-08 10:46:14,573 INFO  [scheduler-1] ArtifactsPublisher:68 - Pluggable metadata folder is empty.
+2023-03-08 10:46:14,574 INFO  [scheduler-1] DefaultGoPublisher:101 - Agent [d32686145094, 172.18.0.2, cb7e2315-eb2c-4008-bdda-7538ae607d53] is reporting build result [Failed] to Go Server for Build [pipeline1/10/stage1/1/clean/12]
+2023-03-08 10:46:14,676 INFO  [scheduler-1] HttpService:125 - Got back 200 from server
+2023-03-08 10:46:15,018 INFO  [scheduler-1] DefaultGoPublisher:83 - Stopping Transmission for Build [pipeline1/10/stage1/1/clean/12]
