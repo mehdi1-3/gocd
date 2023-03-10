@@ -3312,3 +3312,160 @@ INFO   | jvm 2    | 2023/03/10 09:42:44 | STDERR: fatal: unable to access 'https
 INFO   | jvm 2    | 2023/03/10 09:42:48 | 2023-03-10 09:42:48,114 ERROR [qtp1784242807-45] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
 INFO   | jvm 2    | 2023/03/10 09:42:58 | 2023-03-10 09:42:58,118 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
 INFO   | jvm 2    | 2023/03/10 09:43:08 | 2023-03-10 09:43:08,135 ERROR [qtp1784242807-45] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:48:07 | 2023-03-10 09:48:07,918 ERROR [qtp1784242807-34] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:48:14 | 2023-03-10 09:48:14,425 WARN  [ThreadPoolTaskScheduler-1] MaterialUpdateService:204 - [Material Update] Skipping update of material GitMaterial{url=https://github.com/mehdi1-3/gocd, branch='master', shallowClone=false, submoduleFolder='null'} which has been in-progress since Fri Mar 10 09:48:09 GMT 2023
+INFO   | jvm 2    | 2023/03/10 09:48:15 | 2023-03-10 09:48:15,831 INFO  [138@MessageListener for MaterialUpdateListener] ScmMaterialUpdater:60 - [Material Update] Found '1' modifications for material 'GitMaterial{url=https://github.com/mehdi1-3/gocd, branch='master', shallowClone=false, submoduleFolder='null'}' with flyweight '0824dc982ad52193ccc2cc41a13fbf254bcc00012cf78af3a609470a7c9d334a' using working directory '/go-working-dir/pipelines/flyweight/77b41907-5173-463d-91f9-e8290f5fa1c0'
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 2023-03-10 09:48:17,039 INFO  [124@MessageListener for ConfigMaterialUpdateListener] GoConfigDao:108 - Config update request by anonymous is in queue - com.thoughtworks.go.config.update.PartialConfigUpdateCommand@360555f7
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 2023-03-10 09:48:17,042 INFO  [124@MessageListener for ConfigMaterialUpdateListener] GoConfigDao:111 - Config update request com.thoughtworks.go.config.update.PartialConfigUpdateCommand@360555f7 by anonymous is being processed
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 2023-03-10 09:48:17,079 WARN  [124@MessageListener for ConfigMaterialUpdateListener] GoFileConfigDataSource:349 - Merged config update operation failed on LATEST 1 partials. Falling back to using LAST VALID 0 partials. Exception message was: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:48:17 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	1. Not allowed to refer to pipeline group 'ops'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | com.thoughtworks.go.config.exceptions.GoConfigInvalidMergeException: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:48:17 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	1. Not allowed to refer to pipeline group 'ops'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.validateCruiseConfig(MagicalGoConfigXmlLoader.java:137)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.preprocessAndValidate(MagicalGoConfigXmlLoader.java:124)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlWriter.write(MagicalGoConfigXmlWriter.java:76)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.configAsXml(GoFileConfigDataSource.java:408)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.getUnmergedConfig(GoFileConfigDataSource.java:600)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.trySavingConfig(GoFileConfigDataSource.java:584)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.writeWithLock(GoFileConfigDataSource.java:343)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.CachedGoConfig.writeWithLock(CachedGoConfig.java:154)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoConfigDao.updateConfig(GoConfigDao.java:118)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.service.GoConfigService.updateConfig(GoConfigService.java:283)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.PartialConfigService.updateConfig(PartialConfigService.java:159)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.PartialConfigService.onSuccessPartialConfig(PartialConfigService.java:87)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.notifySuccessListeners(GoConfigRepoConfigDataSource.java:209)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:172)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 2023-03-10 09:48:17,095 WARN  [124@MessageListener for ConfigMaterialUpdateListener] GoFileConfigDataSource:355 - Merged config update operation failed using fallback LAST VALID 1 partials. Exception message was: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:48:17 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	1. Not allowed to refer to pipeline group 'ops'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | com.thoughtworks.go.config.exceptions.GoConfigInvalidMergeException: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:48:17 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	1. Not allowed to refer to pipeline group 'ops'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.validateCruiseConfig(MagicalGoConfigXmlLoader.java:137)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.preprocessAndValidate(MagicalGoConfigXmlLoader.java:124)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlWriter.write(MagicalGoConfigXmlWriter.java:76)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.configAsXml(GoFileConfigDataSource.java:408)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.getUnmergedConfig(GoFileConfigDataSource.java:600)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.trySavingConfig(GoFileConfigDataSource.java:584)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.writeWithLock(GoFileConfigDataSource.java:351)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.CachedGoConfig.writeWithLock(CachedGoConfig.java:154)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoConfigDao.updateConfig(GoConfigDao.java:118)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.service.GoConfigService.updateConfig(GoConfigService.java:283)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.PartialConfigService.updateConfig(PartialConfigService.java:159)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.PartialConfigService.onSuccessPartialConfig(PartialConfigService.java:87)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.notifySuccessListeners(GoConfigRepoConfigDataSource.java:209)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:172)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 2023-03-10 09:48:17,101 WARN  [124@MessageListener for ConfigMaterialUpdateListener] GoFileConfigDataSource:366 - Configuration file is invalid: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:48:17 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	1. Not allowed to refer to pipeline group 'ops'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | com.thoughtworks.go.config.exceptions.GoConfigInvalidMergeException: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:48:17 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	1. Not allowed to refer to pipeline group 'ops'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.writeWithLock(GoFileConfigDataSource.java:356)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.CachedGoConfig.writeWithLock(CachedGoConfig.java:154)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoConfigDao.updateConfig(GoConfigDao.java:118)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.service.GoConfigService.updateConfig(GoConfigService.java:283)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.PartialConfigService.updateConfig(PartialConfigService.java:159)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.PartialConfigService.onSuccessPartialConfig(PartialConfigService.java:87)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.notifySuccessListeners(GoConfigRepoConfigDataSource.java:209)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:172)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | Caused by: com.thoughtworks.go.config.exceptions.GoConfigInvalidMergeException: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:48:17 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	1. Not allowed to refer to pipeline group 'ops'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.validateCruiseConfig(MagicalGoConfigXmlLoader.java:137)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.preprocessAndValidate(MagicalGoConfigXmlLoader.java:124)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlWriter.write(MagicalGoConfigXmlWriter.java:76)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.configAsXml(GoFileConfigDataSource.java:408)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.getUnmergedConfig(GoFileConfigDataSource.java:600)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.trySavingConfig(GoFileConfigDataSource.java:584)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.writeWithLock(GoFileConfigDataSource.java:351)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	... 13 common frames omitted
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 2023-03-10 09:48:17,103 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigDao:120 - Config update failed.
+INFO   | jvm 2    | 2023/03/10 09:48:17 | java.lang.RuntimeException: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:48:17 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	1. Not allowed to refer to pipeline group 'ops'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.util.ExceptionUtils.bomb(ExceptionUtils.java:41)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.writeWithLock(GoFileConfigDataSource.java:367)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.CachedGoConfig.writeWithLock(CachedGoConfig.java:154)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoConfigDao.updateConfig(GoConfigDao.java:118)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.service.GoConfigService.updateConfig(GoConfigService.java:283)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.PartialConfigService.updateConfig(PartialConfigService.java:159)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.PartialConfigService.onSuccessPartialConfig(PartialConfigService.java:87)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.notifySuccessListeners(GoConfigRepoConfigDataSource.java:209)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:172)
+INFO   | jvm 2    | 2023/03/10 09:48:17 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:48:18 | Caused by: com.thoughtworks.go.config.exceptions.GoConfigInvalidMergeException: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:48:18 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 	1. Not allowed to refer to pipeline group 'ops'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 
+INFO   | jvm 2    | 2023/03/10 09:48:18 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.writeWithLock(GoFileConfigDataSource.java:356)
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 	... 13 common frames omitted
+INFO   | jvm 2    | 2023/03/10 09:48:18 | Caused by: com.thoughtworks.go.config.exceptions.GoConfigInvalidMergeException: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:48:18 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 	1. Not allowed to refer to pipeline group 'ops'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 
+INFO   | jvm 2    | 2023/03/10 09:48:18 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.validateCruiseConfig(MagicalGoConfigXmlLoader.java:137)
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.preprocessAndValidate(MagicalGoConfigXmlLoader.java:124)
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlWriter.write(MagicalGoConfigXmlWriter.java:76)
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.configAsXml(GoFileConfigDataSource.java:408)
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.getUnmergedConfig(GoFileConfigDataSource.java:600)
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.trySavingConfig(GoFileConfigDataSource.java:584)
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.writeWithLock(GoFileConfigDataSource.java:351)
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 	... 13 common frames omitted
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 2023-03-10 09:48:17,105 INFO  [124@MessageListener for ConfigMaterialUpdateListener] GoConfigDao:126 - Config update request by anonymous is completed
+INFO   | jvm 2    | 2023/03/10 09:48:18 | 2023-03-10 09:48:17,953 ERROR [qtp1784242807-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:48:28 | 2023-03-10 09:48:28,019 ERROR [qtp1784242807-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:48:58 | 2023-03-10 09:48:58,065 ERROR [qtp1784242807-36] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
