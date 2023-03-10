@@ -1,4 +1,3 @@
-#write a GoCD pipeline to clean, package a spring boot application existing with this template under the folder src/.. in a git repository  and finally deoloy to tomcat server runing in docker container
 format_version: 10
 pipelines:
   pipeline:
@@ -7,46 +6,25 @@ pipelines:
     lock_behavior: none
     display_order: -1
     materials:
-      git-a5b18f4:
+      git-cb27d0d:
         git: https://github.com/mehdi1-3/gocd
         shallow_clone: false
         auto_update: true
         branch: master
-
     stages:
       - clean:
-          clean:
-            working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-            command: mvn clean
+          fetch_materials: true
+          keep_artifacts: false
+          clean_workspace: false
+          approval:
+            type: success
+            allow_only_on_success: false
           jobs:
-            - clean:
-                tasks:
-                  - exec:
-                      command: mvn clean
-                      working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-      - package:
-          package:
-            working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-            command: mvn package
-          jobs:
-            - package:
-                tasks:
-                  - exec:
-                      command: mvn package
-                      working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-      - deployment:
-          deployment:
-            working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-            command: mvn deploy
-          jobs:
-            - deployment:
-                tasks:
-                  - exec:
-                      command: mvn deploy
-                      working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-
-
-
-
-
-
+            clean:
+              timeout: 0
+              tasks:
+                - exec:
+                    arguments:
+                      - clean
+                    command: mvn
+                    run_if: passed
