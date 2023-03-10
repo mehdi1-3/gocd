@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32e90438-1709-47b3-a992-98c109f1e3b1" name="Changes" comment="pipeline modification2">
+    <list default="true" id="32e90438-1709-47b3-a992-98c109f1e3b1" name="Changes" comment="pipeline modification4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/cruise-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/cruise-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/logs/go-server-wrapper.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/logs/go-server-wrapper.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/logs/go-server.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/logs/go-server.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline.gocd.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline.gocd.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +120,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1678280341148</updated>
-      <workItem from="1678280341564" duration="2218000" />
+      <workItem from="1678280341564" duration="2818000" />
     </task>
     <servers />
   </component>
@@ -154,7 +152,8 @@
     <MESSAGE value="pipeline modification" />
     <MESSAGE value="pipeline modification2" />
     <MESSAGE value="pipeline modification3" />
-    <option name="LAST_COMMIT_MESSAGE" value="pipeline modification3" />
+    <MESSAGE value="pipeline modification4" />
+    <option name="LAST_COMMIT_MESSAGE" value="pipeline modification4" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
