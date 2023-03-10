@@ -1,49 +1,18 @@
 #write a GoCD pipeline to clean, package a spring boot application existing with this template under the folder src/.. in a git repository  and finally deoloy to tomcat server runing in docker container
 format_version: 10
 pipelines:
-  pipeline:
-    group: defaultGroup
-    label_template: ${COUNT}
-    lock_behavior: none
-    display_order: -1
+  provisioning:
+    group: ops
     materials:
-      git-a5b18f4:
-        git: https://github.com/mehdi1-3/gocd
-        shallow_clone: false
-        auto_update: true
-        branch: master
-
+      provisioning:
+        git: 'https://github.com/mehdi1-3/gocd'
     stages:
-    - clean:
-        clean:
-          working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-          command: mvn clean
-        jobs:
-        - clean:
-            tasks:
-            - exec:
-                command: mvn clean
-                working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-    - package:
-        package:
-          working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-          command: mvn package
-        jobs:
-        - package:
-            tasks:
-            - exec:
-                command: mvn package
-                working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-    - deployment:
-        deployment:
-          working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-          command: mvn deploy
-        jobs:
-        - deployment:
-            tasks:
-            - exec:
-                command: mvn deploy
-                working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
+      - build:
+          jobs:
+            hello:
+              tasks:
+                - exec:
+                    command: env
 
 
 

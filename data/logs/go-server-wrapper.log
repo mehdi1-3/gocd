@@ -2572,3 +2572,743 @@ INFO   | jvm 2    | 2023/03/08 16:36:15 | 	at java.base/java.util.concurrent.Thr
 INFO   | jvm 2    | 2023/03/08 16:36:15 | 	at java.base/java.lang.Thread.run(Unknown Source)
 STATUS | wrapper  | 2023/03/08 16:37:38 | TERM trapped.  Shutting down.
 STATUS | wrapper  | 2023/03/08 16:37:40 | <-- Wrapper Stopped
+WARN   | wrapper  | 2023/03/10 08:42:43 | The "wrapper.java.additional.100" property was redefined on line #47 of configuration file: /go-server/wrapper-config/wrapper-properties.conf
+WARN   | wrapper  | 2023/03/10 08:42:43 |   Old Value wrapper.java.additional.100=-Dgo.console.stdout=true
+WARN   | wrapper  | 2023/03/10 08:42:43 |   New Value wrapper.java.additional.100=-Dgo.console.stdout=true
+STATUS | wrapper  | 2023/03/10 08:42:43 | --> Wrapper Started as Console
+STATUS | wrapper  | 2023/03/10 08:42:43 | Java Service Wrapper Standard Edition 64-bit 3.5.50
+STATUS | wrapper  | 2023/03/10 08:42:43 |   Copyright (C) 1999-2022 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2023/03/10 08:42:43 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2023/03/10 08:42:43 |   Licensed to ThoughtWorks for GoCD Server
+STATUS | wrapper  | 2023/03/10 08:42:43 | 
+STATUS | wrapper  | 2023/03/10 08:42:43 | Launching a JVM...
+ERROR  | wrapper  | 2023/03/10 08:42:43 | Failed to set JVM input handle to non blocking mode: Bad file descriptor (9)
+ERROR  | wrapper  | 2023/03/10 08:42:43 | Failed to set JVM input handle to close on JVM exit: Bad file descriptor (9)
+ERROR  | wrapper  | 2023/03/10 08:42:43 | JVM exited while loading the application.
+ERROR  | wrapper  | 2023/03/10 08:42:43 | Unable to set JVM's stdin: Bad file descriptor
+INFO   | jvm 1    | 2023/03/10 08:42:43 | wrapper  | The "wrapper.java.additional.100" property was redefined on line #47 of configuration file: /go-server/wrapper-config/wrapper-properties.conf
+INFO   | jvm 1    | 2023/03/10 08:42:43 | wrapper  |   Old Value wrapper.java.additional.100=-Dgo.console.stdout=true
+INFO   | jvm 1    | 2023/03/10 08:42:43 | wrapper  |   New Value wrapper.java.additional.100=-Dgo.console.stdout=true
+INFO   | jvm 1    | 2023/03/10 08:42:43 | wrapper  | --> Wrapper Started as Console
+INFO   | jvm 1    | 2023/03/10 08:42:43 | ]0;go-serverwrapper  | Java Service Wrapper Standard Edition 64-bit 3.5.50
+INFO   | jvm 1    | 2023/03/10 08:42:43 | wrapper  |   Copyright (C) 1999-2022 Tanuki Software, Ltd. All Rights Reserved.
+INFO   | jvm 1    | 2023/03/10 08:42:43 | wrapper  |     http://wrapper.tanukisoftware.com
+INFO   | jvm 1    | 2023/03/10 08:42:43 | wrapper  |   Licensed to ThoughtWorks for GoCD Server
+INFO   | jvm 1    | 2023/03/10 08:42:43 | wrapper  | 
+INFO   | jvm 1    | 2023/03/10 08:42:43 | wrapper  | Launching a JVM...
+STATUS | wrapper  | 2023/03/10 08:42:48 | Launching a JVM...
+INFO   | jvm 2    | 2023/03/10 08:42:48 | WrapperManager: Initializing...
+INFO   | jvm 2    | 2023/03/10 08:42:49 | [Fri Mar 10 08:42:48 GMT 2023] Starting process: 
+INFO   | jvm 2    | 2023/03/10 08:42:49 | [Fri Mar 10 08:42:48 GMT 2023]   Working directory    : /go-working-dir
+INFO   | jvm 2    | 2023/03/10 08:42:49 | [Fri Mar 10 08:42:48 GMT 2023]   Application arguments: []
+INFO   | jvm 2    | 2023/03/10 08:42:49 | [Fri Mar 10 08:42:48 GMT 2023]            GoCD Version: 22.3.0-15301
+INFO   | jvm 2    | 2023/03/10 08:42:49 | [Fri Mar 10 08:42:48 GMT 2023]            Java Version: 17.0.5
+INFO   | jvm 2    | 2023/03/10 08:42:49 | [Fri Mar 10 08:42:48 GMT 2023]        Operating System: Linux(5.15.90.1-microsoft-standard-WSL2)
+INFO   | jvm 2    | 2023/03/10 08:42:49 | Could not find file `config/logback.xml'. Attempting to load from classpath.
+INFO   | jvm 2    | 2023/03/10 08:42:49 | Using classpath resource `jar:onejar:lib/server-launcher-22.3.0-15301-main.jar!/config/logback.xml'.
+INFO   | jvm 2    | 2023/03/10 08:42:50 | 2023-03-10 08:42:50,726 INFO  [WrapperJarAppMain] Jetty9Server:193 - Configuring Jetty using /go-working-dir/config/jetty.xml
+INFO   | jvm 2    | 2023/03/10 08:42:50 | 2023-03-10 08:42:50,845 WARN  [WrapperJarAppMain] Server:357 - ErrorPageMapper not supported for Server level Error Handling
+INFO   | jvm 2    | 2023/03/10 08:42:50 | 2023-03-10 08:42:50,974 WARN  [WrapperJarAppMain] AbstractHandler:96 - No Server set for ResourceHandler@65723aa0{STOPPED}
+INFO   | jvm 2    | 2023/03/10 08:42:59 | 2023-03-10 08:42:59,160 WARN  [WrapperJarAppMain] ConnectionManager:117 - The file config/db.properties specified by `go.db.config` does not exist.
+INFO   | jvm 2    | 2023/03/10 08:43:00 | 2023-03-10 08:43:00,388 INFO  [WrapperJarAppMain] DatabaseMigrator:40 - Upgrading database, this might take a while depending on the size of the database.
+INFO   | jvm 2    | 2023/03/10 08:43:00 | ************************************************************************
+INFO   | jvm 2    | 2023/03/10 08:43:00 | 2023-03-10 08:43:00,391 INFO  [WrapperJarAppMain] DatabaseMigrator:49 - ************************************************************************
+INFO   | jvm 2    | 2023/03/10 08:43:00 | WARNING: Shutting down your server at this point will lead to a database corruption. Please wait until the database upgrade completes.
+INFO   | jvm 2    | 2023/03/10 08:43:00 | 2023-03-10 08:43:00,394 INFO  [WrapperJarAppMain] DatabaseMigrator:49 - WARNING: Shutting down your server at this point will lead to a database corruption. Please wait until the database upgrade completes.
+INFO   | jvm 2    | 2023/03/10 08:43:00 | ************************************************************************
+INFO   | jvm 2    | 2023/03/10 08:43:00 | 2023-03-10 08:43:00,397 INFO  [WrapperJarAppMain] DatabaseMigrator:49 - ************************************************************************
+INFO   | jvm 2    | 2023/03/10 08:43:00 | Mar 10, 2023 8:43:00 AM liquibase.database
+INFO   | jvm 2    | 2023/03/10 08:43:00 | INFO: Set default schema name to PUBLIC
+INFO   | jvm 2    | 2023/03/10 08:43:01 | Mar 10, 2023 8:43:01 AM liquibase.lockservice
+INFO   | jvm 2    | 2023/03/10 08:43:01 | INFO: Successfully acquired change log lock
+INFO   | jvm 2    | 2023/03/10 08:43:01 | Mar 10, 2023 8:43:01 AM liquibase.servicelocator
+INFO   | jvm 2    | 2023/03/10 08:43:01 | INFO: Cannot load service: liquibase.parser.ChangeLogParser: liquibase.parser.core.json.JsonChangeLogParser Unable to get public no-arg constructor
+INFO   | jvm 2    | 2023/03/10 08:43:01 | Mar 10, 2023 8:43:01 AM liquibase.servicelocator
+INFO   | jvm 2    | 2023/03/10 08:43:01 | INFO: Cannot load service: liquibase.parser.ChangeLogParser: liquibase.parser.core.yaml.YamlChangeLogParser Unable to get public no-arg constructor
+INFO   | jvm 2    | 2023/03/10 08:43:01 | Mar 10, 2023 8:43:01 AM liquibase.servicelocator
+INFO   | jvm 2    | 2023/03/10 08:43:01 | INFO: Cannot load service: liquibase.change.Change: liquibase.change.core.LoadDataChange Unable to get public no-arg constructor
+INFO   | jvm 2    | 2023/03/10 08:43:01 | Mar 10, 2023 8:43:01 AM liquibase.servicelocator
+INFO   | jvm 2    | 2023/03/10 08:43:01 | INFO: Cannot load service: liquibase.change.Change: liquibase.change.core.LoadUpdateDataChange Unable to get public no-arg constructor
+INFO   | jvm 2    | 2023/03/10 08:43:02 | Mar 10, 2023 8:43:01 AM liquibase.changelog
+INFO   | jvm 2    | 2023/03/10 08:43:02 | INFO: Reading resource: db-migration-scripts/migrations/2006.xml
+INFO   | jvm 2    | 2023/03/10 08:43:02 | Mar 10, 2023 8:43:02 AM liquibase.changelog
+INFO   | jvm 2    | 2023/03/10 08:43:02 | INFO: Reading from PUBLIC.DATABASECHANGELOG
+INFO   | jvm 2    | 2023/03/10 08:43:02 | Mar 10, 2023 8:43:02 AM liquibase.servicelocator
+INFO   | jvm 2    | 2023/03/10 08:43:02 | INFO: Cannot load service: liquibase.hub.HubService: Provider liquibase.hub.core.StandardHubService could not be instantiated
+INFO   | jvm 2    | 2023/03/10 08:43:02 | Mar 10, 2023 8:43:02 AM liquibase.lockservice
+INFO   | jvm 2    | 2023/03/10 08:43:02 | INFO: Successfully released change log lock
+INFO   | jvm 2    | 2023/03/10 08:43:02 | INFO: Database upgrade completed successfully.
+INFO   | jvm 2    | 2023/03/10 08:43:02 | 2023-03-10 08:43:02,521 INFO  [WrapperJarAppMain] DatabaseMigrator:57 - Database upgrade completed successfully.
+INFO   | jvm 2    | 2023/03/10 08:43:02 | 2023-03-10 08:43:02,526 INFO  [WrapperJarAppMain] DataMigrationRunner:34 - Running data migrations...
+INFO   | jvm 2    | 2023/03/10 08:43:02 | 2023-03-10 08:43:02,595 INFO  [WrapperJarAppMain] DataMigrationRunner:49 - Data migration took 4 ms
+INFO   | jvm 2    | 2023/03/10 08:43:02 | 2023-03-10 08:43:02,601 INFO  [WrapperJarAppMain] DataMigrationRunner:49 - Data migration took 0 ms
+INFO   | jvm 2    | 2023/03/10 08:43:02 | 2023-03-10 08:43:02,602 INFO  [WrapperJarAppMain] DataMigrationRunner:39 - Data migrations completed.
+INFO   | jvm 2    | 2023/03/10 08:43:03 | 2023-03-10 08:43:03,481 WARN  [WrapperJarAppMain] ConfigurationFactory:136 - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/go-working-dir/work/jetty-0_0_0_0-8153-cruise_war-_go-any-/webapp/WEB-INF/lib/ehcache-2.10.9.2.jar!/ehcache-failsafe.xml
+INFO   | jvm 2    | 2023/03/10 08:43:03 | 2023-03-10 08:43:03,586 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.AccessToken]; using defaults.
+INFO   | jvm 2    | 2023/03/10 08:43:03 | 2023-03-10 08:43:03,647 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.NotificationFilter]; using defaults.
+INFO   | jvm 2    | 2023/03/10 08:43:03 | 2023-03-10 08:43:03,758 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.User]; using defaults.
+INFO   | jvm 2    | 2023/03/10 08:43:03 | 2023-03-10 08:43:03,787 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.Plugin]; using defaults.
+INFO   | jvm 2    | 2023/03/10 08:43:03 | 2023-03-10 08:43:03,808 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.EnvironmentVariable]; using defaults.
+INFO   | jvm 2    | 2023/03/10 08:43:03 | 2023-03-10 08:43:03,874 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.User.notificationFilters]; using defaults.
+INFO   | jvm 2    | 2023/03/10 08:43:04 | 2023-03-10 08:43:03,959 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.
+INFO   | jvm 2    | 2023/03/10 08:43:04 | 2023-03-10 08:43:03,974 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.
+INFO   | jvm 2    | 2023/03/10 08:43:06 | 2023-03-10 08:43:06,678 INFO  [WrapperJarAppMain] ConnectionManager:98 - Done loading query extensions, found com.thoughtworks.go.server.database.h2.H2QueryExtensions@7a38fcb3
+INFO   | jvm 2    | 2023/03/10 08:43:11 | 2023-03-10 08:43:11,839 INFO  [WrapperJarAppMain] GoConfigMigration:94 - Upgrading config file from version 139 to version 139
+INFO   | jvm 2    | 2023/03/10 08:43:11 | 2023-03-10 08:43:11,885 INFO  [WrapperJarAppMain] GoConfigMigration:102 - Finished upgrading config file
+INFO   | jvm 2    | 2023/03/10 08:43:11 | 2023-03-10 08:43:11,887 INFO  [WrapperJarAppMain] GoConfigMigrator:106 - [Config Save] Starting Config Save post upgrade using FullConfigSaveNormalFlow
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,084 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-ldap-authentication-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,243 INFO  [WrapperJarAppMain] CachedGoConfig:223 - About to notify config listeners
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,246 INFO  [WrapperJarAppMain] CachedGoConfig:231 - Finished notifying all listeners
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,535 INFO  [WrapperJarAppMain] BuildAssignmentService:250 - [Configuration Changed] Removing jobs for pipelines that no longer exist in configuration.
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,570 INFO  [WrapperJarAppMain] InvalidateAuthenticationOnSecurityConfigChangeFilter:78 - [Configuration Changed] Security Configuration is changed. Updating the last changed time.
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,595 INFO  [WrapperJarAppMain] PipelineRepository:78 - Start updating pipeline timeline
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,648 INFO  [WrapperJarAppMain] PipelineRepository:84 - Pipeline timeline updated
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,650 INFO  [WrapperJarAppMain] PipelineSqlMapDao:132 - Loading active pipelines into memory.
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,651 INFO  [WrapperJarAppMain] PipelineSqlMapDao:383 - Retriving Active Pipelines from Database...
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,673 INFO  [Thread-82] PipelineSqlMapDao:419 - Loading pipeline history to cache...Started
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,673 INFO  [Thread-81] PipelineSqlMapDao:413 - Loading Active Pipelines to cache...Started
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,674 INFO  [WrapperJarAppMain] MaterialRepository:238 - Loading PMRs,Remaining 1 Pipelines (Total: 1)...
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,678 INFO  [Thread-82] PipelineSqlMapDao:423 - Loading pipeline history to cache...Done
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,680 INFO  [Thread-81] PipelineSqlMapDao:416 - Loading Active Pipelines to cache...Done
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,721 INFO  [WrapperJarAppMain] MaterialRepository:313 - Loading modifications, Remaining 1 PMRs(Total: 1)...
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,736 INFO  [WrapperJarAppMain] PipelineSqlMapDao:134 - Done loading active pipelines into memory.
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,799 INFO  [WrapperJarAppMain] ConsoleActivityMonitor:78 - Found '0' building jobs. Added them with '2023-03-10T08:43:12.737Z' as the last heard time
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,809 INFO  [WrapperJarAppMain] ConsoleActivityMonitor:79 - Found '0' scheduled jobs. Added them with '2023-03-10T08:43:12.737Z' as the last heard time
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,818 INFO  [WrapperJarAppMain] RailsAssetsService:68 - Found rails assets manifest file named .sprockets-manifest-33237067f8bbd7d7d3ed31a1f9d514b9.json 
+INFO   | jvm 2    | 2023/03/10 08:43:12 | 2023-03-10 08:43:12,838 INFO  [WrapperJarAppMain] RailsAssetsService:72 - Successfully read rails assets manifest file located at /go-working-dir/work/jetty-0_0_0_0-8153-cruise_war-_go-any-/webapp/WEB-INF/rails/public/assets/.sprockets-manifest-33237067f8bbd7d7d3ed31a1f9d514b9.json
+INFO   | jvm 2    | 2023/03/10 08:43:13 | jruby: warning: unknown property jruby.rack.request.size.threshold.bytes
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 2023-03-10 08:43:13,248  INFO [Thread-79] p.c.g.a.l.c.g.a.l.LdapPlugin:72 [plugin-cd.go.authentication.ldap] - Loading plugin null version 2.2.1-181
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 2023-03-10 08:43:13,355 ERROR [Thread-79] p.c.g.a.l.c.g.a.l.LdapPlugin:127 [plugin-cd.go.authentication.ldap] - Error while executing request go.plugin-settings.get-configuration
+INFO   | jvm 2    | 2023/03/10 08:43:13 | com.thoughtworks.go.plugin.api.exceptions.UnhandledRequestTypeException: This is an invalid request type :go.plugin-settings.get-configuration
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at cd.go.plugin.base.dispatcher.RequestDispatcher.dispatch(RequestDispatcher.java:45)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at cd.go.authentication.ldap.LdapPlugin.handle(LdapPlugin.java:68)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.DefaultPluginManager.lambda$submitTo$0(DefaultPluginManager.java:134)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.FelixGoPluginOSGiFramework.executeActionOnTheService(FelixGoPluginOSGiFramework.java:208)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.FelixGoPluginOSGiFramework.doOn(FelixGoPluginOSGiFramework.java:164)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.DefaultPluginManager.submitTo(DefaultPluginManager.java:131)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.access.PluginRequestHelper.submitRequest(PluginRequestHelper.java:49)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.access.common.AbstractExtension.getPluginSettingsConfiguration(AbstractExtension.java:56)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.access.common.settings.PluginSettingsMetadataLoader.lambda$findSettingsAndViewOfAllExtensionsIn$2(PluginSettingsMetadataLoader.java:84)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at java.base/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at java.base/java.util.stream.ReferencePipeline.collect(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.access.common.settings.PluginSettingsMetadataLoader.findSettingsAndViewOfAllExtensionsIn(PluginSettingsMetadataLoader.java:89)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.access.common.settings.PluginSettingsMetadataLoader.fetchPluginSettingsMetaData(PluginSettingsMetadataLoader.java:59)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.access.common.settings.PluginSettingsMetadataLoader.pluginLoaded(PluginSettingsMetadataLoader.java:49)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.PluginLoader.lambda$doPostBundleInstallActivities$0(PluginLoader.java:113)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at org.apache.commons.collections4.IteratorUtils.forEach(IteratorUtils.java:1224)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at org.apache.commons.collections4.IterableUtils.forEach(IterableUtils.java:585)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.PluginLoader.lambda$doPostBundleInstallActivities$1(PluginLoader.java:113)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at org.apache.commons.collections4.IteratorUtils.forEach(IteratorUtils.java:1224)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at org.apache.commons.collections4.IterableUtils.forEach(IterableUtils.java:585)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.PluginLoader.doPostBundleInstallActivities(PluginLoader.java:112)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.PluginLoader.loadPlugin(PluginLoader.java:70)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.listeners.DefaultPluginJarChangeListener.refreshBundle(DefaultPluginJarChangeListener.java:180)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.listeners.DefaultPluginJarChangeListener.addPlugin(DefaultPluginJarChangeListener.java:123)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.listeners.DefaultPluginJarChangeListener.pluginJarAdded(DefaultPluginJarChangeListener.java:72)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread$DoOnAllListeners.lambda$pluginJarAdded$0(DefaultPluginJarLocationMonitor.java:237)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread$DoOnAllListeners.doOnAllPluginJarChangeListener(DefaultPluginJarLocationMonitor.java:258)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread$DoOnAllListeners.pluginJarAdded(DefaultPluginJarLocationMonitor.java:237)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.monitor.PluginChangeNotifier.lambda$notify$0(PluginChangeNotifier.java:33)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at java.base/java.lang.Iterable.forEach(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.monitor.PluginChangeNotifier.notify(PluginChangeNotifier.java:30)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread.loadAndNotifyPluginsFrom(DefaultPluginJarLocationMonitor.java:204)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread.oneShot(DefaultPluginJarLocationMonitor.java:191)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread.run(DefaultPluginJarLocationMonitor.java:177)
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 2023-03-10 08:43:13,358 WARN  [Thread-79] PluginSettingsMetadataLoader:63 - Failed to fetch plugin settings metadata for plugin cd.go.authentication.ldap. Maybe the plugin does not implement plugin settings and view?
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 2023-03-10 08:43:13,359 WARN  [Thread-79] PluginSettingsMetadataLoader:64 - Plugin: cd.go.authentication.ldap - Metadata load info: [{extension='authorization', configuration='null', view='null', error='The plugin sent a response that could not be understood by Go. Plugin returned with code '500' and the following response: 'This is an invalid request type :go.plugin-settings.get-configuration''}]
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 2023-03-10 08:43:13,360 WARN  [Thread-79] PluginSettingsMetadataLoader:65 - Not all plugins are required to implement the request above. This error may be safe to ignore.
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 2023-03-10 08:43:13,363 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-ldap-authentication-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 2023-03-10 08:43:13,447 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-file-based-secrets-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 2023-03-10 08:43:13,732 ERROR [Thread-79] DefaultPluginManager:136 - This is an invalid request type :go.plugin-settings.get-configuration
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 2023-03-10 08:43:13,734 WARN  [Thread-79] PluginSettingsMetadataLoader:63 - Failed to fetch plugin settings metadata for plugin cd.go.secrets.file-based-plugin. Maybe the plugin does not implement plugin settings and view?
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 2023-03-10 08:43:13,735 WARN  [Thread-79] PluginSettingsMetadataLoader:64 - Plugin: cd.go.secrets.file-based-plugin - Metadata load info: [{extension='secrets', configuration='null', view='null', error='com.thoughtworks.go.plugin.api.exceptions.UnhandledRequestTypeException: This is an invalid request type :go.plugin-settings.get-configuration'}]
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 2023-03-10 08:43:13,736 WARN  [Thread-79] PluginSettingsMetadataLoader:65 - Not all plugins are required to implement the request above. This error may be safe to ignore.
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 2023-03-10 08:43:13,811 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-file-based-secrets-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:43:13 | 2023-03-10 08:43:13,889 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-json-config-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:43:14 | 2023-03-10T08:43:14.602Z [WrapperJarAppMain] WARN FilenoUtil : Native subprocess control requires open access to the JDK IO subsystem
+INFO   | jvm 2    | 2023/03/10 08:43:14 | Pass '--add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED' to enable.
+INFO   | jvm 2    | 2023/03/10 08:43:15 | 2023-03-10 08:43:15,288 INFO  [Thread-79] ConfigRepositoryInitializer:108 - [Config Repository Initializer] Start initializing the config repositories for plugin 'json.config.plugin' 
+INFO   | jvm 2    | 2023/03/10 08:43:15 | 2023-03-10 08:43:15,291 INFO  [Thread-79] ConfigRepositoryInitializer:112 - [Config Repository Initializer] Done initializing the config repositories for plugin 'json.config.plugin' 
+INFO   | jvm 2    | 2023/03/10 08:43:15 | 2023-03-10 08:43:15,324 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-json-config-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:43:15 | 2023-03-10 08:43:15,421 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-yum-repository-poller-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:43:16 | 2023-03-10 08:43:16,051 WARN  [Thread-79] PluginSettingsMetadataLoader:63 - Failed to fetch plugin settings metadata for plugin yum. Maybe the plugin does not implement plugin settings and view?
+INFO   | jvm 2    | 2023/03/10 08:43:16 | 2023-03-10 08:43:16,052 WARN  [Thread-79] PluginSettingsMetadataLoader:64 - Plugin: yum - Metadata load info: [{extension='package-repository', configuration='null', view='null', error='The plugin sent a response that could not be understood by Go. Plugin returned with code '400' and the following response: 'Invalid request name go.plugin-settings.get-configuration''}]
+INFO   | jvm 2    | 2023/03/10 08:43:16 | 2023-03-10 08:43:16,053 WARN  [Thread-79] PluginSettingsMetadataLoader:65 - Not all plugins are required to implement the request above. This error may be safe to ignore.
+INFO   | jvm 2    | 2023/03/10 08:43:16 | 2023-03-10 08:43:16,108 ERROR [Thread-79] PluginInfoBuilder:54 - Failed to fetch Plugin Settings metadata for plugin yum. Maybe the plugin does not implement plugin settings and view?
+INFO   | jvm 2    | 2023/03/10 08:43:16 | 2023-03-10 08:43:16,115 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-yum-repository-poller-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:43:16 | 2023-03-10 08:43:16,204 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-filebased-authentication-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:43:16 | 2023-03-10 08:43:16,377  INFO [Thread-79] p.c.g.a.p.c.g.a.p.PasswordFilePlugin:72 [plugin-cd.go.authentication.passwordfile] - Loading plugin null version 2.1.2-162
+INFO   | jvm 2    | 2023/03/10 08:43:16 | 2023-03-10 08:43:16,433  WARN [Thread-79] p.c.g.a.p.c.g.a.p.PasswordFilePlugin:97 [plugin-cd.go.authentication.passwordfile] - Request go.plugin-settings.get-configuration is not supported by plugin.
+INFO   | jvm 2    | 2023/03/10 08:43:16 | 2023-03-10 08:43:16,435 WARN  [Thread-79] PluginSettingsMetadataLoader:63 - Failed to fetch plugin settings metadata for plugin cd.go.authentication.passwordfile. Maybe the plugin does not implement plugin settings and view?
+INFO   | jvm 2    | 2023/03/10 08:43:16 | 2023-03-10 08:43:16,437 WARN  [Thread-79] PluginSettingsMetadataLoader:64 - Plugin: cd.go.authentication.passwordfile - Metadata load info: [{extension='authorization', configuration='null', view='null', error='The plugin sent a response that could not be understood by Go. Plugin returned with code '500' and the following response: 'Request go.plugin-settings.get-configuration is not supported by plugin.''}]
+INFO   | jvm 2    | 2023/03/10 08:43:16 | 2023-03-10 08:43:16,440 WARN  [Thread-79] PluginSettingsMetadataLoader:65 - Not all plugins are required to implement the request above. This error may be safe to ignore.
+INFO   | jvm 2    | 2023/03/10 08:43:16 | 2023-03-10 08:43:16,443 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-filebased-authentication-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:43:16 | 2023-03-10 08:43:16,571 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-yaml-config-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:43:18 | 2023-03-10 08:43:18,166 INFO  [Thread-79] ConfigRepositoryInitializer:108 - [Config Repository Initializer] Start initializing the config repositories for plugin 'yaml.config.plugin' 
+INFO   | jvm 2    | 2023/03/10 08:43:18 | 2023-03-10 08:43:18,169 INFO  [Thread-79] ConfigRepositoryInitializer:112 - [Config Repository Initializer] Done initializing the config repositories for plugin 'yaml.config.plugin' 
+INFO   | jvm 2    | 2023/03/10 08:43:18 | 2023-03-10 08:43:18,186 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-yaml-config-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:43:27 | 2023-03-10 08:43:27,938 WARN  [WrapperJarAppMain] DeprecationWarning:43 - Using @Deprecated Class com.thoughtworks.go.server.web.DefaultHeadersFilter
+INFO   | jvm 2    | 2023/03/10 08:43:34 | 2023-03-10 08:43:34,201 INFO  [ThreadPoolTaskScheduler-2] GoFileConfigDataSource:263 - Config file changed at 1678437792219
+INFO   | jvm 2    | 2023/03/10 08:43:34 | 2023-03-10 08:43:34,206 INFO  [ThreadPoolTaskScheduler-2] GoFileConfigDataSource:264 - Reloading config file: config/cruise-config.xml
+INFO   | jvm 2    | 2023/03/10 08:43:34 | 2023-03-10 08:43:34,296 INFO  [ThreadPoolTaskScheduler-2] CachedGoConfig:223 - About to notify config listeners
+INFO   | jvm 2    | 2023/03/10 08:43:34 | 2023-03-10 08:43:34,301 INFO  [ThreadPoolTaskScheduler-2] BuildAssignmentService:250 - [Configuration Changed] Removing jobs for pipelines that no longer exist in configuration.
+INFO   | jvm 2    | 2023/03/10 08:43:34 | 2023-03-10 08:43:34,303 INFO  [ThreadPoolTaskScheduler-2] CachedGoConfig:231 - Finished notifying all listeners
+INFO   | jvm 2    | 2023/03/10 08:43:38 | 2023-03-10 08:43:38,284 WARN  [qtp1784242807-45] FeatureToggleRepository:69 - Toggles file, /go-working-dir/config/go.feature.toggles does not exist. Saying there are no toggles.
+INFO   | jvm 2    | 2023/03/10 08:43:38 | 2023-03-10 08:43:38,688 INFO  [qtp1784242807-35] ServerVersionInfoManager:71 - [Go Update Check] Starting update check at: Fri Mar 10 08:43:38 GMT 2023
+INFO   | jvm 2    | 2023/03/10 08:43:42 | 2023-03-10 08:43:42,129 INFO  [qtp1784242807-39] ServerVersionInfoManager:86 - [Go Update Check] Update check done at: Fri Mar 10 08:43:42 GMT 2023, latest available version: 22.3.0-15301
+STATUS | wrapper  | 2023/03/10 08:54:39 | TERM trapped.  Shutting down.
+STATUS | wrapper  | 2023/03/10 08:54:40 | <-- Wrapper Stopped
+WARN   | wrapper  | 2023/03/10 08:54:44 | The "wrapper.java.additional.100" property was redefined on line #47 of configuration file: /go-server/wrapper-config/wrapper-properties.conf
+WARN   | wrapper  | 2023/03/10 08:54:44 |   Old Value wrapper.java.additional.100=-Dgo.console.stdout=true
+WARN   | wrapper  | 2023/03/10 08:54:44 |   New Value wrapper.java.additional.100=-Dgo.console.stdout=true
+WARN   | wrapper  | 2023/03/10 08:54:44 | The "wrapper.java.additional.100" property was redefined on line #48 of configuration file: /go-server/wrapper-config/wrapper-properties.conf
+WARN   | wrapper  | 2023/03/10 08:54:44 |   Old Value wrapper.java.additional.100=-Dgo.console.stdout=true
+WARN   | wrapper  | 2023/03/10 08:54:44 |   New Value wrapper.java.additional.100=-Dgo.console.stdout=true
+STATUS | wrapper  | 2023/03/10 08:54:44 | --> Wrapper Started as Console
+STATUS | wrapper  | 2023/03/10 08:54:44 | Java Service Wrapper Standard Edition 64-bit 3.5.50
+STATUS | wrapper  | 2023/03/10 08:54:44 |   Copyright (C) 1999-2022 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2023/03/10 08:54:44 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2023/03/10 08:54:44 |   Licensed to ThoughtWorks for GoCD Server
+STATUS | wrapper  | 2023/03/10 08:54:44 | 
+STATUS | wrapper  | 2023/03/10 08:54:45 | Launching a JVM...
+ERROR  | wrapper  | 2023/03/10 08:54:45 | Failed to set JVM input handle to non blocking mode: Bad file descriptor (9)
+ERROR  | wrapper  | 2023/03/10 08:54:45 | Failed to set JVM input handle to close on JVM exit: Bad file descriptor (9)
+ERROR  | wrapper  | 2023/03/10 08:54:45 | JVM exited while loading the application.
+ERROR  | wrapper  | 2023/03/10 08:54:45 | Unable to set JVM's stdin: Bad file descriptor
+INFO   | jvm 1    | 2023/03/10 08:54:45 | wrapper  | The "wrapper.java.additional.100" property was redefined on line #47 of configuration file: /go-server/wrapper-config/wrapper-properties.conf
+INFO   | jvm 1    | 2023/03/10 08:54:45 | wrapper  |   Old Value wrapper.java.additional.100=-Dgo.console.stdout=true
+INFO   | jvm 1    | 2023/03/10 08:54:45 | wrapper  |   New Value wrapper.java.additional.100=-Dgo.console.stdout=true
+INFO   | jvm 1    | 2023/03/10 08:54:45 | wrapper  | The "wrapper.java.additional.100" property was redefined on line #48 of configuration file: /go-server/wrapper-config/wrapper-properties.conf
+INFO   | jvm 1    | 2023/03/10 08:54:45 | wrapper  |   Old Value wrapper.java.additional.100=-Dgo.console.stdout=true
+INFO   | jvm 1    | 2023/03/10 08:54:45 | wrapper  |   New Value wrapper.java.additional.100=-Dgo.console.stdout=true
+INFO   | jvm 1    | 2023/03/10 08:54:45 | wrapper  | --> Wrapper Started as Console
+INFO   | jvm 1    | 2023/03/10 08:54:45 | ]0;go-serverwrapper  | Java Service Wrapper Standard Edition 64-bit 3.5.50
+INFO   | jvm 1    | 2023/03/10 08:54:45 | wrapper  |   Copyright (C) 1999-2022 Tanuki Software, Ltd. All Rights Reserved.
+INFO   | jvm 1    | 2023/03/10 08:54:45 | wrapper  |     http://wrapper.tanukisoftware.com
+INFO   | jvm 1    | 2023/03/10 08:54:45 | wrapper  |   Licensed to ThoughtWorks for GoCD Server
+INFO   | jvm 1    | 2023/03/10 08:54:45 | wrapper  | 
+INFO   | jvm 1    | 2023/03/10 08:54:45 | wrapper  | Launching a JVM...
+STATUS | wrapper  | 2023/03/10 08:54:50 | Launching a JVM...
+INFO   | jvm 2    | 2023/03/10 08:54:50 | WrapperManager: Initializing...
+INFO   | jvm 2    | 2023/03/10 08:54:51 | [Fri Mar 10 08:54:50 GMT 2023] Starting process: 
+INFO   | jvm 2    | 2023/03/10 08:54:51 | [Fri Mar 10 08:54:50 GMT 2023]   Working directory    : /go-working-dir
+INFO   | jvm 2    | 2023/03/10 08:54:51 | [Fri Mar 10 08:54:50 GMT 2023]   Application arguments: []
+INFO   | jvm 2    | 2023/03/10 08:54:51 | [Fri Mar 10 08:54:50 GMT 2023]            GoCD Version: 22.3.0-15301
+INFO   | jvm 2    | 2023/03/10 08:54:51 | [Fri Mar 10 08:54:50 GMT 2023]            Java Version: 17.0.5
+INFO   | jvm 2    | 2023/03/10 08:54:51 | [Fri Mar 10 08:54:50 GMT 2023]        Operating System: Linux(5.15.90.1-microsoft-standard-WSL2)
+INFO   | jvm 2    | 2023/03/10 08:54:51 | Could not find file `config/logback.xml'. Attempting to load from classpath.
+INFO   | jvm 2    | 2023/03/10 08:54:51 | Using classpath resource `jar:onejar:lib/server-launcher-22.3.0-15301-main.jar!/config/logback.xml'.
+STATUS | wrapper  | 2023/03/10 08:54:53 | TERM trapped.  Shutting down.
+INFO   | jvm 2    | 2023/03/10 08:54:53 | 2023-03-10 08:54:53,234 INFO  [WrapperJarAppMain] Jetty9Server:193 - Configuring Jetty using /go-working-dir/config/jetty.xml
+INFO   | jvm 2    | 2023/03/10 08:54:53 | 2023-03-10 08:54:53,366 WARN  [WrapperJarAppMain] Server:357 - ErrorPageMapper not supported for Server level Error Handling
+INFO   | jvm 2    | 2023/03/10 08:54:53 | 2023-03-10 08:54:53,525 WARN  [WrapperJarAppMain] AbstractHandler:96 - No Server set for ResourceHandler@74991ed{STOPPED}
+STATUS | wrapper  | 2023/03/10 08:54:55 | <-- Wrapper Stopped
+WARN   | wrapper  | 2023/03/10 08:55:00 | The "wrapper.java.additional.100" property was redefined on line #47 of configuration file: /go-server/wrapper-config/wrapper-properties.conf
+WARN   | wrapper  | 2023/03/10 08:55:00 |   Old Value wrapper.java.additional.100=-Dgo.console.stdout=true
+WARN   | wrapper  | 2023/03/10 08:55:00 |   New Value wrapper.java.additional.100=-Dgo.console.stdout=true
+WARN   | wrapper  | 2023/03/10 08:55:00 | The "wrapper.java.additional.100" property was redefined on line #48 of configuration file: /go-server/wrapper-config/wrapper-properties.conf
+WARN   | wrapper  | 2023/03/10 08:55:00 |   Old Value wrapper.java.additional.100=-Dgo.console.stdout=true
+WARN   | wrapper  | 2023/03/10 08:55:00 |   New Value wrapper.java.additional.100=-Dgo.console.stdout=true
+WARN   | wrapper  | 2023/03/10 08:55:00 | The "wrapper.java.additional.100" property was redefined on line #49 of configuration file: /go-server/wrapper-config/wrapper-properties.conf
+WARN   | wrapper  | 2023/03/10 08:55:00 |   Old Value wrapper.java.additional.100=-Dgo.console.stdout=true
+WARN   | wrapper  | 2023/03/10 08:55:00 |   New Value wrapper.java.additional.100=-Dgo.console.stdout=true
+STATUS | wrapper  | 2023/03/10 08:55:00 | --> Wrapper Started as Console
+STATUS | wrapper  | 2023/03/10 08:55:00 | Java Service Wrapper Standard Edition 64-bit 3.5.50
+STATUS | wrapper  | 2023/03/10 08:55:00 |   Copyright (C) 1999-2022 Tanuki Software, Ltd. All Rights Reserved.
+STATUS | wrapper  | 2023/03/10 08:55:00 |     http://wrapper.tanukisoftware.com
+STATUS | wrapper  | 2023/03/10 08:55:00 |   Licensed to ThoughtWorks for GoCD Server
+STATUS | wrapper  | 2023/03/10 08:55:00 | 
+STATUS | wrapper  | 2023/03/10 08:55:00 | Launching a JVM...
+ERROR  | wrapper  | 2023/03/10 08:55:00 | Failed to set JVM input handle to non blocking mode: Bad file descriptor (9)
+ERROR  | wrapper  | 2023/03/10 08:55:00 | Failed to set JVM input handle to close on JVM exit: Bad file descriptor (9)
+ERROR  | wrapper  | 2023/03/10 08:55:00 | JVM exited while loading the application.
+ERROR  | wrapper  | 2023/03/10 08:55:00 | Unable to set JVM's stdin: Bad file descriptor
+INFO   | jvm 1    | 2023/03/10 08:55:00 | wrapper  | The "wrapper.java.additional.100" property was redefined on line #47 of configuration file: /go-server/wrapper-config/wrapper-properties.conf
+INFO   | jvm 1    | 2023/03/10 08:55:00 | wrapper  |   Old Value wrapper.java.additional.100=-Dgo.console.stdout=true
+INFO   | jvm 1    | 2023/03/10 08:55:00 | wrapper  |   New Value wrapper.java.additional.100=-Dgo.console.stdout=true
+INFO   | jvm 1    | 2023/03/10 08:55:00 | wrapper  | The "wrapper.java.additional.100" property was redefined on line #48 of configuration file: /go-server/wrapper-config/wrapper-properties.conf
+INFO   | jvm 1    | 2023/03/10 08:55:00 | wrapper  |   Old Value wrapper.java.additional.100=-Dgo.console.stdout=true
+INFO   | jvm 1    | 2023/03/10 08:55:00 | wrapper  |   New Value wrapper.java.additional.100=-Dgo.console.stdout=true
+INFO   | jvm 1    | 2023/03/10 08:55:00 | wrapper  | The "wrapper.java.additional.100" property was redefined on line #49 of configuration file: /go-server/wrapper-config/wrapper-properties.conf
+INFO   | jvm 1    | 2023/03/10 08:55:00 | wrapper  |   Old Value wrapper.java.additional.100=-Dgo.console.stdout=true
+INFO   | jvm 1    | 2023/03/10 08:55:00 | wrapper  |   New Value wrapper.java.additional.100=-Dgo.console.stdout=true
+INFO   | jvm 1    | 2023/03/10 08:55:00 | wrapper  | --> Wrapper Started as Console
+INFO   | jvm 1    | 2023/03/10 08:55:00 | ]0;go-serverwrapper  | Java Service Wrapper Standard Edition 64-bit 3.5.50
+INFO   | jvm 1    | 2023/03/10 08:55:00 | wrapper  |   Copyright (C) 1999-2022 Tanuki Software, Ltd. All Rights Reserved.
+INFO   | jvm 1    | 2023/03/10 08:55:00 | wrapper  |     http://wrapper.tanukisoftware.com
+INFO   | jvm 1    | 2023/03/10 08:55:00 | wrapper  |   Licensed to ThoughtWorks for GoCD Server
+INFO   | jvm 1    | 2023/03/10 08:55:00 | wrapper  | 
+INFO   | jvm 1    | 2023/03/10 08:55:00 | wrapper  | Launching a JVM...
+STATUS | wrapper  | 2023/03/10 08:55:05 | Launching a JVM...
+INFO   | jvm 2    | 2023/03/10 08:55:06 | WrapperManager: Initializing...
+INFO   | jvm 2    | 2023/03/10 08:55:06 | [Fri Mar 10 08:55:06 GMT 2023] Starting process: 
+INFO   | jvm 2    | 2023/03/10 08:55:06 | [Fri Mar 10 08:55:06 GMT 2023]   Working directory    : /go-working-dir
+INFO   | jvm 2    | 2023/03/10 08:55:06 | [Fri Mar 10 08:55:06 GMT 2023]   Application arguments: []
+INFO   | jvm 2    | 2023/03/10 08:55:06 | [Fri Mar 10 08:55:06 GMT 2023]            GoCD Version: 22.3.0-15301
+INFO   | jvm 2    | 2023/03/10 08:55:06 | [Fri Mar 10 08:55:06 GMT 2023]            Java Version: 17.0.5
+INFO   | jvm 2    | 2023/03/10 08:55:06 | [Fri Mar 10 08:55:06 GMT 2023]        Operating System: Linux(5.15.90.1-microsoft-standard-WSL2)
+INFO   | jvm 2    | 2023/03/10 08:55:06 | Could not find file `config/logback.xml'. Attempting to load from classpath.
+INFO   | jvm 2    | 2023/03/10 08:55:06 | Using classpath resource `jar:onejar:lib/server-launcher-22.3.0-15301-main.jar!/config/logback.xml'.
+INFO   | jvm 2    | 2023/03/10 08:55:07 | 2023-03-10 08:55:07,765 INFO  [WrapperJarAppMain] Jetty9Server:193 - Configuring Jetty using /go-working-dir/config/jetty.xml
+INFO   | jvm 2    | 2023/03/10 08:55:07 | 2023-03-10 08:55:07,849 WARN  [WrapperJarAppMain] Server:357 - ErrorPageMapper not supported for Server level Error Handling
+INFO   | jvm 2    | 2023/03/10 08:55:08 | 2023-03-10 08:55:08,003 WARN  [WrapperJarAppMain] AbstractHandler:96 - No Server set for ResourceHandler@74991ed{STOPPED}
+INFO   | jvm 2    | 2023/03/10 08:55:13 | 2023-03-10 08:55:13,111 WARN  [WrapperJarAppMain] ConnectionManager:117 - The file config/db.properties specified by `go.db.config` does not exist.
+INFO   | jvm 2    | 2023/03/10 08:55:13 | 2023-03-10 08:55:13,446 INFO  [WrapperJarAppMain] DatabaseMigrator:40 - Upgrading database, this might take a while depending on the size of the database.
+INFO   | jvm 2    | 2023/03/10 08:55:13 | ************************************************************************
+INFO   | jvm 2    | 2023/03/10 08:55:13 | 2023-03-10 08:55:13,448 INFO  [WrapperJarAppMain] DatabaseMigrator:49 - ************************************************************************
+INFO   | jvm 2    | 2023/03/10 08:55:13 | WARNING: Shutting down your server at this point will lead to a database corruption. Please wait until the database upgrade completes.
+INFO   | jvm 2    | 2023/03/10 08:55:13 | 2023-03-10 08:55:13,449 INFO  [WrapperJarAppMain] DatabaseMigrator:49 - WARNING: Shutting down your server at this point will lead to a database corruption. Please wait until the database upgrade completes.
+INFO   | jvm 2    | 2023/03/10 08:55:13 | ************************************************************************
+INFO   | jvm 2    | 2023/03/10 08:55:13 | 2023-03-10 08:55:13,450 INFO  [WrapperJarAppMain] DatabaseMigrator:49 - ************************************************************************
+INFO   | jvm 2    | 2023/03/10 08:55:13 | Mar 10, 2023 8:55:13 AM liquibase.database
+INFO   | jvm 2    | 2023/03/10 08:55:13 | INFO: Set default schema name to PUBLIC
+INFO   | jvm 2    | 2023/03/10 08:55:13 | Mar 10, 2023 8:55:13 AM liquibase.lockservice
+INFO   | jvm 2    | 2023/03/10 08:55:13 | INFO: Successfully acquired change log lock
+INFO   | jvm 2    | 2023/03/10 08:55:13 | Mar 10, 2023 8:55:13 AM liquibase.servicelocator
+INFO   | jvm 2    | 2023/03/10 08:55:13 | INFO: Cannot load service: liquibase.parser.ChangeLogParser: liquibase.parser.core.json.JsonChangeLogParser Unable to get public no-arg constructor
+INFO   | jvm 2    | 2023/03/10 08:55:13 | Mar 10, 2023 8:55:13 AM liquibase.servicelocator
+INFO   | jvm 2    | 2023/03/10 08:55:13 | INFO: Cannot load service: liquibase.parser.ChangeLogParser: liquibase.parser.core.yaml.YamlChangeLogParser Unable to get public no-arg constructor
+INFO   | jvm 2    | 2023/03/10 08:55:13 | Mar 10, 2023 8:55:13 AM liquibase.servicelocator
+INFO   | jvm 2    | 2023/03/10 08:55:13 | INFO: Cannot load service: liquibase.change.Change: liquibase.change.core.LoadDataChange Unable to get public no-arg constructor
+INFO   | jvm 2    | 2023/03/10 08:55:13 | Mar 10, 2023 8:55:13 AM liquibase.servicelocator
+INFO   | jvm 2    | 2023/03/10 08:55:13 | INFO: Cannot load service: liquibase.change.Change: liquibase.change.core.LoadUpdateDataChange Unable to get public no-arg constructor
+INFO   | jvm 2    | 2023/03/10 08:55:14 | Mar 10, 2023 8:55:14 AM liquibase.changelog
+INFO   | jvm 2    | 2023/03/10 08:55:14 | INFO: Reading resource: db-migration-scripts/migrations/2006.xml
+INFO   | jvm 2    | 2023/03/10 08:55:14 | Mar 10, 2023 8:55:14 AM liquibase.changelog
+INFO   | jvm 2    | 2023/03/10 08:55:14 | INFO: Reading from PUBLIC.DATABASECHANGELOG
+INFO   | jvm 2    | 2023/03/10 08:55:14 | Mar 10, 2023 8:55:14 AM liquibase.servicelocator
+INFO   | jvm 2    | 2023/03/10 08:55:14 | INFO: Cannot load service: liquibase.hub.HubService: Provider liquibase.hub.core.StandardHubService could not be instantiated
+INFO   | jvm 2    | 2023/03/10 08:55:14 | Mar 10, 2023 8:55:14 AM liquibase.lockservice
+INFO   | jvm 2    | 2023/03/10 08:55:14 | INFO: Successfully released change log lock
+INFO   | jvm 2    | 2023/03/10 08:55:14 | INFO: Database upgrade completed successfully.
+INFO   | jvm 2    | 2023/03/10 08:55:14 | 2023-03-10 08:55:14,749 INFO  [WrapperJarAppMain] DatabaseMigrator:57 - Database upgrade completed successfully.
+INFO   | jvm 2    | 2023/03/10 08:55:14 | 2023-03-10 08:55:14,751 INFO  [WrapperJarAppMain] DataMigrationRunner:34 - Running data migrations...
+INFO   | jvm 2    | 2023/03/10 08:55:14 | 2023-03-10 08:55:14,814 INFO  [WrapperJarAppMain] DataMigrationRunner:49 - Data migration took 4 ms
+INFO   | jvm 2    | 2023/03/10 08:55:14 | 2023-03-10 08:55:14,819 INFO  [WrapperJarAppMain] DataMigrationRunner:49 - Data migration took 0 ms
+INFO   | jvm 2    | 2023/03/10 08:55:14 | 2023-03-10 08:55:14,822 INFO  [WrapperJarAppMain] DataMigrationRunner:39 - Data migrations completed.
+INFO   | jvm 2    | 2023/03/10 08:55:15 | 2023-03-10 08:55:15,708 WARN  [WrapperJarAppMain] ConfigurationFactory:136 - No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/go-working-dir/work/jetty-0_0_0_0-8153-cruise_war-_go-any-/webapp/WEB-INF/lib/ehcache-2.10.9.2.jar!/ehcache-failsafe.xml
+INFO   | jvm 2    | 2023/03/10 08:55:15 | 2023-03-10 08:55:15,795 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.AccessToken]; using defaults.
+INFO   | jvm 2    | 2023/03/10 08:55:15 | 2023-03-10 08:55:15,832 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.NotificationFilter]; using defaults.
+INFO   | jvm 2    | 2023/03/10 08:55:15 | 2023-03-10 08:55:15,917 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.User]; using defaults.
+INFO   | jvm 2    | 2023/03/10 08:55:15 | 2023-03-10 08:55:15,939 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.Plugin]; using defaults.
+INFO   | jvm 2    | 2023/03/10 08:55:15 | 2023-03-10 08:55:15,951 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.EnvironmentVariable]; using defaults.
+INFO   | jvm 2    | 2023/03/10 08:55:16 | 2023-03-10 08:55:15,994 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [com.thoughtworks.go.domain.User.notificationFilters]; using defaults.
+INFO   | jvm 2    | 2023/03/10 08:55:16 | 2023-03-10 08:55:16,056 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.
+INFO   | jvm 2    | 2023/03/10 08:55:16 | 2023-03-10 08:55:16,065 WARN  [WrapperJarAppMain] EhCacheProvider:93 - Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.
+INFO   | jvm 2    | 2023/03/10 08:55:18 | 2023-03-10 08:55:18,756 INFO  [WrapperJarAppMain] ConnectionManager:98 - Done loading query extensions, found com.thoughtworks.go.server.database.h2.H2QueryExtensions@50cf4a6a
+INFO   | jvm 2    | 2023/03/10 08:55:22 | 2023-03-10 08:55:22,466 INFO  [WrapperJarAppMain] GoConfigMigration:94 - Upgrading config file from version 139 to version 139
+INFO   | jvm 2    | 2023/03/10 08:55:22 | 2023-03-10 08:55:22,507 INFO  [WrapperJarAppMain] GoConfigMigration:102 - Finished upgrading config file
+INFO   | jvm 2    | 2023/03/10 08:55:22 | 2023-03-10 08:55:22,508 INFO  [WrapperJarAppMain] GoConfigMigrator:106 - [Config Save] Starting Config Save post upgrade using FullConfigSaveNormalFlow
+INFO   | jvm 2    | 2023/03/10 08:55:22 | 2023-03-10 08:55:22,699 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-ldap-authentication-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:55:22 | 2023-03-10 08:55:22,830 INFO  [WrapperJarAppMain] CachedGoConfig:223 - About to notify config listeners
+INFO   | jvm 2    | 2023/03/10 08:55:22 | 2023-03-10 08:55:22,833 INFO  [WrapperJarAppMain] CachedGoConfig:231 - Finished notifying all listeners
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,043 INFO  [WrapperJarAppMain] BuildAssignmentService:250 - [Configuration Changed] Removing jobs for pipelines that no longer exist in configuration.
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,073 INFO  [WrapperJarAppMain] InvalidateAuthenticationOnSecurityConfigChangeFilter:78 - [Configuration Changed] Security Configuration is changed. Updating the last changed time.
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,091 INFO  [WrapperJarAppMain] PipelineRepository:78 - Start updating pipeline timeline
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,126 INFO  [WrapperJarAppMain] PipelineRepository:84 - Pipeline timeline updated
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,128 INFO  [WrapperJarAppMain] PipelineSqlMapDao:132 - Loading active pipelines into memory.
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,129 INFO  [WrapperJarAppMain] PipelineSqlMapDao:383 - Retriving Active Pipelines from Database...
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,149 INFO  [Thread-81] PipelineSqlMapDao:413 - Loading Active Pipelines to cache...Started
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,148 INFO  [Thread-82] PipelineSqlMapDao:419 - Loading pipeline history to cache...Started
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,149 INFO  [WrapperJarAppMain] MaterialRepository:238 - Loading PMRs,Remaining 1 Pipelines (Total: 1)...
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,152 INFO  [Thread-81] PipelineSqlMapDao:416 - Loading Active Pipelines to cache...Done
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,153 INFO  [Thread-82] PipelineSqlMapDao:423 - Loading pipeline history to cache...Done
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,180 INFO  [WrapperJarAppMain] MaterialRepository:313 - Loading modifications, Remaining 1 PMRs(Total: 1)...
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,191 INFO  [WrapperJarAppMain] PipelineSqlMapDao:134 - Done loading active pipelines into memory.
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,225 INFO  [WrapperJarAppMain] ConsoleActivityMonitor:78 - Found '0' building jobs. Added them with '2023-03-10T08:55:23.192Z' as the last heard time
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,233 INFO  [WrapperJarAppMain] ConsoleActivityMonitor:79 - Found '0' scheduled jobs. Added them with '2023-03-10T08:55:23.192Z' as the last heard time
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,240 INFO  [WrapperJarAppMain] RailsAssetsService:68 - Found rails assets manifest file named .sprockets-manifest-33237067f8bbd7d7d3ed31a1f9d514b9.json 
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,258 INFO  [WrapperJarAppMain] RailsAssetsService:72 - Successfully read rails assets manifest file located at /go-working-dir/work/jetty-0_0_0_0-8153-cruise_war-_go-any-/webapp/WEB-INF/rails/public/assets/.sprockets-manifest-33237067f8bbd7d7d3ed31a1f9d514b9.json
+INFO   | jvm 2    | 2023/03/10 08:55:23 | jruby: warning: unknown property jruby.rack.request.size.threshold.bytes
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,789  INFO [Thread-79] p.c.g.a.l.c.g.a.l.LdapPlugin:72 [plugin-cd.go.authentication.ldap] - Loading plugin null version 2.2.1-181
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 2023-03-10 08:55:23,859 ERROR [Thread-79] p.c.g.a.l.c.g.a.l.LdapPlugin:127 [plugin-cd.go.authentication.ldap] - Error while executing request go.plugin-settings.get-configuration
+INFO   | jvm 2    | 2023/03/10 08:55:23 | com.thoughtworks.go.plugin.api.exceptions.UnhandledRequestTypeException: This is an invalid request type :go.plugin-settings.get-configuration
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 	at cd.go.plugin.base.dispatcher.RequestDispatcher.dispatch(RequestDispatcher.java:45)
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 	at cd.go.authentication.ldap.LdapPlugin.handle(LdapPlugin.java:68)
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 	at com.thoughtworks.go.plugin.infra.DefaultPluginManager.lambda$submitTo$0(DefaultPluginManager.java:134)
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 	at com.thoughtworks.go.plugin.infra.FelixGoPluginOSGiFramework.executeActionOnTheService(FelixGoPluginOSGiFramework.java:208)
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 	at com.thoughtworks.go.plugin.infra.FelixGoPluginOSGiFramework.doOn(FelixGoPluginOSGiFramework.java:164)
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 	at com.thoughtworks.go.plugin.infra.DefaultPluginManager.submitTo(DefaultPluginManager.java:131)
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 	at com.thoughtworks.go.plugin.access.PluginRequestHelper.submitRequest(PluginRequestHelper.java:49)
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 	at com.thoughtworks.go.plugin.access.common.AbstractExtension.getPluginSettingsConfiguration(AbstractExtension.java:56)
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 	at com.thoughtworks.go.plugin.access.common.settings.PluginSettingsMetadataLoader.lambda$findSettingsAndViewOfAllExtensionsIn$2(PluginSettingsMetadataLoader.java:84)
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 	at java.base/java.util.stream.ReferencePipeline$2$1.accept(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:55:23 | 	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at java.base/java.util.stream.ReferencePipeline.collect(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.access.common.settings.PluginSettingsMetadataLoader.findSettingsAndViewOfAllExtensionsIn(PluginSettingsMetadataLoader.java:89)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.access.common.settings.PluginSettingsMetadataLoader.fetchPluginSettingsMetaData(PluginSettingsMetadataLoader.java:59)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.access.common.settings.PluginSettingsMetadataLoader.pluginLoaded(PluginSettingsMetadataLoader.java:49)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.infra.PluginLoader.lambda$doPostBundleInstallActivities$0(PluginLoader.java:113)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at org.apache.commons.collections4.IteratorUtils.forEach(IteratorUtils.java:1224)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at org.apache.commons.collections4.IterableUtils.forEach(IterableUtils.java:585)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.infra.PluginLoader.lambda$doPostBundleInstallActivities$1(PluginLoader.java:113)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at org.apache.commons.collections4.IteratorUtils.forEach(IteratorUtils.java:1224)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at org.apache.commons.collections4.IterableUtils.forEach(IterableUtils.java:585)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.infra.PluginLoader.doPostBundleInstallActivities(PluginLoader.java:112)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.infra.PluginLoader.loadPlugin(PluginLoader.java:70)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.infra.listeners.DefaultPluginJarChangeListener.refreshBundle(DefaultPluginJarChangeListener.java:180)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.infra.listeners.DefaultPluginJarChangeListener.addPlugin(DefaultPluginJarChangeListener.java:123)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.infra.listeners.DefaultPluginJarChangeListener.pluginJarAdded(DefaultPluginJarChangeListener.java:72)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread$DoOnAllListeners.lambda$pluginJarAdded$0(DefaultPluginJarLocationMonitor.java:237)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread$DoOnAllListeners.doOnAllPluginJarChangeListener(DefaultPluginJarLocationMonitor.java:258)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread$DoOnAllListeners.pluginJarAdded(DefaultPluginJarLocationMonitor.java:237)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.infra.monitor.PluginChangeNotifier.lambda$notify$0(PluginChangeNotifier.java:33)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at java.base/java.lang.Iterable.forEach(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.infra.monitor.PluginChangeNotifier.notify(PluginChangeNotifier.java:30)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread.loadAndNotifyPluginsFrom(DefaultPluginJarLocationMonitor.java:204)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread.oneShot(DefaultPluginJarLocationMonitor.java:191)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread.run(DefaultPluginJarLocationMonitor.java:177)
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 2023-03-10 08:55:23,861 WARN  [Thread-79] PluginSettingsMetadataLoader:63 - Failed to fetch plugin settings metadata for plugin cd.go.authentication.ldap. Maybe the plugin does not implement plugin settings and view?
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 2023-03-10 08:55:23,863 WARN  [Thread-79] PluginSettingsMetadataLoader:64 - Plugin: cd.go.authentication.ldap - Metadata load info: [{extension='authorization', configuration='null', view='null', error='The plugin sent a response that could not be understood by Go. Plugin returned with code '500' and the following response: 'This is an invalid request type :go.plugin-settings.get-configuration''}]
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 2023-03-10 08:55:23,866 WARN  [Thread-79] PluginSettingsMetadataLoader:65 - Not all plugins are required to implement the request above. This error may be safe to ignore.
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 2023-03-10 08:55:23,868 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-ldap-authentication-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 2023-03-10 08:55:23,937 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-file-based-secrets-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 2023-03-10 08:55:24,228 ERROR [Thread-79] DefaultPluginManager:136 - This is an invalid request type :go.plugin-settings.get-configuration
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 2023-03-10 08:55:24,230 WARN  [Thread-79] PluginSettingsMetadataLoader:63 - Failed to fetch plugin settings metadata for plugin cd.go.secrets.file-based-plugin. Maybe the plugin does not implement plugin settings and view?
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 2023-03-10 08:55:24,230 WARN  [Thread-79] PluginSettingsMetadataLoader:64 - Plugin: cd.go.secrets.file-based-plugin - Metadata load info: [{extension='secrets', configuration='null', view='null', error='com.thoughtworks.go.plugin.api.exceptions.UnhandledRequestTypeException: This is an invalid request type :go.plugin-settings.get-configuration'}]
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 2023-03-10 08:55:24,231 WARN  [Thread-79] PluginSettingsMetadataLoader:65 - Not all plugins are required to implement the request above. This error may be safe to ignore.
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 2023-03-10 08:55:24,296 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-file-based-secrets-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 2023-03-10 08:55:24,383 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-json-config-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:55:24 | 2023-03-10T08:55:24.936Z [WrapperJarAppMain] WARN FilenoUtil : Native subprocess control requires open access to the JDK IO subsystem
+INFO   | jvm 2    | 2023/03/10 08:55:24 | Pass '--add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED' to enable.
+INFO   | jvm 2    | 2023/03/10 08:55:25 | 2023-03-10 08:55:25,876 INFO  [Thread-79] ConfigRepositoryInitializer:108 - [Config Repository Initializer] Start initializing the config repositories for plugin 'json.config.plugin' 
+INFO   | jvm 2    | 2023/03/10 08:55:25 | 2023-03-10 08:55:25,878 INFO  [Thread-79] ConfigRepositoryInitializer:112 - [Config Repository Initializer] Done initializing the config repositories for plugin 'json.config.plugin' 
+INFO   | jvm 2    | 2023/03/10 08:55:26 | 2023-03-10 08:55:25,910 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-json-config-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:55:26 | 2023-03-10 08:55:25,971 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-yum-repository-poller-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:55:26 | 2023-03-10 08:55:26,570 WARN  [Thread-79] PluginSettingsMetadataLoader:63 - Failed to fetch plugin settings metadata for plugin yum. Maybe the plugin does not implement plugin settings and view?
+INFO   | jvm 2    | 2023/03/10 08:55:26 | 2023-03-10 08:55:26,571 WARN  [Thread-79] PluginSettingsMetadataLoader:64 - Plugin: yum - Metadata load info: [{extension='package-repository', configuration='null', view='null', error='The plugin sent a response that could not be understood by Go. Plugin returned with code '400' and the following response: 'Invalid request name go.plugin-settings.get-configuration''}]
+INFO   | jvm 2    | 2023/03/10 08:55:26 | 2023-03-10 08:55:26,572 WARN  [Thread-79] PluginSettingsMetadataLoader:65 - Not all plugins are required to implement the request above. This error may be safe to ignore.
+INFO   | jvm 2    | 2023/03/10 08:55:26 | 2023-03-10 08:55:26,627 ERROR [Thread-79] PluginInfoBuilder:54 - Failed to fetch Plugin Settings metadata for plugin yum. Maybe the plugin does not implement plugin settings and view?
+INFO   | jvm 2    | 2023/03/10 08:55:26 | 2023-03-10 08:55:26,636 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-yum-repository-poller-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:55:26 | 2023-03-10 08:55:26,709 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-filebased-authentication-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:55:26 | 2023-03-10 08:55:26,924  INFO [Thread-79] p.c.g.a.p.c.g.a.p.PasswordFilePlugin:72 [plugin-cd.go.authentication.passwordfile] - Loading plugin null version 2.1.2-162
+INFO   | jvm 2    | 2023/03/10 08:55:27 | 2023-03-10 08:55:26,953  WARN [Thread-79] p.c.g.a.p.c.g.a.p.PasswordFilePlugin:97 [plugin-cd.go.authentication.passwordfile] - Request go.plugin-settings.get-configuration is not supported by plugin.
+INFO   | jvm 2    | 2023/03/10 08:55:27 | 2023-03-10 08:55:26,955 WARN  [Thread-79] PluginSettingsMetadataLoader:63 - Failed to fetch plugin settings metadata for plugin cd.go.authentication.passwordfile. Maybe the plugin does not implement plugin settings and view?
+INFO   | jvm 2    | 2023/03/10 08:55:27 | 2023-03-10 08:55:26,956 WARN  [Thread-79] PluginSettingsMetadataLoader:64 - Plugin: cd.go.authentication.passwordfile - Metadata load info: [{extension='authorization', configuration='null', view='null', error='The plugin sent a response that could not be understood by Go. Plugin returned with code '500' and the following response: 'Request go.plugin-settings.get-configuration is not supported by plugin.''}]
+INFO   | jvm 2    | 2023/03/10 08:55:27 | 2023-03-10 08:55:26,957 WARN  [Thread-79] PluginSettingsMetadataLoader:65 - Not all plugins are required to implement the request above. This error may be safe to ignore.
+INFO   | jvm 2    | 2023/03/10 08:55:27 | 2023-03-10 08:55:26,958 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-filebased-authentication-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:55:27 | 2023-03-10 08:55:27,057 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/bundled/gocd-yaml-config-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:55:28 | 2023-03-10 08:55:28,645 INFO  [Thread-79] ConfigRepositoryInitializer:108 - [Config Repository Initializer] Start initializing the config repositories for plugin 'yaml.config.plugin' 
+INFO   | jvm 2    | 2023/03/10 08:55:28 | 2023-03-10 08:55:28,648 INFO  [Thread-79] ConfigRepositoryInitializer:112 - [Config Repository Initializer] Done initializing the config repositories for plugin 'yaml.config.plugin' 
+INFO   | jvm 2    | 2023/03/10 08:55:28 | 2023-03-10 08:55:28,667 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/bundled/gocd-yaml-config-plugin.jar
+INFO   | jvm 2    | 2023/03/10 08:55:28 | 2023-03-10 08:55:28,807 INFO  [Thread-79] DefaultPluginJarChangeListener:67 - Plugin load starting: /go-working-dir/plugins/external/yaml-config-plugin-0.13.0.jar
+INFO   | jvm 2    | 2023/03/10 08:55:28 | 2023-03-10 08:55:28,809 INFO  [Thread-79] DefaultPluginJarChangeListener:74 - Plugin load finished: /go-working-dir/plugins/external/yaml-config-plugin-0.13.0.jar
+INFO   | jvm 2    | 2023/03/10 08:55:28 | 2023-03-10 08:55:28,810 WARN  [Thread-79] DefaultPluginJarLocationMonitor:260 - Plugin listener failed
+INFO   | jvm 2    | 2023/03/10 08:55:28 | java.lang.RuntimeException: Found bundled plugin with ID: [yaml.config.plugin], external plugin could not be loaded
+INFO   | jvm 2    | 2023/03/10 08:55:28 | 	at com.thoughtworks.go.plugin.infra.listeners.DefaultPluginJarChangeListener.validateIfExternalPluginRemovingBundledPlugin(DefaultPluginJarChangeListener.java:139)
+INFO   | jvm 2    | 2023/03/10 08:55:28 | 	at com.thoughtworks.go.plugin.infra.listeners.DefaultPluginJarChangeListener.pluginJarAdded(DefaultPluginJarChangeListener.java:69)
+INFO   | jvm 2    | 2023/03/10 08:55:28 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread$DoOnAllListeners.lambda$pluginJarAdded$0(DefaultPluginJarLocationMonitor.java:237)
+INFO   | jvm 2    | 2023/03/10 08:55:28 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread$DoOnAllListeners.doOnAllPluginJarChangeListener(DefaultPluginJarLocationMonitor.java:258)
+INFO   | jvm 2    | 2023/03/10 08:55:28 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread$DoOnAllListeners.pluginJarAdded(DefaultPluginJarLocationMonitor.java:237)
+INFO   | jvm 2    | 2023/03/10 08:55:28 | 	at com.thoughtworks.go.plugin.infra.monitor.PluginChangeNotifier.lambda$notify$0(PluginChangeNotifier.java:33)
+INFO   | jvm 2    | 2023/03/10 08:55:28 | 	at java.base/java.lang.Iterable.forEach(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 08:55:28 | 	at com.thoughtworks.go.plugin.infra.monitor.PluginChangeNotifier.notify(PluginChangeNotifier.java:30)
+INFO   | jvm 2    | 2023/03/10 08:55:28 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread.loadAndNotifyPluginsFrom(DefaultPluginJarLocationMonitor.java:204)
+INFO   | jvm 2    | 2023/03/10 08:55:28 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread.oneShot(DefaultPluginJarLocationMonitor.java:192)
+INFO   | jvm 2    | 2023/03/10 08:55:28 | 	at com.thoughtworks.go.plugin.infra.monitor.DefaultPluginJarLocationMonitor$PluginLocationMonitorThread.run(DefaultPluginJarLocationMonitor.java:177)
+INFO   | jvm 2    | 2023/03/10 08:55:37 | 2023-03-10 08:55:37,911 WARN  [WrapperJarAppMain] DeprecationWarning:43 - Using @Deprecated Class com.thoughtworks.go.server.web.DefaultHeadersFilter
+INFO   | jvm 2    | 2023/03/10 08:55:44 | 2023-03-10 08:55:44,124 INFO  [ThreadPoolTaskScheduler-2] GoFileConfigDataSource:263 - Config file changed at 1678438522807
+INFO   | jvm 2    | 2023/03/10 08:55:44 | 2023-03-10 08:55:44,128 INFO  [ThreadPoolTaskScheduler-2] GoFileConfigDataSource:264 - Reloading config file: config/cruise-config.xml
+INFO   | jvm 2    | 2023/03/10 08:55:44 | 2023-03-10 08:55:44,249 INFO  [ThreadPoolTaskScheduler-2] CachedGoConfig:223 - About to notify config listeners
+INFO   | jvm 2    | 2023/03/10 08:55:44 | 2023-03-10 08:55:44,253 INFO  [ThreadPoolTaskScheduler-2] BuildAssignmentService:250 - [Configuration Changed] Removing jobs for pipelines that no longer exist in configuration.
+INFO   | jvm 2    | 2023/03/10 08:55:44 | 2023-03-10 08:55:44,254 INFO  [ThreadPoolTaskScheduler-2] CachedGoConfig:231 - Finished notifying all listeners
+INFO   | jvm 2    | 2023/03/10 08:56:23 | 2023-03-10 08:56:23,953 WARN  [qtp1784242807-44] FeatureToggleRepository:69 - Toggles file, /go-working-dir/config/go.feature.toggles does not exist. Saying there are no toggles.
+INFO   | jvm 2    | 2023/03/10 08:56:43 | 2023-03-10 08:56:43,915 ERROR [qtp1784242807-37] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 08:56:53 | 2023-03-10 08:56:53,928 ERROR [qtp1784242807-34] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:00:17 | 2023-03-10 09:00:17,660 ERROR [qtp1784242807-42] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:00:34 | 2023-03-10 09:00:34,841 ERROR [qtp1784242807-36] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:01:07 | 2023-03-10 09:01:07,192 ERROR [qtp1784242807-41] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:07:31 | 2023-03-10 09:07:31,838 ERROR [qtp1784242807-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:07:36 | 2023-03-10 09:07:36,345 ERROR [qtp1784242807-31] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:07:36 | 2023-03-10 09:07:36,360 INFO  [qtp1784242807-31] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@7342f718[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.CreateConfigRepoCommand@4cd16a8d
+INFO   | jvm 2    | 2023/03/10 09:07:36 | 2023-03-10 09:07:36,370 INFO  [qtp1784242807-31] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@7342f718[displayName=anonymous,username=anonymous] is being processed
+INFO   | jvm 2    | 2023/03/10 09:07:36 | 2023-03-10 09:07:36,388 INFO  [qtp1784242807-31] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+INFO   | jvm 2    | 2023/03/10 09:07:36 | 2023-03-10 09:07:36,423 INFO  [qtp1784242807-31] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+INFO   | jvm 2    | 2023/03/10 09:07:36 | 2023-03-10 09:07:36,491 INFO  [qtp1784242807-31] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.remote.ConfigRepoConfig config listeners
+INFO   | jvm 2    | 2023/03/10 09:07:36 | 2023-03-10 09:07:36,499 INFO  [qtp1784242807-31] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.remote.ConfigRepoConfig config listeners
+INFO   | jvm 2    | 2023/03/10 09:07:36 | 2023-03-10 09:07:36,501 INFO  [qtp1784242807-31] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@7342f718[displayName=anonymous,username=anonymous] is completed
+INFO   | jvm 2    | 2023/03/10 09:07:36 | 2023-03-10 09:07:36,521 ERROR [qtp1784242807-38] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:07:38 | 2023-03-10 09:07:38,140 INFO  [137@MessageListener for MaterialUpdateListener] ScmMaterialUpdater:60 - [Material Update] Found '2' modifications for material 'GitMaterial{url=https://github.com/mehdi1-3/gocd, branch='master', shallowClone=false, submoduleFolder='null'}' with flyweight '0824dc982ad52193ccc2cc41a13fbf254bcc00012cf78af3a609470a7c9d334a' using working directory '/go-working-dir/pipelines/flyweight/77b41907-5173-463d-91f9-e8290f5fa1c0'
+INFO   | jvm 2    | 2023/03/10 09:07:39 | 2023-03-10 09:07:39,830 ERROR [123@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/10 09:07:39 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/10 09:07:39 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/10 09:07:39 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/10 09:07:39 | 
+INFO   | jvm 2    | 2023/03/10 09:07:39 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/10 09:07:39 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/10 09:07:39 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/10 09:07:40 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:07:40 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:07:40 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:07:40 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:07:40 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:07:40 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:07:41 | 2023-03-10 09:07:41,891 ERROR [qtp1784242807-38] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:07:51 | 2023-03-10 09:07:51,973 ERROR [qtp1784242807-38] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:08:02 | 2023-03-10 09:08:02,025 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:08:12 | 2023-03-10 09:08:12,068 ERROR [qtp1784242807-31] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:08:22 | 2023-03-10 09:08:22,117 ERROR [qtp1784242807-44] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:08:32 | 2023-03-10 09:08:32,175 ERROR [qtp1784242807-38] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:08:42 | 2023-03-10 09:08:42,229 ERROR [qtp1784242807-26] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:08:51 | 2023-03-10 09:08:51,671 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/10 09:08:51 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/10 09:08:51 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/10 09:08:51 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/10 09:08:51 | 
+INFO   | jvm 2    | 2023/03/10 09:08:51 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/10 09:08:51 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/10 09:08:51 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/10 09:08:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:08:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:08:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:08:51 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:08:51 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:08:51 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:08:52 | 2023-03-10 09:08:52,278 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:09:02 | 2023-03-10 09:09:02,327 ERROR [qtp1784242807-44] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:09:12 | 2023-03-10 09:09:12,371 ERROR [qtp1784242807-31] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:09:22 | 2023-03-10 09:09:22,427 ERROR [qtp1784242807-40] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:09:32 | 2023-03-10 09:09:32,468 ERROR [qtp1784242807-31] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:09:42 | 2023-03-10 09:09:42,520 ERROR [qtp1784242807-44] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:09:52 | 2023-03-10 09:09:52,582 ERROR [qtp1784242807-31] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:10:02 | 2023-03-10 09:10:02,630 ERROR [qtp1784242807-40] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:10:12 | 2023-03-10 09:10:12,683 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:10:21 | 2023-03-10 09:10:21,650 ERROR [123@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/10 09:10:21 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/10 09:10:21 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/10 09:10:21 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/10 09:10:21 | 
+INFO   | jvm 2    | 2023/03/10 09:10:21 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/10 09:10:21 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/10 09:10:21 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/10 09:10:21 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:10:21 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:10:21 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:10:21 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:10:21 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:10:21 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:10:22 | 2023-03-10 09:10:22,730 ERROR [qtp1784242807-44] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:10:32 | 2023-03-10 09:10:32,780 ERROR [qtp1784242807-31] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:10:42 | 2023-03-10 09:10:42,829 ERROR [qtp1784242807-44] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:10:52 | 2023-03-10 09:10:52,886 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:11:02 | 2023-03-10 09:11:02,942 ERROR [qtp1784242807-44] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:11:13 | 2023-03-10 09:11:12,999 ERROR [qtp1784242807-31] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:11:23 | 2023-03-10 09:11:23,046 ERROR [qtp1784242807-40] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:11:33 | 2023-03-10 09:11:33,125 ERROR [qtp1784242807-31] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:11:43 | 2023-03-10 09:11:43,184 ERROR [qtp1784242807-44] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:11:51 | 2023-03-10 09:11:51,367 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/10 09:11:51 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/10 09:11:51 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/10 09:11:51 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/10 09:11:51 | 
+INFO   | jvm 2    | 2023/03/10 09:11:51 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/10 09:11:51 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/10 09:11:51 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/10 09:11:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:11:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:11:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:11:51 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:11:51 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:11:51 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:11:53 | 2023-03-10 09:11:53,243 ERROR [qtp1784242807-31] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:12:03 | 2023-03-10 09:12:03,285 ERROR [qtp1784242807-40] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:12:13 | 2023-03-10 09:12:13,311 ERROR [qtp1784242807-31] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:12:23 | 2023-03-10 09:12:23,340 ERROR [qtp1784242807-40] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:12:33 | 2023-03-10 09:12:33,380 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:12:43 | 2023-03-10 09:12:43,406 ERROR [qtp1784242807-40] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:12:53 | 2023-03-10 09:12:53,458 ERROR [qtp1784242807-31] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:13:03 | 2023-03-10 09:13:03,495 ERROR [qtp1784242807-44] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:13:13 | 2023-03-10 09:13:13,534 ERROR [qtp1784242807-31] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:13:22 | 2023-03-10 09:13:21,999 ERROR [123@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/10 09:13:22 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/10 09:13:22 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/10 09:13:22 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/10 09:13:22 | 
+INFO   | jvm 2    | 2023/03/10 09:13:22 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/10 09:13:22 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/10 09:13:22 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/10 09:13:22 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:13:22 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:13:22 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:13:22 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:13:22 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:13:22 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:13:23 | 2023-03-10 09:13:23,564 ERROR [qtp1784242807-40] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:13:33 | 2023-03-10 09:13:33,605 ERROR [qtp1784242807-31] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:13:43 | 2023-03-10 09:13:43,651 ERROR [qtp1784242807-44] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:13:53 | 2023-03-10 09:13:53,699 ERROR [qtp1784242807-29] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:14:03 | 2023-03-10 09:14:03,737 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:14:13 | 2023-03-10 09:14:13,770 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:14:23 | 2023-03-10 09:14:23,803 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:14:33 | 2023-03-10 09:14:33,832 ERROR [qtp1784242807-40] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:14:43 | 2023-03-10 09:14:43,858 ERROR [qtp1784242807-40] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:14:51 | 2023-03-10 09:14:51,422 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/10 09:14:51 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/10 09:14:51 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/10 09:14:51 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/10 09:14:51 | 
+INFO   | jvm 2    | 2023/03/10 09:14:51 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/10 09:14:51 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/10 09:14:51 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/10 09:14:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:14:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:14:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:14:51 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:14:51 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:14:51 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:14:53 | 2023-03-10 09:14:53,886 ERROR [qtp1784242807-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:15:03 | 2023-03-10 09:15:03,928 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:15:14 | 2023-03-10 09:15:13,964 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:15:24 | 2023-03-10 09:15:24,014 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:15:34 | 2023-03-10 09:15:34,053 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:15:44 | 2023-03-10 09:15:44,086 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:15:54 | 2023-03-10 09:15:54,111 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:16:04 | 2023-03-10 09:16:04,149 ERROR [qtp1784242807-39] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:16:14 | 2023-03-10 09:16:14,222 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:16:21 | 2023-03-10 09:16:21,518 ERROR [123@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/10 09:16:21 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/10 09:16:21 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/10 09:16:21 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/10 09:16:21 | 
+INFO   | jvm 2    | 2023/03/10 09:16:21 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/10 09:16:21 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/10 09:16:21 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/10 09:16:21 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:16:21 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:16:21 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:16:21 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:16:21 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:16:21 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:16:24 | 2023-03-10 09:16:24,274 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:16:34 | 2023-03-10 09:16:34,322 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:16:44 | 2023-03-10 09:16:44,364 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:16:54 | 2023-03-10 09:16:54,407 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:17:04 | 2023-03-10 09:17:04,444 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:17:14 | 2023-03-10 09:17:14,493 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:17:24 | 2023-03-10 09:17:24,536 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:17:34 | 2023-03-10 09:17:34,579 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:17:44 | 2023-03-10 09:17:44,629 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:17:51 | 2023-03-10 09:17:51,339 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/10 09:17:51 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/10 09:17:51 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/10 09:17:51 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/10 09:17:51 | 
+INFO   | jvm 2    | 2023/03/10 09:17:51 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/10 09:17:51 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/10 09:17:51 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/10 09:17:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:17:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:17:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:17:51 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:17:51 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:17:51 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:17:54 | 2023-03-10 09:17:54,679 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:18:04 | 2023-03-10 09:18:04,730 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:18:14 | 2023-03-10 09:18:14,777 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:18:24 | 2023-03-10 09:18:24,814 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:18:34 | 2023-03-10 09:18:34,860 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:18:44 | 2023-03-10 09:18:44,897 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:18:55 | 2023-03-10 09:18:54,938 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:19:04 | 2023-03-10 09:19:04,987 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:19:15 | 2023-03-10 09:19:15,021 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:19:21 | 2023-03-10 09:19:21,759 ERROR [123@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/10 09:19:21 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/10 09:19:21 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/10 09:19:21 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/10 09:19:21 | 
+INFO   | jvm 2    | 2023/03/10 09:19:21 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/10 09:19:21 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/10 09:19:21 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/10 09:19:21 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:19:21 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:19:21 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:19:21 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:19:21 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:19:21 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:19:25 | 2023-03-10 09:19:25,073 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:19:35 | 2023-03-10 09:19:35,110 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:19:45 | 2023-03-10 09:19:45,150 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:19:55 | 2023-03-10 09:19:55,189 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:20:05 | 2023-03-10 09:20:05,240 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:20:15 | 2023-03-10 09:20:15,283 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:20:25 | 2023-03-10 09:20:25,333 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:20:35 | 2023-03-10 09:20:35,378 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:20:45 | 2023-03-10 09:20:45,429 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:20:51 | 2023-03-10 09:20:51,290 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/10 09:20:51 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/10 09:20:51 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/10 09:20:51 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/10 09:20:51 | 
+INFO   | jvm 2    | 2023/03/10 09:20:51 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/10 09:20:51 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/10 09:20:51 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/10 09:20:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:20:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:20:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:20:51 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:20:51 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:20:51 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:20:55 | 2023-03-10 09:20:55,483 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:21:05 | 2023-03-10 09:21:05,514 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:21:15 | 2023-03-10 09:21:15,563 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:21:25 | 2023-03-10 09:21:25,614 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:21:35 | 2023-03-10 09:21:35,662 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:21:45 | 2023-03-10 09:21:45,695 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:21:55 | 2023-03-10 09:21:55,756 ERROR [qtp1784242807-34] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:22:05 | 2023-03-10 09:22:05,799 ERROR [qtp1784242807-34] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:22:15 | 2023-03-10 09:22:15,835 ERROR [qtp1784242807-34] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:22:21 | 2023-03-10 09:22:21,406 ERROR [123@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/10 09:22:21 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/10 09:22:21 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/10 09:22:21 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/10 09:22:21 | 
+INFO   | jvm 2    | 2023/03/10 09:22:21 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/10 09:22:21 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/10 09:22:21 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/10 09:22:21 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:22:21 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:22:21 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:22:21 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:22:21 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:22:21 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:22:25 | 2023-03-10 09:22:25,890 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:22:36 | 2023-03-10 09:22:35,939 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:22:46 | 2023-03-10 09:22:45,981 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:22:56 | 2023-03-10 09:22:56,030 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:23:06 | 2023-03-10 09:23:06,083 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:23:16 | 2023-03-10 09:23:16,130 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:23:26 | 2023-03-10 09:23:26,176 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:23:36 | 2023-03-10 09:23:36,216 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:23:46 | 2023-03-10 09:23:46,260 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:23:51 | 2023-03-10 09:23:51,637 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/mehdi1-3/gocd by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/10 09:23:51 | com.thoughtworks.go.plugin.access.configrepo.InvalidPartialConfigException: 
+INFO   | jvm 2    | 2023/03/10 09:23:51 | pipeline.gocd.yaml;
+INFO   | jvm 2    | 2023/03/10 09:23:51 | 1. Failed to parse pipeline pipeline; class java.util.ArrayList cannot be cast to class java.util.Map (java.util.ArrayList and java.util.Map are in module java.base of loader 'bootstrap')
+INFO   | jvm 2    | 2023/03/10 09:23:51 | 
+INFO   | jvm 2    | 2023/03/10 09:23:51 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:97)
+INFO   | jvm 2    | 2023/03/10 09:23:51 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/10 09:23:51 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/10 09:23:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:23:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:23:51 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:23:51 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:23:51 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:23:51 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:23:56 | 2023-03-10 09:23:56,309 ERROR [qtp1784242807-28] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:42:36 | 2023-03-10 09:42:36,037 ERROR [qtp1784242807-36] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:42:44 | 2023-03-10 09:42:44,479 WARN  [123@MessageListener for ConfigMaterialUpdateListener] ConfigMaterialUpdateListener:66 - [Config Material Update] Cannot update configuration part because material update has failed. Reason: Working directory: pipelines/flyweight/77b41907-5173-463d-91f9-e8290f5fa1c0
+INFO   | jvm 2    | 2023/03/10 09:42:44 | STDERR: fatal: unable to access 'https://github.com/mehdi1-3/gocd/': Could not resolve host: github.com. Cause: git fetch failed for [https://github.com/mehdi1-3/gocd]
+INFO   | jvm 2    | 2023/03/10 09:42:48 | 2023-03-10 09:42:48,114 ERROR [qtp1784242807-45] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:42:58 | 2023-03-10 09:42:58,118 ERROR [qtp1784242807-30] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:43:08 | 2023-03-10 09:43:08,135 ERROR [qtp1784242807-45] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
