@@ -1,6 +1,10 @@
 #write a GoCD pipeline to clean, package a spring boot application existing with this template under the folder src/.. in a git repository  and finally deoloy to tomcat server runing in docker container
 format_version: 10
 pipelines:
+  "gocd-yaml-plugin":
+    group: gocd
+    label_template: "${git[:8]}"
+    locking: off
   pipeline:
     group: defaultGroup
     label_template: ${COUNT}

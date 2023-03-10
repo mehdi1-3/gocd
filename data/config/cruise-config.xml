@@ -6,8 +6,11 @@
     </artifacts>
   </server>
   <config-repos>
-    <config-repo id="gocd" pluginId="yaml.config.plugin">
-      <git url="https://github.com/mehdi1-3/gocd" />
+    <config-repo id="PaC" pluginId="yaml.config.plugin">
+      <git url="https://github.com/tomzo/gocd-yaml-config-plugin/" />
+      <rules>
+        <allow action="refer" type="*">*</allow>
+      </rules>
     </config-repo>
   </config-repos>
   <pipelines group="defaultGroup">

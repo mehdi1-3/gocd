@@ -3469,3 +3469,275 @@ INFO   | jvm 2    | 2023/03/10 09:48:18 | 2023-03-10 09:48:17,105 INFO  [124@Mes
 INFO   | jvm 2    | 2023/03/10 09:48:18 | 2023-03-10 09:48:17,953 ERROR [qtp1784242807-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
 INFO   | jvm 2    | 2023/03/10 09:48:28 | 2023-03-10 09:48:28,019 ERROR [qtp1784242807-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
 INFO   | jvm 2    | 2023/03/10 09:48:58 | 2023-03-10 09:48:58,065 ERROR [qtp1784242807-36] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:50:03 | 2023-03-10 09:50:03,873 ERROR [qtp1784242807-41] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:50:09 | 2023-03-10 09:50:09,060 INFO  [138@MessageListener for MaterialUpdateListener] ScmMaterialUpdater:60 - [Material Update] Found '1' modifications for material 'GitMaterial{url=https://github.com/mehdi1-3/gocd, branch='master', shallowClone=false, submoduleFolder='null'}' with flyweight '0824dc982ad52193ccc2cc41a13fbf254bcc00012cf78af3a609470a7c9d334a' using working directory '/go-working-dir/pipelines/flyweight/77b41907-5173-463d-91f9-e8290f5fa1c0'
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 2023-03-10 09:50:10,406 INFO  [124@MessageListener for ConfigMaterialUpdateListener] GoConfigDao:108 - Config update request by anonymous is in queue - com.thoughtworks.go.config.update.PartialConfigUpdateCommand@3d1b174c
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 2023-03-10 09:50:10,409 INFO  [124@MessageListener for ConfigMaterialUpdateListener] GoConfigDao:111 - Config update request com.thoughtworks.go.config.update.PartialConfigUpdateCommand@3d1b174c by anonymous is being processed
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 2023-03-10 09:50:10,431 WARN  [124@MessageListener for ConfigMaterialUpdateListener] GoFileConfigDataSource:349 - Merged config update operation failed on LATEST 1 partials. Falling back to using LAST VALID 0 partials. Exception message was: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:50:10 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	1. Not allowed to refer to pipeline group 'defaultGroup'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | com.thoughtworks.go.config.exceptions.GoConfigInvalidMergeException: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:50:10 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	1. Not allowed to refer to pipeline group 'defaultGroup'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.validateCruiseConfig(MagicalGoConfigXmlLoader.java:137)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.preprocessAndValidate(MagicalGoConfigXmlLoader.java:124)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlWriter.write(MagicalGoConfigXmlWriter.java:76)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.configAsXml(GoFileConfigDataSource.java:408)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.getUnmergedConfig(GoFileConfigDataSource.java:600)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.trySavingConfig(GoFileConfigDataSource.java:584)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.writeWithLock(GoFileConfigDataSource.java:343)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.CachedGoConfig.writeWithLock(CachedGoConfig.java:154)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.GoConfigDao.updateConfig(GoConfigDao.java:118)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.server.service.GoConfigService.updateConfig(GoConfigService.java:283)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.PartialConfigService.updateConfig(PartialConfigService.java:159)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.PartialConfigService.onSuccessPartialConfig(PartialConfigService.java:87)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.notifySuccessListeners(GoConfigRepoConfigDataSource.java:209)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:172)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 2023-03-10 09:50:10,442 WARN  [124@MessageListener for ConfigMaterialUpdateListener] GoFileConfigDataSource:355 - Merged config update operation failed using fallback LAST VALID 1 partials. Exception message was: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:50:10 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	1. Not allowed to refer to pipeline group 'defaultGroup'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | com.thoughtworks.go.config.exceptions.GoConfigInvalidMergeException: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:50:10 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	1. Not allowed to refer to pipeline group 'defaultGroup'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.validateCruiseConfig(MagicalGoConfigXmlLoader.java:137)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.preprocessAndValidate(MagicalGoConfigXmlLoader.java:124)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlWriter.write(MagicalGoConfigXmlWriter.java:76)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.configAsXml(GoFileConfigDataSource.java:408)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.getUnmergedConfig(GoFileConfigDataSource.java:600)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.trySavingConfig(GoFileConfigDataSource.java:584)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.writeWithLock(GoFileConfigDataSource.java:351)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.CachedGoConfig.writeWithLock(CachedGoConfig.java:154)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.config.GoConfigDao.updateConfig(GoConfigDao.java:118)
+INFO   | jvm 2    | 2023/03/10 09:50:10 | 	at com.thoughtworks.go.server.service.GoConfigService.updateConfig(GoConfigService.java:283)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.PartialConfigService.updateConfig(PartialConfigService.java:159)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.PartialConfigService.onSuccessPartialConfig(PartialConfigService.java:87)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.notifySuccessListeners(GoConfigRepoConfigDataSource.java:209)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:172)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 2023-03-10 09:50:10,448 WARN  [124@MessageListener for ConfigMaterialUpdateListener] GoFileConfigDataSource:366 - Configuration file is invalid: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:50:11 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	1. Not allowed to refer to pipeline group 'defaultGroup'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | com.thoughtworks.go.config.exceptions.GoConfigInvalidMergeException: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:50:11 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	1. Not allowed to refer to pipeline group 'defaultGroup'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.writeWithLock(GoFileConfigDataSource.java:356)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.CachedGoConfig.writeWithLock(CachedGoConfig.java:154)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoConfigDao.updateConfig(GoConfigDao.java:118)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.server.service.GoConfigService.updateConfig(GoConfigService.java:283)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.PartialConfigService.updateConfig(PartialConfigService.java:159)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.PartialConfigService.onSuccessPartialConfig(PartialConfigService.java:87)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.notifySuccessListeners(GoConfigRepoConfigDataSource.java:209)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:172)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | Caused by: com.thoughtworks.go.config.exceptions.GoConfigInvalidMergeException: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:50:11 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	1. Not allowed to refer to pipeline group 'defaultGroup'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.validateCruiseConfig(MagicalGoConfigXmlLoader.java:137)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.preprocessAndValidate(MagicalGoConfigXmlLoader.java:124)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlWriter.write(MagicalGoConfigXmlWriter.java:76)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.configAsXml(GoFileConfigDataSource.java:408)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.getUnmergedConfig(GoFileConfigDataSource.java:600)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.trySavingConfig(GoFileConfigDataSource.java:584)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.writeWithLock(GoFileConfigDataSource.java:351)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	... 13 common frames omitted
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 2023-03-10 09:50:10,451 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigDao:120 - Config update failed.
+INFO   | jvm 2    | 2023/03/10 09:50:11 | java.lang.RuntimeException: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:50:11 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	1. Not allowed to refer to pipeline group 'defaultGroup'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.util.ExceptionUtils.bomb(ExceptionUtils.java:41)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.writeWithLock(GoFileConfigDataSource.java:367)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.CachedGoConfig.writeWithLock(CachedGoConfig.java:154)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoConfigDao.updateConfig(GoConfigDao.java:118)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.server.service.GoConfigService.updateConfig(GoConfigService.java:283)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.PartialConfigService.updateConfig(PartialConfigService.java:159)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.PartialConfigService.onSuccessPartialConfig(PartialConfigService.java:87)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.notifySuccessListeners(GoConfigRepoConfigDataSource.java:209)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:172)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | Caused by: com.thoughtworks.go.config.exceptions.GoConfigInvalidMergeException: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:50:11 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	1. Not allowed to refer to pipeline group 'defaultGroup'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.writeWithLock(GoFileConfigDataSource.java:356)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	... 13 common frames omitted
+INFO   | jvm 2    | 2023/03/10 09:50:11 | Caused by: com.thoughtworks.go.config.exceptions.GoConfigInvalidMergeException: Number of errors: 1+
+INFO   | jvm 2    | 2023/03/10 09:50:11 | I. Rule Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	1. Not allowed to refer to pipeline group 'defaultGroup'. Check the 'Rules' of this config repository.;; 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | II. Config Validation Errors: 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.validateCruiseConfig(MagicalGoConfigXmlLoader.java:137)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlLoader.preprocessAndValidate(MagicalGoConfigXmlLoader.java:124)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.MagicalGoConfigXmlWriter.write(MagicalGoConfigXmlWriter.java:76)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.configAsXml(GoFileConfigDataSource.java:408)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.getUnmergedConfig(GoFileConfigDataSource.java:600)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.trySavingConfig(GoFileConfigDataSource.java:584)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	at com.thoughtworks.go.config.GoFileConfigDataSource.writeWithLock(GoFileConfigDataSource.java:351)
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 	... 13 common frames omitted
+INFO   | jvm 2    | 2023/03/10 09:50:11 | 2023-03-10 09:50:10,452 INFO  [124@MessageListener for ConfigMaterialUpdateListener] GoConfigDao:126 - Config update request by anonymous is completed
+INFO   | jvm 2    | 2023/03/10 09:50:33 | 2023-03-10 09:50:33,913 ERROR [qtp1784242807-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:50:43 | 2023-03-10 09:50:43,971 ERROR [qtp1784242807-41] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:50:54 | 2023-03-10 09:50:53,997 ERROR [qtp1784242807-33] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:51:04 | 2023-03-10 09:51:04,026 ERROR [qtp1784242807-40] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:51:14 | 2023-03-10 09:51:14,069 ERROR [qtp1784242807-35] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:51:24 | 2023-03-10 09:51:24,102 ERROR [qtp1784242807-45] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:57:38 | 2023-03-10 09:57:38,163 ERROR [qtp1784242807-34] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:57:41 | 2023-03-10 09:57:41,533 INFO  [qtp1784242807-36] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@37b37114[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.DeleteConfigRepoCommand@483585e6
+INFO   | jvm 2    | 2023/03/10 09:57:41 | 2023-03-10 09:57:41,537 INFO  [qtp1784242807-36] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@37b37114[displayName=anonymous,username=anonymous] is being processed
+INFO   | jvm 2    | 2023/03/10 09:57:41 | 2023-03-10 09:57:41,543 INFO  [qtp1784242807-36] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+INFO   | jvm 2    | 2023/03/10 09:57:41 | 2023-03-10 09:57:41,572 INFO  [qtp1784242807-36] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+INFO   | jvm 2    | 2023/03/10 09:57:41 | 2023-03-10 09:57:41,594 INFO  [qtp1784242807-36] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.remote.ConfigRepoConfig config listeners
+INFO   | jvm 2    | 2023/03/10 09:57:41 | 2023-03-10 09:57:41,595 INFO  [qtp1784242807-36] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.remote.ConfigRepoConfig config listeners
+INFO   | jvm 2    | 2023/03/10 09:57:41 | 2023-03-10 09:57:41,596 INFO  [qtp1784242807-36] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@37b37114[displayName=anonymous,username=anonymous] is completed
+INFO   | jvm 2    | 2023/03/10 09:57:41 | 2023-03-10 09:57:41,609 ERROR [qtp1784242807-44] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 09:58:39 | 2023-03-10 09:58:39,776 WARN  [pool-3-thread-1] ProcessWrapper:59 - null
+INFO   | jvm 2    | 2023/03/10 09:58:39 | java.lang.InterruptedException: null
+INFO   | jvm 2    | 2023/03/10 09:58:39 | 	at java.base/java.lang.Object.wait(Native Method)
+INFO   | jvm 2    | 2023/03/10 09:58:39 | 	at java.base/java.lang.Object.wait(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:58:39 | 	at java.base/java.lang.ProcessImpl.waitFor(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:58:39 | 	at com.thoughtworks.go.util.ProcessWrapper.waitForExit(ProcessWrapper.java:55)
+INFO   | jvm 2    | 2023/03/10 09:58:39 | 	at com.thoughtworks.go.util.command.CommandLine.run(CommandLine.java:373)
+INFO   | jvm 2    | 2023/03/10 09:58:39 | 	at com.thoughtworks.go.domain.materials.SCMCommand.run(SCMCommand.java:42)
+INFO   | jvm 2    | 2023/03/10 09:58:39 | 	at com.thoughtworks.go.domain.materials.git.GitCommand.cloneWithNoCheckout(GitCommand.java:106)
+INFO   | jvm 2    | 2023/03/10 09:58:39 | 	at com.thoughtworks.go.config.materials.git.GitMaterial.git(GitMaterial.java:379)
+INFO   | jvm 2    | 2023/03/10 09:58:39 | 	at com.thoughtworks.go.config.materials.git.GitMaterial.getGit(GitMaterial.java:347)
+INFO   | jvm 2    | 2023/03/10 09:58:39 | 	at com.thoughtworks.go.config.materials.git.GitMaterial.latestModification(GitMaterial.java:124)
+INFO   | jvm 2    | 2023/03/10 09:58:39 | 	at com.thoughtworks.go.server.service.materials.GitPoller.latestModification(GitPoller.java:30)
+INFO   | jvm 2    | 2023/03/10 09:58:39 | 	at com.thoughtworks.go.server.service.materials.GitPoller.latestModification(GitPoller.java:26)
+INFO   | jvm 2    | 2023/03/10 09:58:39 | 	at com.thoughtworks.go.server.service.MaterialService.latestModification(MaterialService.java:127)
+INFO   | jvm 2    | 2023/03/10 09:58:39 | 	at com.thoughtworks.go.apiv1.pipelinesascodeinternal.PipelinesAsCodeInternalControllerV1.lambda$checkoutFromMaterialConfig$6(PipelinesAsCodeInternalControllerV1.java:225)
+INFO   | jvm 2    | 2023/03/10 09:58:39 | 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:58:40 | 	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:58:40 | 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:58:40 | 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 09:58:40 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 10:09:18 | 2023-03-10 10:09:18,033 ERROR [qtp1784242807-43] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 10:09:18 | 2023-03-10 10:09:18,038 INFO  [qtp1784242807-43] GoConfigDao:88 - Config update for entity request by com.thoughtworks.go.server.domain.Username@5ea4f5ad[displayName=anonymous,username=anonymous] is in queue - com.thoughtworks.go.config.update.CreateConfigRepoCommand@19df16ba
+INFO   | jvm 2    | 2023/03/10 10:09:18 | 2023-03-10 10:09:18,040 INFO  [qtp1784242807-43] GoConfigDao:91 - Config update for entity request by com.thoughtworks.go.server.domain.Username@5ea4f5ad[displayName=anonymous,username=anonymous] is being processed
+INFO   | jvm 2    | 2023/03/10 10:09:18 | 2023-03-10 10:09:18,043 INFO  [qtp1784242807-43] GoFileConfigDataSource:491 - [Configuration Changed] Saving updated configuration.
+INFO   | jvm 2    | 2023/03/10 10:09:18 | 2023-03-10 10:09:18,056 INFO  [qtp1784242807-43] MagicalGoConfigXmlWriter:85 - [Serializing Config] Generating config partial.
+INFO   | jvm 2    | 2023/03/10 10:09:18 | 2023-03-10 10:09:18,072 INFO  [qtp1784242807-43] CachedGoConfig:167 - About to notify com.thoughtworks.go.config.remote.ConfigRepoConfig config listeners
+INFO   | jvm 2    | 2023/03/10 10:09:18 | 2023-03-10 10:09:18,074 INFO  [qtp1784242807-43] CachedGoConfig:181 - Finished notifying com.thoughtworks.go.config.remote.ConfigRepoConfig config listeners
+INFO   | jvm 2    | 2023/03/10 10:09:18 | 2023-03-10 10:09:18,075 INFO  [qtp1784242807-43] GoConfigDao:101 - Entity update for request by com.thoughtworks.go.server.domain.Username@5ea4f5ad[displayName=anonymous,username=anonymous] is completed
+INFO   | jvm 2    | 2023/03/10 10:09:18 | 2023-03-10 10:09:18,254 ERROR [qtp1784242807-34] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 2023-03-10 10:09:21,059 INFO  [138@MessageListener for MaterialUpdateListener] ScmMaterialUpdater:60 - [Material Update] Found '1' modifications for material 'GitMaterial{url=https://github.com/tomzo/gocd-yaml-config-plugin/, branch='master', shallowClone=false, submoduleFolder='null'}' with flyweight '9a1c5c6211a4d197a64558169d1cf8d48a76a118b40cf44afa380b590e9c5b97' using working directory '/go-working-dir/pipelines/flyweight/668f2b23-e3a5-41f8-8ba6-60231123aeaf'
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 2023-03-10 10:09:21,884 ERROR [124@MessageListener for ConfigMaterialUpdateListener] p.y.c.p.c.g.p.c.y.YamlConfigPlugin:127 [plugin-yaml.config.plugin] - Unexpected error occurred in YAML configuration plugin.
+INFO   | jvm 2    | 2023/03/10 10:09:21 | java.lang.RuntimeException: Versions across files are not unique. Found versions: [3, 9, 10]. There can only be one version across the whole repository.
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at cd.go.plugin.config.yaml.JsonConfigCollection.updateTargetVersionFromFiles(JsonConfigCollection.java:75)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at cd.go.plugin.config.yaml.YamlConfigPlugin.lambda$handleParseDirectoryRequest$3(YamlConfigPlugin.java:160)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at cd.go.plugin.config.yaml.YamlConfigPlugin.handlingErrors(YamlConfigPlugin.java:221)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at cd.go.plugin.config.yaml.YamlConfigPlugin.handleParseDirectoryRequest(YamlConfigPlugin.java:152)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at cd.go.plugin.config.yaml.YamlConfigPlugin.handle(YamlConfigPlugin.java:75)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.plugin.infra.DefaultPluginManager.lambda$submitTo$0(DefaultPluginManager.java:134)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.plugin.infra.FelixGoPluginOSGiFramework.executeActionOnTheService(FelixGoPluginOSGiFramework.java:208)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.plugin.infra.FelixGoPluginOSGiFramework.doOn(FelixGoPluginOSGiFramework.java:164)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.plugin.infra.DefaultPluginManager.submitTo(DefaultPluginManager.java:131)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.plugin.access.PluginRequestHelper.submitRequest(PluginRequestHelper.java:49)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.plugin.access.configrepo.ConfigRepoExtension.parseDirectory(ConfigRepoExtension.java:132)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:95)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 2023-03-10 10:09:21,885 ERROR [124@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/tomzo/gocd-yaml-config-plugin/ by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/10 10:09:21 | java.lang.RuntimeException: The plugin sent a response that could not be understood by Go. Plugin returned with code '500' and the following response: '{"target_version":1,"environments":[],"pipelines":[],"errors":[{"location":"YAML config plugin","message":"java.lang.RuntimeException: Versions across files are not unique. Found versions: [3, 9, 10]. There can only be one version across the whole repository."}]}'
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.plugin.access.PluginRequestHelper.submitRequest(PluginRequestHelper.java:58)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.plugin.access.configrepo.ConfigRepoExtension.parseDirectory(ConfigRepoExtension.java:132)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:95)
+INFO   | jvm 2    | 2023/03/10 10:09:21 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/10 10:09:22 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/10 10:09:22 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 10:09:22 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 10:09:22 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 10:09:22 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 10:09:22 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 10:09:22 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 10:09:28 | 2023-03-10 10:09:28,267 ERROR [qtp1784242807-29] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 10:09:38 | 2023-03-10 10:09:38,294 ERROR [qtp1784242807-34] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 10:09:53 | 2023-03-10 10:09:53,298 ERROR [qtp1784242807-35] VariableReplacer:385 - function ${escape:} type 'escape:' not a valid type
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 2023-03-10 10:10:46,121 ERROR [123@MessageListener for ConfigMaterialUpdateListener] p.y.c.p.c.g.p.c.y.YamlConfigPlugin:127 [plugin-yaml.config.plugin] - Unexpected error occurred in YAML configuration plugin.
+INFO   | jvm 2    | 2023/03/10 10:10:46 | java.lang.RuntimeException: Versions across files are not unique. Found versions: [3, 9, 10]. There can only be one version across the whole repository.
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at cd.go.plugin.config.yaml.JsonConfigCollection.updateTargetVersionFromFiles(JsonConfigCollection.java:75)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at cd.go.plugin.config.yaml.YamlConfigPlugin.lambda$handleParseDirectoryRequest$3(YamlConfigPlugin.java:160)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at cd.go.plugin.config.yaml.YamlConfigPlugin.handlingErrors(YamlConfigPlugin.java:221)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at cd.go.plugin.config.yaml.YamlConfigPlugin.handleParseDirectoryRequest(YamlConfigPlugin.java:152)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at cd.go.plugin.config.yaml.YamlConfigPlugin.handle(YamlConfigPlugin.java:75)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.plugin.infra.DefaultPluginManager.lambda$submitTo$0(DefaultPluginManager.java:134)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.plugin.infra.FelixGoPluginOSGiFramework.executeActionOnTheService(FelixGoPluginOSGiFramework.java:208)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.plugin.infra.FelixGoPluginOSGiFramework.doOn(FelixGoPluginOSGiFramework.java:164)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.plugin.infra.DefaultPluginManager.submitTo(DefaultPluginManager.java:131)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.plugin.access.PluginRequestHelper.submitRequest(PluginRequestHelper.java:49)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.plugin.access.configrepo.ConfigRepoExtension.parseDirectory(ConfigRepoExtension.java:132)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:95)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at java.base/java.lang.Thread.run(Unknown Source)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 2023-03-10 10:10:46,123 ERROR [123@MessageListener for ConfigMaterialUpdateListener] GoConfigRepoConfigDataSource:175 - Failed to parse configuration material https://github.com/tomzo/gocd-yaml-config-plugin/ by Plugin yaml.config.plugin
+INFO   | jvm 2    | 2023/03/10 10:10:46 | java.lang.RuntimeException: The plugin sent a response that could not be understood by Go. Plugin returned with code '500' and the following response: '{"target_version":1,"environments":[],"pipelines":[],"errors":[{"location":"YAML config plugin","message":"java.lang.RuntimeException: Versions across files are not unique. Found versions: [3, 9, 10]. There can only be one version across the whole repository."}]}'
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.plugin.access.PluginRequestHelper.submitRequest(PluginRequestHelper.java:58)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.plugin.access.configrepo.ConfigRepoExtension.parseDirectory(ConfigRepoExtension.java:132)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.parseDirectory(ConfigRepoPlugin.java:95)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.config.ConfigRepoPlugin.load(ConfigRepoPlugin.java:64)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.config.GoConfigRepoConfigDataSource.onCheckoutComplete(GoConfigRepoConfigDataSource.java:162)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.updateConfigurationFromCheckout(ConfigMaterialUpdateListener.java:99)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:84)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.server.materials.ConfigMaterialUpdateListener.onMessage(ConfigMaterialUpdateListener.java:36)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.runImpl(JMSMessageListenerAdapter.java:83)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at com.thoughtworks.go.server.messaging.activemq.JMSMessageListenerAdapter.run(JMSMessageListenerAdapter.java:63)
+INFO   | jvm 2    | 2023/03/10 10:10:46 | 	at java.base/java.lang.Thread.run(Unknown Source)
