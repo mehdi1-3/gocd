@@ -4,10 +4,20 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="32e90438-1709-47b3-a992-98c109f1e3b1" name="Changes" comment="pipeline modification4">
+    <list default="true" id="32e90438-1709-47b3-a992-98c109f1e3b1" name="Changes" comment="pipeline modification for test2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootRestWithH2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBootRestWithH2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/agent-config/autoregister.properties" beforeDir="false" afterPath="$PROJECT_DIR$/data/agent-config/autoregister.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/agent-logs/go-agent-bootstrapper-wrapper.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/agent-logs/go-agent-bootstrapper-wrapper.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/agent-logs/go-agent-bootstrapper.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/agent-logs/go-agent-bootstrapper.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/agent-logs/go-agent-launcher.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/agent-logs/go-agent-launcher.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/cruise-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/config/cruise-config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/logs/go-server-wrapper.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/logs/go-server-wrapper.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/logs/go-server.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/logs/go-server.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/logs/plugin-cd.go.authentication.ldap.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/logs/plugin-cd.go.authentication.ldap.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/logs/plugin-cd.go.authentication.passwordfile.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/logs/plugin-cd.go.authentication.passwordfile.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/plugins/go-plugins-all.zip" beforeDir="false" afterPath="$PROJECT_DIR$/data/plugins/go-plugins-all.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline.gocd.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline.gocd.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +34,7 @@
   <component name="GOROOT" url="file://$USER_HOME$/sdk/go1.20" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -63,7 +74,9 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;71366816ab10b576457f9b6e3146d463&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -121,6 +134,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678280341148</updated>
       <workItem from="1678280341564" duration="2818000" />
+      <workItem from="1678437586926" duration="683000" />
     </task>
     <servers />
   </component>
@@ -153,7 +167,9 @@
     <MESSAGE value="pipeline modification2" />
     <MESSAGE value="pipeline modification3" />
     <MESSAGE value="pipeline modification4" />
-    <option name="LAST_COMMIT_MESSAGE" value="pipeline modification4" />
+    <MESSAGE value="pipeline modification for test" />
+    <MESSAGE value="pipeline modification for test2" />
+    <option name="LAST_COMMIT_MESSAGE" value="pipeline modification for test2" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

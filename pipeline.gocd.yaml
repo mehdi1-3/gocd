@@ -14,37 +14,36 @@ pipelines:
         branch: master
 
     stages:
-    - clean:
-        clean:
-          working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-          command: mvn clean
-        jobs:
-        - clean:
-            tasks:
-            - exec:
-                command: mvn clean
-                working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-    - package:
-        package:
-          working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-          command: mvn package
-        jobs:
-        - package:
-            tasks:
-            - exec:
-                command: mvn package
-                working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-    - deployment:
-        deployment:
-          working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-          command: mvn deploy
-        jobs:
-        - deployment:
-            tasks:
-            - exec:
-                command: mvn deploy
-                working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
-
+      - clean:
+          clean:
+            working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
+            command: mvn clean
+          jobs:
+            - clean:
+                tasks:
+                  - exec:
+                      command: mvn clean
+                      working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
+      - package:
+          package:
+            working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
+            command: mvn package
+          jobs:
+            - package:
+                tasks:
+                  - exec:
+                      command: mvn package
+                      working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
+      - deployment:
+          deployment:
+            working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
+            command: mvn deploy
+          jobs:
+            - deployment:
+                tasks:
+                  - exec:
+                      command: mvn deploy
+                      working_directory: src/main/java/com/mehdi/SpringBootRestWithH2
 
 
 

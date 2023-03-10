@@ -5,6 +5,14 @@
       <artifactsDir>artifacts</artifactsDir>
     </artifacts>
   </server>
+  <config-repos>
+    <config-repo id="PaC" pluginId="yaml.config.plugin">
+      <git url="https://github.com/tomzo/gocd-yaml-config-plugin/" />
+      <rules>
+        <allow action="refer" type="*">*</allow>
+      </rules>
+    </config-repo>
+  </config-repos>
   <pipelines group="defaultGroup">
     <pipeline name="pipeline1">
       <materials>
